@@ -4,7 +4,7 @@ const mainImage = document.getElementById('mainImage');
 
 // Update image source
 function getImageSrc(step) {
-  mainImage.src = `/back_${step}.png`
+  mainImage.src = `images/back_${step}.png`
 }
 
 function isElementInViewport(el) {
