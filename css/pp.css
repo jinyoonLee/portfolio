@@ -19,7 +19,7 @@
   position: sticky;
   align-self: flex-start;
   left: 0;
-  background-image: url('images/back_phone.png');
+  background-image: url('../images/back_phone.png');
   background-repeat: no-repeat;
 }
 
