@@ -1,0 +1,117 @@
+/* 같은 스타일을 유지합니다 */
+.contentBox {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.textF .move {
+  padding: 430px 30px 100px;
+  margin-bottom: 300px;
+}
+
+.textF h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.imgF {
+  position: sticky;
+  align-self: flex-start;
+  left: 0;
+  background-image: url('/back_phone.png');
+  background-repeat: no-repeat;
+}
+
+.imgF img {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.fade-leave-active, .fade-leave-to {
+  animation-name: fadeA;
+  animation-duration: 0.25s;
+}
+
+@keyframes fadeA {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.5;
+    transform: scale(0.98);
+  }
+}
+
+.fade-enter-active, .fade-enter-to {
+  animation-name: fadeB;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeB {
+  from {
+    opacity: 0.5;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentBox {
+    gap: 0;
+  }
+
+  .textF {
+    width: 0%;
+    opacity: 0;
+  }
+
+  .imgF {
+    margin: 30px auto;
+    max-width: 400px;
+    background-size: 100%;
+    background-position: center 44px;
+    top: 80px;
+  }
+
+  .imgF h2 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .imgF img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .textF {
+    width: 45%;
+  }
+
+  .imgF {
+    width: 50%;
+    margin: 100px 0;
+    min-width: 400px;
+    background-size: 400px;
+    background-position: center 0px;
+    top: 150px;
+  }
+
+  .imgF h2,
+  .imgF h2+p {
+    display: none;
+  }
+
+  .imgF img {
+    width: 400px;
+  }
+}
