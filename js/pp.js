@@ -10,15 +10,10 @@ function getImageSrc(step) {
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
-  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-
-  const offset = viewportHeight * 0.3;
-
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= viewportHeight - offset &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }

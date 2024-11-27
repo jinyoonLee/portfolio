@@ -1,40 +1,32 @@
-@media screen and (max-width: 399px) {
-  .textF .move:nth-child(3){
-    margin-bottom: 65vh;
-  }
-}
 
-@media screen and (min-width: 400px) and (max-width: 999px) {
-  .textF .move:nth-child(3){
-    margin-bottom: 70vh;
-  }
-}
-
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 499px)  {
   .textF >ul{
     padding: 0;
   }
   
   .textF .move {
-    padding: 0 0 10vh;
+    padding: 5vh 0 300px;
     list-style: none;
     text-align: center;
+    margin-bottom: 50vh;
+  }
+  .textF .move:nth-child(3){
+    margin-bottom: 50vh;
   }
   
   .textF h2 {
-    padding-top: 120px;
     font-size: 20px;
     font-weight: 400;
   }
   
   .imgF {
     position: fixed;
-    top: 180px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
     margin: 30px auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     background-image: url('../images/back_phone.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -45,7 +37,147 @@
     margin: 0 auto;
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
+  }
+  
+  .imgF h2 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .imgF #imageContainerP{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 699px)  {
+  .textF >ul{
+    padding: 0;
+  }
+  
+  .textF .move {
+    padding: 5vh 0 300px;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 50vh;
+  }
+  .textF .move:nth-child(3){
+    margin-bottom: 50vh;
+  }
+
+  .textF .move span {
+    font-size: 20px;
+    color: #238F51;
+    font-weight: 500;
+  }
+
+  .textF .move h2 {
+    font-size: 30px;
+    color: #14142B;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .textF .move p:first-of-type{
+    font-size: 16px;
+    color: #9999A6;
+  }
+  .textF .move p:last-of-type{
+    font-size: 18px;
+    color: #14142B;
+  }
+
+  .imgF {
+    position: fixed;
+    top: calc(50vh - 340px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px auto;
+    width: 100%;
+    max-width: 700px;
+    background-image: url('../images/back_phone.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+  }
+  
+  .imgF img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .imgF h2 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .imgF #imageContainerP{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px)  {
+  .textF >ul{
+    padding: 0;
+  }
+  
+  .textF .move {
+    padding: 80px 0 300px;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30vh;
+  }
+  .textF .move:nth-child(3){
+    margin-bottom: 57vh;
+  }
+  
+  .textF .move span {
+    font-size: 20px;
+    color: #238F51;
+    font-weight: 500;
+  }
+
+  .textF .move h2 {
+    font-size: 30px;
+    color: #14142B;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .textF .move p:first-of-type{
+    font-size: 16px;
+    color: #9999A6;
+  }
+  .textF .move p:last-of-type{
+    font-size: 18px;
+    color: #14142B;
+  }
+
+  .imgF {
+    position: fixed;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px auto;
+    width: 100%;
+    max-width: 700px;
+    background-image: url('../images/back_phone.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+  }
+  
+  .imgF img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
   }
   
   .imgF h2 {
@@ -64,25 +196,50 @@
 @media screen and (min-width: 1000px) {
   .contentBox {
     display: flex;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
+  .textF >ul{
+    padding: 0 0 0 20px;
+  }
+
   .textF .move {
-    padding: 400px 0 100px;
+    padding: 300px 0 100px;
     margin-bottom: 300px;
     list-style: none;
   }
 
+  .textF .move:nth-child(1){
+    margin-top: calc(50vh - 370px);
+  }
+
   .textF .move:nth-child(3){
-    margin-bottom: 390px;
+    margin-bottom: calc(50vh - 150px);
   }
   
-  .textF h2 {
+  .textF .move span {
     font-size: 20px;
-    font-weight: 400;
+    color: #238F51;
+    font-weight: 500;
+  }
+
+  .textF .move h2 {
+    font-size: 30px;
+    color: #14142B;
+    font-weight: 700;
+    margin: 0;
   }
   
+  .textF .move p:first-of-type{
+    font-size: 16px;
+    color: #9999A6;
+  }
+  .textF .move p:last-of-type{
+    font-size: 18px;
+    color: #14142B;
+  }
+
   .imgF img {
     margin: 0 auto;
     display: block;
@@ -101,15 +258,15 @@
     top: calc(50vh - 260px);
     left: 0;
     width: 70%;
-    min-width: 610px;
-    margin: 100px 0;
+    min-width: 750px;
+    margin: 0;
     background-image: url('../images/back_pc.png');
     background-repeat: no-repeat;
-    background-size: 610px;
+    background-size: 750px;
     background-position: center 0px;
   }
 
   .imgF img {
-    width: 610px;
+    width: 750px;
   }
 }
