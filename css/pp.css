@@ -15,8 +15,12 @@ body{
     text-align: center;
     margin-bottom: 50vh;
   }
+  .textF .move:nth-child(1){
+    margin-top: 30px;
+  }
   .textF .move:nth-child(3){
-    margin-bottom: 50vh;
+    padding-bottom: 0;
+    margin-bottom: calc(100vh - 245px);
   }
   
   .textF .move >span {
@@ -59,7 +63,7 @@ body{
 
   .imgF {
     position: fixed;
-    top: 270px;
+    top: 260px;
     left: 50%;
     transform: translateX(-50%);
     margin: 30px auto;
@@ -102,7 +106,8 @@ body{
     margin-bottom: 50vh;
   }
   .textF .move:nth-child(3){
-    margin-bottom: 50vh;
+    padding-bottom: 0;
+    margin-bottom: calc(100vh - 235px);
   }
 
   .textF .move >span {
@@ -145,7 +150,6 @@ body{
 
   .imgF {
     position: fixed;
-    /* top: calc(50vh - 220px); */
     top: 250px;
     left: 50%;
     transform: translateX(-50%);
@@ -189,7 +193,8 @@ body{
     margin-bottom: 30vh;
   }
   .textF .move:nth-child(3){
-    margin-bottom: 57vh;
+    padding-bottom: 0;
+    margin-bottom: calc(100vh - 265px);
   }
   
   .textF .move >span {
@@ -262,7 +267,6 @@ body{
     display: none;
   }
 }
-
 
 @media screen and (min-width: 1000px) {
   .contentBox {
@@ -356,4 +360,8 @@ body{
   .imgF img {
     width: 750px;
   }
+}
+
+.moneyImg >img{
+  width: 100%;
 }
