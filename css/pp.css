@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body{
+  font-family: "Noto Sans KR", sans-serif;
+}
 
 @media screen and (max-width: 499px)  {
   .textF >ul{
@@ -14,14 +19,47 @@
     margin-bottom: 50vh;
   }
   
-  .textF h2 {
-    font-size: 20px;
-    font-weight: 400;
+  .textF .move >span {
+    font-size: 14px;
+    color: #238F51;
+    font-weight: 500;
+  }
+
+  .textF .move h2 {
+    font-size: 26px;
+    color: #14142B;
+    font-weight: 700;
+    margin: 0;
   }
   
+  .textF .move p:first-of-type{
+    font-size: 12px;
+    color: #9999A6;
+  }
+  .textF .move p >span{
+    color: #f05d4d;
+    font-weight: 600;
+  }
+  .textF .move p:last-of-type{
+    font-size: 14px;
+    color: #14142B;
+  }
+  .textF .move a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #238F51;
+    width: 220px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
   .imgF {
     position: fixed;
-    top: 150px;
+    top: 270px;
     left: 50%;
     transform: translateX(-50%);
     margin: 30px auto;
@@ -67,31 +105,48 @@
     margin-bottom: 50vh;
   }
 
-  .textF .move span {
-    font-size: 20px;
+  .textF .move >span {
+    font-size: 14px;
     color: #238F51;
     font-weight: 500;
   }
 
   .textF .move h2 {
-    font-size: 30px;
+    font-size: 26px;
     color: #14142B;
     font-weight: 700;
     margin: 0;
   }
   
   .textF .move p:first-of-type{
-    font-size: 16px;
+    font-size: 12px;
     color: #9999A6;
   }
+  .textF .move p >span{
+    color: #f05d4d;
+    font-weight: 600;
+  }
   .textF .move p:last-of-type{
-    font-size: 18px;
+    font-size: 14px;
     color: #14142B;
+  }
+  .textF .move a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #238F51;
+    width: 220px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    margin: 0 auto;
   }
 
   .imgF {
     position: fixed;
-    top: calc(50vh - 340px);
+    /* top: calc(50vh - 220px); */
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
     margin: 30px auto;
@@ -137,31 +192,47 @@
     margin-bottom: 57vh;
   }
   
-  .textF .move span {
-    font-size: 20px;
+  .textF .move >span {
+    font-size: 16px;
     color: #238F51;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .textF .move h2 {
-    font-size: 30px;
+    font-size: 28px;
     color: #14142B;
     font-weight: 700;
     margin: 0;
   }
   
   .textF .move p:first-of-type{
-    font-size: 16px;
+    font-size: 14px;
     color: #9999A6;
   }
+  .textF .move p >span{
+    color: #f05d4d;
+    font-weight: 600;
+  }
   .textF .move p:last-of-type{
-    font-size: 18px;
+    font-size: 16px;
     color: #14142B;
+  }
+  .textF .move a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #238F51;
+    width: 255px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    margin: 0 auto;
   }
 
   .imgF {
     position: fixed;
-    top: 220px;
+    top: 280px;
     left: 50%;
     transform: translateX(-50%);
     margin: 30px auto;
@@ -211,33 +282,49 @@
   }
 
   .textF .move:nth-child(1){
-    margin-top: calc(50vh - 370px);
+    margin-top: calc(50vh - 390px);
   }
 
   .textF .move:nth-child(3){
-    margin-bottom: calc(50vh - 150px);
+    margin-bottom: calc(50vh - 200px);
   }
   
-  .textF .move span {
-    font-size: 20px;
+  .textF .move >span {
+    font-size: 16px;
     color: #238F51;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .textF .move h2 {
-    font-size: 30px;
+    font-size: 28px;
     color: #14142B;
     font-weight: 700;
     margin: 0;
   }
   
   .textF .move p:first-of-type{
-    font-size: 16px;
+    font-size: 14px;
     color: #9999A6;
   }
+  .textF .move p >span{
+    color: #f05d4d;
+    font-weight: 600;
+  }
   .textF .move p:last-of-type{
-    font-size: 18px;
+    font-size: 16px;
     color: #14142B;
+  }
+
+  .textF .move a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #238F51;
+    width: 120px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
   }
 
   .imgF img {
