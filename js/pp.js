@@ -1,38 +1,42 @@
 const textList = document.querySelectorAll('.move');
 const currentContent = document.getElementById('currentContent');
-const mainImage = document.getElementById('mainImage');
+const mainImageM = document.getElementById('mainImageM');
+const mainImageP = document.getElementById('mainImageP');
 
-// Update image source
 function getImageSrc(step) {
-  mainImage.src = `images/back_${step}.png`
+  mainImageM.src = `images/back_${step}.png`
+  mainImageP.src = `images/back_pc_${step}.png`
 }
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+
+  const offset = viewportHeight * 0.3;
+
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom <= viewportHeight - offset &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 
-let prevStep = 1; // 이전 step 값을 저장할 변수
-
+let prevStep = 1;
 function onScroll() {
   const elements = document.querySelectorAll('.move');
   elements.forEach((element) => {
     if (isElementInViewport(element)) {
       const currentStep = parseInt(element.id); 
 
-      if (currentStep !== prevStep) { // step 값이 변경되었을 때만 실행
+      if (currentStep !== prevStep) {
         getImageSrc(currentStep);
-        prevStep = currentStep; // 이전 step 값 업데이트
+        prevStep = currentStep;
       }
     }
   });
 }
 
-// 스크롤 이벤트 등록
 window.addEventListener('scroll', onScroll);
 
