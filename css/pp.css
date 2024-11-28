@@ -18,7 +18,7 @@ body{
   .textF .move:nth-child(1){
     margin-top: 30px;
   }
-  .textF .move:nth-child(3){
+  .textF .move:last-child{
     padding-bottom: 0;
     margin-bottom: calc(100vh - 245px);
   }
@@ -105,7 +105,7 @@ body{
     text-align: center;
     margin-bottom: 50vh;
   }
-  .textF .move:nth-child(3){
+  .textF .move:last-child{
     padding-bottom: 0;
     margin-bottom: calc(100vh - 235px);
   }
@@ -192,7 +192,7 @@ body{
     text-align: center;
     margin-bottom: 30vh;
   }
-  .textF .move:nth-child(3){
+  .textF .move:last-child{
     padding-bottom: 0;
     margin-bottom: calc(100vh - 265px);
   }
@@ -289,7 +289,7 @@ body{
     margin-top: calc(50vh - 390px);
   }
 
-  .textF .move:nth-child(3){
+  .textF .move:last-child{
     margin-bottom: calc(50vh - 200px);
   }
   

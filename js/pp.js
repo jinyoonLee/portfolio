@@ -8,21 +8,26 @@ function getImageSrc(step) {
   mainImageP.src = `images/back_pc_${step}.png`
 }
 
-function isElementInViewport(el) {
+function isElementInViewport(el, threshold = 0.4) {
   const rect = el.getBoundingClientRect();
-  return (
-    rect.top < window.innerHeight &&
-    rect.bottom > 0 &&
-    rect.left < window.innerWidth &&
-    rect.right > 0
-  );
+  const elementHeight = rect.bottom - rect.top;
+  const elementWidth = rect.right - rect.left;
+
+  const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+  const visibleWidth = Math.min(rect.right, window.innerWidth) - Math.max(rect.left, 0);
+
+  const visibleArea = Math.max(0, visibleHeight) * Math.max(0, visibleWidth);
+  const totalArea = elementHeight * elementWidth;
+  const visibilityRatio = visibleArea / totalArea;
+
+  return visibilityRatio >= threshold;
 }
 
 let prevStep = 1;
 function onScroll() {
   const elements = document.querySelectorAll('.move');
   elements.forEach((element) => {
-    if (isElementInViewport(element)) {
+    if (isElementInViewport(element, 0.4)) {
       const currentStep = parseInt(element.id); 
 
       if (currentStep !== prevStep) {
@@ -34,4 +39,3 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll);
-
