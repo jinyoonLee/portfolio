@@ -22,7 +22,13 @@
 #header .group-nav .icon::before,
 #header .group-nav .icon::after,
 #header .util-area >*::after,
-.main-tab .tab-item .tab .point::before{
+.main-tab .tab-item .tab .point::before,
+.sc-news .group-issue .issue-area .btn-all::after,
+.sc-news .group-control .control-area .btn.prev::before,
+.sc-news .group-control .control-area .btn.next::before,
+.sc-news .group-control .view-area button:first-of-type::before,
+.sc-news .group-control .view-area button:last-of-type::before,
+.sc-login .link-login::before{
 
 background-image: url(../images/sp-bg.png);
 background-repeat: no-repeat;

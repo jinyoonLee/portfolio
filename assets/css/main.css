@@ -109,10 +109,11 @@ body{
 
 
 
-
+/***** left *****/
 .sc-news{}
 .sc-news .group-head{}
 
+/* group-issue */
 .sc-news .group-issue{
     background-color: #f5f7f8;
     background-color: var(--color_option_bg);
@@ -127,10 +128,56 @@ body{
     display: flex;
     flex: 1;
 }
+.sc-news .group-issue .issue-area .btn-all{
+    display: flex;
+    align-items: center;
+}
+.sc-news .group-issue .issue-area .btn-all::after{
+    display: block;
+    content: '';
+    background-position: -242px -184px;
+    width: 9px;
+    height: 6px;
+    margin: 0 0 0 5px;
+}
+.sc-news .group-issue .issue-area .link-media{
+    display: flex;
+    align-items: center;
+}
+.sc-news .group-issue .issue-area .link-media::before{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    margin: 4px 12px 0;
+}
+.sc-news .group-issue .issue-area .link-media::after{
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    margin: 0 6px;
+    border-radius: 50%;
+}
 .sc-news .group-issue .news-area{
     display: flex;
 }
+.sc-news .group-issue .news-area .link-news+.link-news{
+    font-weight: 800;
+}
+.sc-news .group-issue .news-area .link-news+.link-news::before{
+    display: inline-block;
+    content: "";
+    margin: 4px 12px 0;
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+}
 
+/* group-media */
 .sc-news .group-media{
     margin: 18px 20px 18px 20px;
     border: 1px solid #ebebeb;
@@ -149,7 +196,6 @@ body{
 .sc-news .group-media .media-item{
     display: flex;align-items: center;justify-content: center;
 }
-
 .sc-news .group-media .vt-line{
     position: absolute;
     top: 0;width: 1px;height: 100%;
@@ -160,20 +206,16 @@ body{
 .sc-news .group-media .vt-line.vt3{left: calc((100%/6)*3);}
 .sc-news .group-media .vt-line.vt4{left: calc((100%/6)*4);}
 .sc-news .group-media .vt-line.vt5{left: calc((100%/6)*5);}
-
 .sc-news .group-media .hr-line{
-    position: absolute;height: 1px;width: 100%;left: 0;
+    position: absolute;
+    height: 1px;width: 100%;left: 0;
     background: var(--color_border_in);
 }
 .sc-news .group-media .hr-line.hr1{top: calc((100%/4)*1);}
 .sc-news .group-media .hr-line.hr2{top: calc((100%/4)*2);}
 .sc-news .group-media .hr-line.hr3{top: calc((100%/4)*3);}
 
-
-
-
-
-
+/* group-control */
 .sc-news .group-control{
     border-top: 1px solid #ebebeb;
     border-top: 1px solid var(--color_border_in);
@@ -186,6 +228,157 @@ body{
     display: flex;
     justify-content: center;
 }
+.sc-news .group-control .control-area .btn.prev{
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dadcdf;
+    border: 1px solid var(--color_button_border);
+    background-color: #fff;
+    background-color: var(--color_button1_bg);
+    position: relative;
+    display: inline-block;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    border-radius: 50%;
+    vertical-align: top;
+    cursor: pointer;
+}
+.sc-news .group-control .control-area .btn.prev::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: -452px -104px;
+    width: 10px;
+    height: 12px;
+    margin: auto;
+    transform: rotate(180deg);
+}
+.sc-news .group-control .control-area .more-wrap{
+    color: var(--color_caption2);
+    display: flex;
+    justify-content: center;
+    min-width: 156px;
+    padding: 0 16px;
+    font-size: 1.3rem;
+    line-height: 35px;
+    font-weight: 600;
+}
+.sc-news .group-control .control-area .more-wrap .point{
+    color: var(--color_news);
+    padding-right: 4px;
+}
+.sc-news .group-control .control-area .more-wrap .curr{
+    padding-left: 4px;
+}
+.sc-news .group-control .control-area .more-wrap .total{
+    color: rgba(96,96,96,.5);
+}
+.sc-news .group-control .control-area .btn.next{
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dadcdf;
+    border: 1px solid var(--color_button_border);
+    background-color: #fff;
+    background-color: var(--color_button1_bg);
+    position: relative;
+    display: inline-block;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    border-radius: 50%;
+    vertical-align: top;
+    cursor: pointer;
+}
+.sc-news .group-control .control-area .btn.next::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: -452px -104px;
+    width: 10px;
+    height: 12px;
+    margin: auto;
+}
 .sc-news .group-control .view-area{
     position: absolute;top: 0;right: 0;
+}
+.sc-news .group-control .view-area button{
+    position: relative;
+}
+.sc-news .group-control .view-area button:first-of-type{
+    padding: 18px 9px 18px 20px;
+}
+.sc-news .group-control .view-area button:first-of-type::before{
+    content: "";
+    display: block;
+    background-position: -219px -376px;
+    width: 20px;
+    height: 20px;
+}
+.sc-news .group-control .view-area button:last-of-type{
+    padding: 18px 20px 18px 9px;
+}
+.sc-news .group-control .view-area button:last-of-type::before{
+    content: "";
+    display: block;
+    background-position: -401px -403px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/***** right *****/
+/* sc-login */
+.sc-login{
+    padding: 21px 20px 18px;
+    line-height: 20px;
+    text-align: center;
+}
+.sc-login p.login-msg{
+    font-size: 1.4rem;
+}
+.sc-login .link-login{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    padding: 17px 0;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 4px;
+    background-color: #03c75a;
+    box-shadow: 0 2px 4px 0 rgba(3,199,90,.12);
+    color: #fff;
+}
+.sc-login .link-login::before{
+    content: '';
+    background-position: 0px -301px;
+    width: 72px;
+    height: 14px;
+}
+.sc-login .more-area{
+    display: flex;
+    justify-content: center;
+    color: var(--color_caption2);
+    margin-top: 16px;
+    font-size: 1.3rem;
+}
+.sc-login .more-area .link-more{
+    display: flex;
+    align-items: center;
+}
+.sc-login .more-area .link-more+.link-more::before{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    margin: 0 12px;
 }
