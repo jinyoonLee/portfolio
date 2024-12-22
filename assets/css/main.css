@@ -1,0 +1,191 @@
+
+html{
+    font-size: 10.5px;
+    line-height: 10.5px;
+}
+body{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}
+.main-left{
+    width: 830px;
+}
+.main-right{
+    width: 420px;
+}
+
+.main-frame{
+    background-color: #fff;
+    background-color: var(--color_block_bg);
+    position: relative;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 0 1px #e3e5e8,0 1px 2px 0 rgba(0,0,0,.04);
+    box-shadow: 0 0 0 1px #e3e5e8,0 1px 2px 0 rgba(0,0,0,.04);
+}
+.main-frame+.main-frame{
+    margin-top: 16px;
+}
+.ad-banner{
+    overflow: hidden;
+}
+
+/* 탭 */
+.main-tab{
+    display: flex;
+    padding: 18px 20px 17px;
+}
+.main-tab .tab-item{}
+.main-tab .tab-item+.tab-item{
+    position: relative;
+    padding-left: 26px;
+}
+.main-tab .tab-item+.tab-item::before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 13px;
+    width: 1px;
+    height: 15px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    -webkit-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+.main-tab .tab-item .tab{
+    display: block;
+    font-size: 1.6rem;
+    line-height: 23px;
+    font-weight: 800;
+    color: rgba(8,8,8,.5);
+    -webkit-font-smoothing: antialiased;
+}
+.main-tab .tab-item .tab[aria-selected="true"]{
+    color: var(--color_title);
+}
+.main-tab .tab-item.first{
+    display: flex;
+}
+.main-tab .tab-item.first .tab+.tab{
+    display: flex;
+    align-items: center;
+}
+.main-tab .tab-item.first .tab+.tab::before{
+    width: 4px;height: 4px;
+    border-radius: 50%;
+    background-color: var(--color_dot_divider);
+    content: '';
+    margin: 0 10px;
+}
+.main-tab .tab-item .tab .point{
+    background-color: #f4361e;
+    background-color: var(--color_live_news_price);
+    display: inline-block;
+    margin: 3px 0 0 5px;
+    padding: 0 5px 0 4px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    line-height: 18px;
+    font-weight: 900;
+    vertical-align: top;
+    color: #fff;
+}
+.main-tab .tab-item .tab .point::before{
+    content: "";
+    display: inline-block;
+    background-position: -358px -301px;
+    width: 14px;
+    height: 10px;
+    margin: 4px 3px 0 0;
+    vertical-align: top;
+}
+
+
+
+
+.sc-news{}
+.sc-news .group-head{}
+
+.sc-news .group-issue{
+    background-color: #f5f7f8;
+    background-color: var(--color_option_bg);
+    position: relative;
+    display: flex;
+    margin: 0 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    line-height: 26px;
+}
+.sc-news .group-issue .issue-area{
+    display: flex;
+    flex: 1;
+}
+.sc-news .group-issue .news-area{
+    display: flex;
+}
+
+.sc-news .group-media{
+    margin: 18px 20px 18px 20px;
+    border: 1px solid #ebebeb;
+    border: 1px solid var(--color_border_in);
+    overflow: hidden;
+    position: relative;
+    height: 224px;
+    border-radius: 4px;
+}
+.sc-news .group-media .media-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 100%;
+}
+.sc-news .group-media .media-item{
+    display: flex;align-items: center;justify-content: center;
+}
+
+.sc-news .group-media .vt-line{
+    position: absolute;
+    top: 0;width: 1px;height: 100%;
+    background: var(--color_border_in);
+}
+.sc-news .group-media .vt-line.vt1{left: calc((100%/6)*1);}
+.sc-news .group-media .vt-line.vt2{left: calc((100%/6)*2);}
+.sc-news .group-media .vt-line.vt3{left: calc((100%/6)*3);}
+.sc-news .group-media .vt-line.vt4{left: calc((100%/6)*4);}
+.sc-news .group-media .vt-line.vt5{left: calc((100%/6)*5);}
+
+.sc-news .group-media .hr-line{
+    position: absolute;height: 1px;width: 100%;left: 0;
+    background: var(--color_border_in);
+}
+.sc-news .group-media .hr-line.hr1{top: calc((100%/4)*1);}
+.sc-news .group-media .hr-line.hr2{top: calc((100%/4)*2);}
+.sc-news .group-media .hr-line.hr3{top: calc((100%/4)*3);}
+
+
+
+
+
+
+.sc-news .group-control{
+    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--color_border_in);
+    position: relative;
+    padding: 10px 0 11px;
+    line-height: 34px;
+    text-align: center;
+}
+.sc-news .group-control .control-area{
+    display: flex;
+    justify-content: center;
+}
+.sc-news .group-control .view-area{
+    position: absolute;top: 0;right: 0;
+}
