@@ -16,7 +16,7 @@
 }
 
 
-
+/** sp-bg */
 #header .group-search .btn-keyboard::after,
 #header .group-search .btn-auto::after,
 #header .group-nav .icon::before,
@@ -24,13 +24,25 @@
 #header .util-area >*::after,
 .main-tab .tab-item .tab .point::before,
 .sc-news .group-issue .issue-area .btn-all::after,
-.sc-news .group-control .control-area .btn.prev::before,
-.sc-news .group-control .control-area .btn.next::before,
+.main-frame .control-area .btn.prev::before,
+.main-frame .control-area .btn.next::before,
 .sc-news .group-control .view-area button:first-of-type::before,
 .sc-news .group-control .view-area button:last-of-type::before,
-.sc-login .link-login::before{
+.sc-login .link-login::before,
+.type-shopping .group-shopping .shopping-pagination .btn.prev::before,
+.type-shopping .group-shopping .shopping-pagination .btn.next::before,
+.sc-shop .group-head .content-page .btn.prev::before,
+.sc-shop .group-head .content-page .btn.next::before{
 
 background-image: url(../images/sp-bg.png);
 background-repeat: no-repeat;
 background-size: 463px auto;
+}
+
+
+/** sp-main */
+.sc-shop .group-media .shopping-desc .quick-link .link-item a .item-thumb::before{
+    background-image: url(../images/sp-main.png);
+    background-size: 158px auto;
+    background-repeat: no-repeat;
 }
