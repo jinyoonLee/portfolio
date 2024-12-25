@@ -33,10 +33,9 @@
 .type-shopping .group-shopping .shopping-pagination .btn.next::before,
 .sc-shop .group-head .content-page .btn.prev::before,
 .sc-shop .group-head .content-page .btn.next::before{
-
-background-image: url(../images/sp-bg.png);
-background-repeat: no-repeat;
-background-size: 463px auto;
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 463px auto;
 }
 
 
@@ -45,4 +44,30 @@ background-size: 463px auto;
     background-image: url(../images/sp-main.png);
     background-size: 158px auto;
     background-repeat: no-repeat;
+}
+
+
+/** sp-down */
+.sc-recommend .group-media .recommend-list .recommend-item.ad-item a .ad-mark-area .ad-mark{
+    background-image: url(../images/sp-down.png);
+    background-size: 100px 90px;
+    background-repeat: no-repeat;
+}
+
+/** a underline */
+.main-tab .tab-item .tab:hover,
+.main-frame .group-issue a:hover,
+.sc-shop .group-media .shopping-desc .mall-name .name-list .name-link:hover,
+.sc-shop .group-media .shopping-desc .quick-link .link-item:hover a .item-text,
+.sc-shop .group-media .shopping-desc .ad-banner a:hover .ad-text,
+.shopping-item:hover,
+.recommend-item:hover .item-title,
+.recommend-item.ad-item:hover .cont-title,
+.sc-login .more-area .link-more:hover,
+#footer .nBanner-area .nBanner-list .nBanner-item a:hover .item-content .title,
+#footer .notice-area a:hover,
+#footer .aside-area .service-box-wrap .service-box .item-content .desc:hover,
+#footer .partner-item .partner-link:hover,
+#footer .corp-area .addr:hover{
+    text-decoration: underline;
 }
