@@ -892,6 +892,10 @@ body{
     box-shadow: 0 2px 4px 0 rgba(3,199,90,.12);
     color: #fff;
 }
+.sc-login .link-login:hover{
+    background-color: #17b75e;
+    box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .24);
+}
 .sc-login .link-login::before{
     content: '';
     background-position: 0px -301px;
@@ -1055,9 +1059,407 @@ body{
 }
 
 
+/*? sc-daily */
+/** group-header */
+.right-board{
+    padding: 0 18px;
+}
+.right-board .group-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    line-height: 40px;
+}
+.right-board .group-header h3{
+    color: var(--color_title);
+    padding-right: 7px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.sc-daily .group-header .link-view{
+    border: 1px solid var(--color_border_in_divider);
+    background-color: var(--color_button1_bg);
+    color: var(--color_caption2);
+    height: 26px;
+    padding: 0 10px 0 7px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+.sc-daily .group-header .link-view::before{
+    content: "";
+    display: inline-block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+    background-size: 452px 436px;
+    background-position: -91px -424px;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    margin: 6px 2px 0 0;
+    vertical-align: top;
+}
+.sc-daily .group-header .link-view:hover{
+    background-color: #f8f8f8;
+    color: #404040;
+}
+.sc-daily .group-header .location{
+    flex: 1;
+    font-size: 1.3rem;
+    line-height: 40px;
+    text-align: right;
+}
+/** group-info */
+.sc-daily .group-info{
+    display: flex;
+    gap: 24px;
+    padding: 20px 0 18px;
+    border-top: 1px solid var(--color_border_in);
+    position: relative;
+;
+}
+.sc-daily .group-info .info-box{
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-width: 0;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-weather .weather-icon{
+    width: 86px;
+    height: 86px;
+    margin-right: 4px;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-weather .weather-icon::before{
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+    background-size: 641px 587px;
+    background-position: 0px -174px;
+    background-repeat: no-repeat;
+    width: 86px;
+    height: 86px;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-weather .weather-temperature{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    font-size: 3.9rem;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-weather .weather-temperature .weather-status{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-temperature{
+    margin-top: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-temperature .temp-low{
+    color: #3172e7;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-temperature .temp-high{
+    color: #cd3534;
+}
+.sc-daily .group-info .info-box .link-info-detail .info-temperature .temp-high::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: var(--color_dot_divider);
+    margin: 0 5px 0 3px;
+    transform: skewX(-15deg);
+    vertical-align: -1px;
+}
+.sc-daily .group-info .info-box .link-weather-dust{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    line-height: 20px;
+}
+.sc-daily .group-info .info-box .link-weather-dust .dust-text{
+    display: inline-block;
+    font-size: 1.3rem;
+    vertical-align: top;
+}
+.sc-daily .group-info .info-box .link-weather-dust .dust-text:last-of-type::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: var(--color_dot_divider);
+    margin: 8px 6px 0;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.sc-daily .group-info .info-box .link-weather-dust .dust-text .dust-status{
+    color: #32a1ff;
+    padding-left: 4px;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather{
+    position: relative;
+    display: block;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-graph{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    left: 0;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-graph canvas{
+    width: 180px;
+    height: 37px;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: auto 180 / 37;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list{
+    display: flex;
+    justify-content: space-between;
+    height: 143px;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item{
+    position: relative;
+    width: 32px;
+    text-align: center;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item .time{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: var(--color_caption2);
+    font-size: 1.3rem;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item:first-of-type .time{
+    color: var(--color_body);
+    font-weight: bold;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item .icon{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item .icon::before{
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+    background-size: 641px 587px;
+    background-position: -198px -522px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item:nth-of-type(2) .icon::before,
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item:nth-of-type(5) .icon::before{
+    background-position: -33px -522px;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item .celsius{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 60px;
+    left: 0;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item:nth-of-type(2) .celsius,
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item:nth-of-type(5) .celsius{
+    margin-top: 18px;
+}
+.sc-daily .group-info .info-box.weather .link-info-weather .weather-list .weather-item .celsius::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 15px;
+    background-color: #ebebeb;
+    background-color: var(--color_border_in);
+    width: 1px;
+}
 
 
+/*? sc-finance */
+/** group-header */
+.sc-finance .group-header .btn-info{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-bottom: -4px;
+}
+.sc-finance .group-header .btn-info::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+    background-size: 452px 436px;
+    background-position: -243px -316px;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+}
+.sc-finance .group-header .time{
+    flex: 1;
+    text-align: right;
+    color: var(--color_caption2);
+    line-height: 40px;
+}
+.sc-finance .group-header .time .refresh{
+    display: inline-block;
+    padding: 12px 0 12px 5px;
+    vertical-align: top;
+}
+.sc-finance .group-header .time .refresh::before{
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+    background-size: 452px 436px;
+    background-position: -132px -332px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.sc-finance .group-header .time:hover .refresh::before{
+    background-position: -204px -176px;
+}
 
+/** group-info */
+.sc-finance .group-info{
+    display: flex;
+    gap: 25px;
+    border-top: 1px solid var(--color_border_in);
+    position: relative;
+    padding: 8px 0 15px;
+}
+.sc-finance .group-info .link-info-detail{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+.sc-finance .group-info .link-info-detail .stock-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 18px;
+}
+.sc-finance .group-info .link-info-detail .stock-price{
+    margin-top: 1px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.7px;
+}
+.sc-finance .group-info .link-info-detail .stock-gap{
+    display: flex;
+    gap: 6px;
+    position: relative;
+    margin-top: 1px;
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f44336;
+}
+.sc-finance .group-info .link-info-detail .stock-gap .ico-status{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+    background-size: 452px 436px;
+    background-position: -65px -424px;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0,0,0,0);
+}
+.sc-finance .group-info .link-info-detail .stock-graph{
+    margin-top: 10px;
+}
+.sc-finance .group-info .link-info-detail .stock-graph{
+    width: 180px;
+    aspect-ratio: auto 180 / 72;
+    height: 72px;
+}
 
-
-/********! footer *********/
+.sc-finance .group-info .info-box.stock{
+    flex: 1;
+}
+.sc-finance .group-info .stock-list .stock-item{
+    display: flex;
+    align-items: center;
+    height: 37px;
+    border-bottom: 1px solid var(--color_border_in);
+}
+.sc-finance .group-info .stock-list .stock-item a{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.sc-finance .group-info .stock-list .stock-item a .stock-price{
+    display: flex;
+}
+.sc-finance .group-info .stock-list .stock-item a .stock-price i{
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+    background-size: 452px 436px;
+    background-position: -65px -424px;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+}
+.sc-finance .group-info .stock-list .stock-item:nth-of-type(3) a .stock-price i{
+    background-position: -39px -424px;
+}
+.sc-finance .group-info .stock-list .stock-item a .stock-price .stock-rate{
+    color: #f44336;
+    margin-right: 4px;
+    font-size: 1.1rem;
+}
+.sc-finance .group-info .stock-list .stock-item:nth-of-type(3) a .stock-price .stock-rate{
+    color: #2196f3;
+}
+.sc-finance .group-info .stock-list .stock-item:nth-of-type(4){
+    height: 39px;
+    color: var(--color_caption2);
+    position: relative;
+}
+.sc-finance .group-info .stock-list .stock-item:nth-of-type(4)::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png);
+    background-size: 452px 436px;
+    background-position: -226px -424px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
+}

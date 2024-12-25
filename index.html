@@ -827,12 +827,145 @@
                     </div>
                 </section>
 
+                <section class="main-frame sc-daily right-board">
+                    <h2 class="blind">날씨</h2>
+                    <div class="group-header">
+                        <h3><a href="">날씨</a></h3>
+                        <a href="" class="link-view">예보 비교</a>
+                        <span class="location">부천시 상동</span>
+                    </div>
+                    <div class="group-info">
+                        <div class="info-box">
+                        <!-- 왼쪽 -->
+                            <a href="" class="link-info-detail">
+                                <div class="info-weather">
+                                    <span class="weather-icon"><span class="blind">흐림</span></span>
+                                    <span class="weather-temperature">3.6°<span class="weather-status">흐림</span></span>
+                                </div>
+                                <div class="info-temperature">
+                                    <span class="temp-low"><span class="blind">최저기온</span>-2°</span>
+                                    <span class="temp-high"><span class="blind">최고기온</span>5°</span>
+                                </div>
+                            </a>
+                            <a href="" class="link-weather-dust">
+                                <span class="dust-text">미세<span class="dust-status">좋음</span></span>
+                                <span class="dust-text">초미세<span class="dust-status">좋음</span></span>
+                            </a>
+                        </div>
+                        <div class="info-box weather">
+                        <!-- 오른쪽-->
+                            <a href="" class="link-info-weather">
+                                <div class="weather-graph">
+                                    <canvas width="180" height="37" style="min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%;"></canvas>
+                                </div>
+                                <ul class="weather-list">
+                                    <li class="weather-item">
+                                        <div class="time">18시</div>
+                                        <div class="icon"><span class="blind">흐림</span></div>
+                                        <div class="celsius">4°</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="time">20</div>
+                                        <div class="icon"><span class="blind">흐림</span></div>
+                                        <div class="celsius">3°</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="time">22</div>
+                                        <div class="icon"><span class="blind">구름많음</span></div>
+                                        <div class="celsius">4°</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="time">0</div>
+                                        <div class="icon"><span class="blind">구름많음</span></div>
+                                        <div class="celsius">4°</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="time">2</div>
+                                        <div class="icon"><span class="blind">흐림</span></div>
+                                        <div class="celsius">3°</div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="main-frame sc-finance right-board">
+                    <h2 class="blind">증시</h2>
+                    <div class="group-header">
+                        <h3><a href="">증시</a></h3>
+                        <button href="" class="btn-info" aria-expanded="false" aria-pressed="false"><span class="blind">정보 더보기</span></button>
+                        <span class="time">
+                            12.25. 20:06
+                            <button class="refresh"><span class="blind">새로고침</span></button>
+                        </span>
+                    </div>
+                    <div class="group-info">
+                        <div class="info-box">
+                        <!-- 왼쪽 -->
+                            <a href="" class="link-info-detail">
+                                <span class="stock-name">유로스톡스50</span>
+                                <span class="stock-price">4,857.86</span>
+                                <div class="stock-gap">
+                                    <i class="ico-status"><span class="blind">상승</span></i>
+                                    4.93
+                                    <span class="rate">+0.10%</span>
+                                </div>
+                                <div class="stock-graph">
+                                    <img src="./assets/images/scfinance.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="info-box stock">
+                        <!-- 오른쪽 -->
+                            <ul class="stock-list">
+                                <li class="stock-item">
+                                    <a href="">
+                                        <span class="stock-name">삼성전자</span>
+                                        <span class="stock-price">
+                                            <i><span class="blind">상승</span></i>
+                                            <span class="stock-rate">1.68%</span>
+                                            54,400
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="stock-item">
+                                    <a href="">
+                                        <span class="stock-name">알테오젠</span>
+                                        <span class="stock-price">
+                                            <i><span class="blind">상승</span></i>
+                                            <span class="stock-rate">6.86%</span>
+                                            296,000
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="stock-item">
+                                    <a href="">
+                                        <span class="stock-name">금양</span>
+                                        <span class="stock-price">
+                                            <i><span class="blind">하락</span></i>
+                                            <span class="stock-rate">13.33%</span>
+                                            21,450
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="stock-item">
+                                    <a href="" class="link-stock">인기종목 더보기</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </section>
+
             </div>
 
         </main>
 
         <footer id="footer">
-
             <div class="footer-inner">
 
                 <div class="nBanner-area">
@@ -955,7 +1088,6 @@
                 </div>
 
             </div>
-
         </footer>
     </div>
 </body>

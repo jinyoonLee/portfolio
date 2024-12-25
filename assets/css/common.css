@@ -64,6 +64,8 @@
 .recommend-item:hover .item-title,
 .recommend-item.ad-item:hover .cont-title,
 .sc-login .more-area .link-more:hover,
+.right-board .group-header h3:hover,
+.sc-finance .group-info .stock-list .stock-item:hover a,
 #footer .nBanner-area .nBanner-list .nBanner-item a:hover .item-content .title,
 #footer .notice-area a:hover,
 #footer .aside-area .service-box-wrap .service-box .item-content .desc:hover,
