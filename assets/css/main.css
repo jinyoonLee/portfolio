@@ -19,6 +19,9 @@ body{
 }
 .main-right{
     width: 420px;
+    position: sticky;
+    align-self: flex-start;
+    top: 30px;
 }
 
 .main-frame{
@@ -191,6 +194,10 @@ body{
     vertical-align: top;
     cursor: pointer;
 }
+.main-frame .group-control .control-area .btn.prev:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+    background-color: #fbfbfc;
+}
 .main-frame .group-control .control-area .btn.prev::before{
     content: "";
     display: block;
@@ -238,6 +245,10 @@ body{
     border-radius: 50%;
     vertical-align: top;
     cursor: pointer;
+}
+.main-frame .group-control .control-area .btn.next:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+    background-color: #fbfbfc;
 }
 .main-frame .group-control .control-area .btn.next::before{
     content: "";
@@ -1962,7 +1973,7 @@ body{
     height: 6px;
     margin-top: -3px;
 }
-.bn-box .banner-indicator .btn-dot{
+.bn-box .banner-indicator .indicator-dot{
     width: 6px;
     height: 6px;
     display: inline-block;
@@ -1971,6 +1982,6 @@ body{
     vertical-align: top;
     color: rgba(0,0,0,0);
 }
-.bn-box .banner-indicator .btn-dot[aria-selected="true"]{
+.bn-box .banner-indicator .indicator-dot[aria-selected="true"]{
     background-color: #03c75a;
 }
