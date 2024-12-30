@@ -13,9 +13,15 @@
           padding: 0;
         }
         .intro-description{
-          height: 400vh;
+          height: 430vh;
           width: 100%;
           background: url('./intro-poster--pc.jpg');
+          background-size: cover;
+          background-attachment: fixed;
+          overflow: hidden;
+        }
+        .intro-description >ul{
+          background: #00000000;
           background-size: cover;
           background-attachment: fixed;
           padding-top: 50vh;
@@ -28,14 +34,25 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          width: 860px;
           color: #fff;
           opacity: 0;
           font-size: 52px;
           line-height: 1.35;
+          font-weight: 700;
+        }
+        .intro-description >ul li:nth-child(1) p.intro-text{
+          width: 634px;
+        }
+        .intro-description >ul li:nth-child(4) p.intro-text{
+          width: 720px;
         }
         .intro-description >ul li.text-box4 p.intro-text{
           font-size: 24px;
           line-height: 1.67;
+        }
+        .v2{
+          height: 100vh;
         }
     </style>
 </head>
@@ -48,7 +65,7 @@
             <li class="text-box2"><p class="intro-text">이용자 개인이 데이터 소유권을 갖고 <br> 언제 어디서든 나를 증명하는 <br> 데이터 패스포트이자</p></li>
             <li class="text-box3"><p class="intro-text">다양한 서비스 이용을 가능하게 하는<br> 패스워드리스 접속 방식입니다.</p></li>
             <li class="text-box4"><p class="intro-text">증명하기 어려운 개인의 창작 활동과 프리랜서 경험을 보호하고<br> 신뢰할 만한 자산으로 측정하기 위해서는 어떻게 관리해야 할까요?</p></li>
-            <li class="intro-description--scroll-down">
+            <!-- <li class="intro-description--scroll-down">
               <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
                   <path d="M40 40V0H0v40z"></path>
@@ -57,8 +74,12 @@
                   </g>
                 </g>
               </svg>
-            </li>
+            </li> -->
           </ul>
+        </section>
+
+        <section class="v2">
+
         </section>
     </main>
     <footer></footer>
@@ -80,6 +101,17 @@
         })
       })
 
+      gsap.to('.intro-description ul',{
+          scrollTrigger:{
+              trigger:".intro-description ul",//움직이지 않는애를 기준으로 잡기
+              start:"10% 0%",//트리거기준 시작지점 //윈도우 기준(화면의) 시작
+              end:"100% 100%",
+              markers:"true",
+              toggleActions:"play none play reverse",
+              duration: 10
+          },
+          background: "#00000080"
+      })
     </script>
 </body>
 </html>
