@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <style>
+    *{margin: 0;padding: 0;
+        list-style: none;}
+        .box{
+            height: 50vh;
+            border: 1px solid #000;
+            /* margin: 50px; */
+        }
+        .box2{
+            background: #ccc;
+        }
+        p{
+            width: 100px;height: 100px;background: #f00;
+            opacity: 0;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+  </style>
+</head>
+<section class="box box1">
+  <p class="text1">안녕하세요1</p></section>
+<section class="box box2">
+  <p class="text2">안녕하세요2</p>
+</section>
+<section class="box box3">
+  <p class="text3">안녕하세요3</p></section>
+<section class="box box4">
+  <p class="text4">안녕하세요4</p></section>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 텍스트 요소들을 선택
+    const texts = document.querySelectorAll('p');
+
+    texts.forEach((text, index) => {
+      gsap.to(text, {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: `.box${index + 1}`, // 각 box에 맞게 trigger 설정
+          start: "0% 50%", // 뷰포트 상단에서 50% 지점
+          end: "100% 70%", // 100% 지점에서 끝
+          toggleActions: "play reverse play reverse", // 스크롤에 따라 애니메이션 제어
+          markers: true, // 마커 표시 (디버깅용)
+        }
+      });
+    });
+  </script>
+</body>
+</html>
