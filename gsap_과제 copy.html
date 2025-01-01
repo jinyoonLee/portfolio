@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      ul{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+      }
+      img,video{
+        display: block;
+        max-width: 100%;
+      }
+      .blind{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        clip: rect(0,0,0,0);
+        overflow: hidden;
+      }
+
+      /* intro */
+      .sc-intro{
+        position: relative;
+        height: 500vh;
+        width: 100%;
+      }
+      .sc-intro .intro-inner{
+        position: sticky;
+        top: 0;
+        height: 100vh;
+      }
+      .sc-intro .intro-inner .background-video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .sc-intro .intro-inner .background-video video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .sc-intro .intro-inner .intro-text-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #00000000;
+      }
+      .sc-intro .intro-inner .intro-text-box [class^="intro-text"]{
+        position: absolute;
+      }
+      .sc-intro .intro-inner .intro-text-box [class^="intro-text"]{
+        color: #fff;
+        opacity: 0;
+        font-size: 52px;
+        line-height: 1.35;
+        font-weight: 700;
+      }
+      .sc-intro .intro-inner .intro-text-box .intro-text4{
+        font-size: 24px;
+        line-height: 1.67;
+      }
+      .sc-intro .intro-inner .intro-text-box .intro-scroll-down{
+        padding-top: 90vh;
+        z-index: 10;
+      }
+
+      /* showcase */
+      [class^="sc-showcase"]{
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .sc-showcase1{
+        background-image: url('./img-showcase01-pc.jpg');
+        height: 500vh;
+      }
+      .showcase-inner{
+        position: sticky;
+        top: 0;
+        height: 100vh;
+      }
+      .sc-showcase1 .showcase-inner .showcase-text-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #00000000;
+        overflow: hidden;
+      }
+      .sc-showcase1 .showcase-inner .showcase-text-box .showcase-text{
+        font-size: 100px;
+        font-weight: 600;
+        color: #fff;
+        opacity: 0;
+        line-height: 1.2;
+      }
+      .sc-showcase2{
+        background-image: url('./slogan-bg2.jpg');
+        height: 100vh;
+      }
+      .sc-showcase3{
+        background-image: url('./img-showcase03-pc.jpg');
+        height: 300vh;
+      }
+      .sc-showcase3 .showcase-inner .showcase-desc-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #00000000;
+      }
+      .sc-showcase3 .showcase-inner .showcase-desc-box .showcase-description{
+        max-width: 600px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.67;
+        color: #fff;
+        opacity: 0;
+      }
+
+      /* challenge */
+      .sc-challenge{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 100px;
+        height: 100vh;
+      }
+      .sc-challenge h2{
+        font-size: 72px;
+        line-height: 1.33;
+        font-weight: 600;
+      }
+      .sc-challenge .challenge-description{
+        padding-left: calc(50% + 55px);
+        font-size: 24px;
+        line-height: 1.89;
+        font-weight: 600;
+      }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="sc-intro">
+          <h2 class="blind">intro</h2>
+          <div class="intro-inner">
+            <div class="background-video">
+              <video autoplay muted loop src="./Archivo-VariableFont_Medium_C_PC.mp4">
+            </div>
+            <ul class="intro-text-box">
+              <li class="intro-text1">DATA ID는 나만의 <br> 데이터 아이덴티티입니다.</li>
+              <li class="intro-text2">이용자 개인이 데이터 소유권을 갖고 <br> 언제 어디서든 나를 증명하는 <br> 데이터 패스포트이자</li>
+              <li class="intro-text3">다양한 서비스 이용을 가능하게 하는<br> 패스워드리스 접속 방식입니다.</li>
+              <li class="intro-text4">증명하기 어려운 개인의 창작 활동과 프리랜서 경험을 보호하고<br> 신뢰할 만한 자산으로 측정하기 위해서는 어떻게 관리해야 할까요?</li>
+              <li class="intro-scroll-down">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M40 40V0H0v40z"></path>
+                    <g stroke="#FFF" stroke-width="2">
+                      <path d="M20 31.18V6.566M31.429 21.29 20 32.72 8.571 21.29"></path>
+                    </g>
+                  </g>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          
+        </section>
+
+        <section class="sc-showcase1">
+          <h2 class="blind">showcase1</h2>
+          <div class="showcase-inner">
+            <ul class="showcase-text-box">
+              <li class="showcase-text text1">기록하고</li>
+              <li class="showcase-text text2">증명하고</li>
+              <li class="showcase-text text3">성장하기</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sc-showcase2">
+          <h2 class="blind">showcase2</h2>
+        </section>
+        
+        <section class="sc-showcase3">
+          <h2 class="blind">showcase3</h2>
+          <div class="showcase-inner">
+            <div class="showcase-desc-box">
+              <p class="showcase-description">
+                엔터프라이즈블록체인은 블록체인 네트워크<br> DATA ID를 활용해 그 문제를 해결하고 새로운 방식을 제안하고자 합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="sc-challenge">
+          <h2>긱 워커<br>개인사업자<br>크리에이터</h2>
+          <p class="challenge-description">
+            파트타임 단기업무, 부업, 프리랜서 활동.<br> 그 어떤 것도 상관없어요.<br> 분산되어 있던 소득과 거래 이력부터 자격, 창작물 등의<br class="pc-block"> 재능 상세를 담은 포트폴리오까지.<br> 나의 이력과 재능을 증명할 정보를 모두 담을 수 있어요.
+          </p>
+        </section>
+    </main>
+    <footer></footer>
+
+  <script>
+    const intro = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sc-intro",
+        start: "0% 0%",
+        end: "100% 100%",
+        scrub: 1
+      }
+    })
+    intro.to(".sc-intro .intro-text-box", {background: "#00000080"}, "a")
+    intro.to(".sc-intro .intro-text1", {opacity: 1}, "a")
+    intro.to(".sc-intro .intro-text1", {opacity: 0})
+    intro.to(".sc-intro .intro-text2", {opacity: 1})
+    intro.to(".sc-intro .intro-text2", {opacity: 0})
+    intro.to(".sc-intro .intro-text3", {opacity: 1})
+    intro.to(".sc-intro .intro-text3", {opacity: 0})
+    intro.to(".sc-intro .intro-text4", {opacity: 1})
+
+    const showcase1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sc-showcase1",
+        start: "0% 0%",
+        end: "100% 100%",
+        scrub: 1
+      }
+    })
+    showcase1.to(".sc-showcase1 .showcase-text-box", {background: "#00000080"}, "a")
+    showcase1.to(".sc-showcase1 .showcase-text", {opacity: 1}, "a")
+    showcase1.to(".sc-showcase1 .showcase-text.text1", {x:400}, "b")
+    showcase1.to(".sc-showcase1 .showcase-text.text3", {x:-400}, "b")
+    showcase1.to(".sc-showcase1 .showcase-text-box", {background: "#00000000"}, "b")
+    showcase1.to(".sc-showcase1 .showcase-text", {opacity: 0})
+
+    const showcase3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sc-showcase3",
+        start: "0% 0%",
+        end: "100% 100%",
+        scrub: 1
+      }
+    })
+    showcase3.to(".sc-showcase3 .showcase-desc-box", {background: "#00000080"}, "a")
+    showcase3.to(".sc-showcase3 .showcase-description", {opacity: 1}, "a")
+  </script>
+</body>
+</html>

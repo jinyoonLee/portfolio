@@ -13,7 +13,7 @@
           padding: 0;
         }
         .intro-description{
-          height: 430vh;
+          height: 530vh;
           width: 100%;
           background: url('./intro-poster--pc.jpg');
           background-size: cover;
@@ -25,21 +25,20 @@
           background-size: cover;
           background-attachment: fixed;
           padding-top: 50vh;
+          overflow: hidden;
         }
         .intro-description >ul li{
           height: 100vh;
         }
+        .intro-description >ul li:nth-child(4){
+          height: 200vh;
+        }
         .intro-description >ul li p.intro-text{
-          position: fixed;
+          position: sticky;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           width: 860px;
-          color: #fff;
-          opacity: 0;
-          font-size: 52px;
-          line-height: 1.35;
-          font-weight: 700;
         }
         .intro-description >ul li:nth-child(1) p.intro-text{
           width: 634px;
@@ -51,8 +50,24 @@
           font-size: 24px;
           line-height: 1.67;
         }
-        .v2{
-          height: 100vh;
+        .intro-scroll-down{
+          position: fixed;
+          bottom: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+        }
+        .showcase-scradar{
+          height: 300vh;
+          width: 100%;
+          background: url('./img-showcase01-pc.jpg');
+          background-size: cover;
+          background-attachment: fixed;
+          overflow: hidden;
+          z-index: 10;
+        }
+        .showcase-inner{
+
         }
     </style>
 </head>
@@ -65,21 +80,26 @@
             <li class="text-box2"><p class="intro-text">이용자 개인이 데이터 소유권을 갖고 <br> 언제 어디서든 나를 증명하는 <br> 데이터 패스포트이자</p></li>
             <li class="text-box3"><p class="intro-text">다양한 서비스 이용을 가능하게 하는<br> 패스워드리스 접속 방식입니다.</p></li>
             <li class="text-box4"><p class="intro-text">증명하기 어려운 개인의 창작 활동과 프리랜서 경험을 보호하고<br> 신뢰할 만한 자산으로 측정하기 위해서는 어떻게 관리해야 할까요?</p></li>
-            <!-- <li class="intro-description--scroll-down">
-              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fill-rule="evenodd">
-                  <path d="M40 40V0H0v40z"></path>
-                  <g stroke="#FFF" stroke-width="2">
-                    <path d="M20 31.18V6.566M31.429 21.29 20 32.72 8.571 21.29"></path>
-                  </g>
-                </g>
-              </svg>
-            </li> -->
           </ul>
+          
+          <div class="intro-scroll-down">
+            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M40 40V0H0v40z"></path>
+                <g stroke="#FFF" stroke-width="2">
+                  <path d="M20 31.18V6.566M31.429 21.29 20 32.72 8.571 21.29"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
         </section>
 
-        <section class="v2">
-
+        <section class="showcase-scradar">
+          <div class="showcase-inner">
+            <p class="showcase-text">기록하고</p>
+            <p class="showcase-text">증명하고</p>
+            <p class="showcase-text">성장하기</p>
+          </div>
         </section>
     </main>
     <footer></footer>
@@ -103,15 +123,41 @@
 
       gsap.to('.intro-description ul',{
           scrollTrigger:{
-              trigger:".intro-description ul",//움직이지 않는애를 기준으로 잡기
-              start:"10% 0%",//트리거기준 시작지점 //윈도우 기준(화면의) 시작
+              trigger:".intro-description ul",
+              start:"10% 0%",
               end:"100% 100%",
-              markers:"true",
-              toggleActions:"play none play reverse",
-              duration: 10
+              toggleActions:"play reverse play reverse"
           },
           background: "#00000080"
       })
+
+      gsap.to('.intro-scroll-down',{
+          scrollTrigger:{
+              trigger:".intro-description",
+              top:"0% 0%",
+              end:"100% 100%",
+              markers:"true",
+              toggleActions:"play reverse play reverse"
+          },
+          opacity: 1
+      })
+
+      const showcaseTl = gsap.timeline({
+        defaults:{
+          duration:10,
+          ease:'none'//기본이 이지
+        }
+      })
+      showcaseTl.to('.showcase-text',{
+            scrollTrigger:{
+                trigger:".showcase-scradar",
+                start:"0% 0%",
+                end:"100% 100%",
+                markers:true,
+                scrub:0,
+            },
+            x:100
+        })
     </script>
 </body>
 </html>
