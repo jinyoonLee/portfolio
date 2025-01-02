@@ -244,6 +244,91 @@
         line-height: 1.5;
       }
 
+      /* sc-possibility */
+      .sc-possibility{
+        position: relative;
+        height: 200vh;
+      }
+      .sc-possibility .possibility-wrap{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .sc-possibility .possibility-wrap .slide-inner{
+        display: flex;
+        align-items: center;
+        width: 600vw;
+        padding: 0 100px;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-item{
+        display: flex;
+        gap: 75px;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-item .square-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border: 2px solid #fff;
+        border-radius: 58px;
+        flex-shrink: 0;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-item .square-item:not(:last-of-type) .square-icon::after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: -44px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        width: 20px;
+        height: 20px;
+        border: 8px solid #fff;
+        border-left: 0;
+        border-bottom: 0;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-item .square-icon img{
+        max-width: 54%;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-item .square-title{
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 700;
+        color: #fff;
+        margin-top: 24px;
+        padding-left: 20px;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-title-box{
+        flex-shrink: 0;
+        padding-right: 160px;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-title-box .slide-title{
+        font-size: 72px;
+        line-height: 1.28;
+        font-weight: 600;
+        color: #fff;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .graphic-inner{
+        padding: 0 60px 0 260px;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .graphic-inner .graphic-img{
+      }
+      .sc-possibility .possibility-wrap .slide-inner .graphic-inner .graphic-img{}
+      .sc-possibility .possibility-wrap .slide-inner .graphic-inner{}
+      .sc-possibility .slide-description{
+        position: absolute;
+        bottom: 5vh;
+        margin: 0 100px;
+      }
+      .sc-possibility .slide-description .slide-desc-text{
+        font-size: 14px;
+        line-height: 1.63;
+        color: hsla(0, 0%, 100%, .6);
+      }
     </style>
 </head>
 <body>
@@ -425,9 +510,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="slide-description">
-              <p class="slide-desc-text">DATA ID는 나만의 데이터 아이덴티티입니다<br> 이용자 개인이 데이터 소유권을 갖고 언제 어디서든 나를 증명하는 데이터 패스포트이자 다양한 서비스 이용을 가능케하는 패스워드리스 접속 방식입니다.</p>
+              <div class="slide-description">
+                <p class="slide-desc-text">DATA ID는 나만의 데이터 아이덴티티입니다<br> 이용자 개인이 데이터 소유권을 갖고 언제 어디서든 나를 증명하는 데이터 패스포트이자 다양한 서비스 이용을 가능케하는 패스워드리스 접속 방식입니다.</p>
+              </div>
             </div>
           </section>
 
@@ -540,6 +625,17 @@
       onLeaveBack: () => {
         gsap.to("body", {backgroundColor:"white",duration:0.5})
       }
+    })
+
+    gsap.to('.slide-inner',{
+      scrollTrigger:{
+        trigger:".sc-possibility",
+        start:"0% 0%",
+        end:"100% 100%",
+        markers:true,
+        scrub:1
+      },
+      xPercent:-110
     })
 
   </script>
