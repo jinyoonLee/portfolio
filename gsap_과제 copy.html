@@ -14,6 +14,8 @@
         padding: 0;
       }
       ul{
+        margin: 0;
+        padding: 0;
         list-style: none;
       }
       a{
@@ -126,6 +128,11 @@
         background-image: url('./img-showcase03-pc.jpg');
         height: 300vh;
       }
+      .sc-showcase4{
+        position: relative;
+        background-image: url('./creator-sec-bg.jpg');
+        height: 300vh;
+      }
       .sc-showcase3 .showcase-inner .showcase-desc-box{
         display: flex;
         justify-content: center;
@@ -140,6 +147,24 @@
         line-height: 1.67;
         color: #fff;
         opacity: 0;
+      }
+      .sc-showcase4 .showcase-desc-box{
+        position: absolute;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+      }
+      .sc-showcase4 .showcase-desc-box .showcase-description{
+        margin-bottom: 26px;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+      .sc-showcase4 .showcase-desc-box .showcase-description2{
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 600;
       }
 
       /* challenge */
@@ -266,6 +291,16 @@
         width: 600vw;
         padding: 0 100px;
       }
+      .sc-possibility .possibility-wrap .slide-inner .slide-title-box{
+        flex-shrink: 0;
+        padding-right: 160px;
+      }
+      .sc-possibility .possibility-wrap .slide-inner .slide-title-box .slide-title{
+        font-size: 72px;
+        line-height: 1.28;
+        font-weight: 600;
+        color: #fff;
+      }
       .sc-possibility .possibility-wrap .slide-inner .slide-item{
         display: flex;
         gap: 75px;
@@ -304,16 +339,6 @@
         color: #fff;
         margin-top: 24px;
         padding-left: 20px;
-      }
-      .sc-possibility .possibility-wrap .slide-inner .slide-title-box{
-        flex-shrink: 0;
-        padding-right: 160px;
-      }
-      .sc-possibility .possibility-wrap .slide-inner .slide-title-box .slide-title{
-        font-size: 72px;
-        line-height: 1.28;
-        font-weight: 600;
-        color: #fff;
       }
       .sc-possibility .possibility-wrap .slide-inner .graphic-inner{
         width: calc(100vw - 100px);
@@ -370,6 +395,214 @@
         line-height: 1.63;
         color: hsla(0, 0%, 100%, .6);
       }
+
+      /* sc-asset */
+      .sc-asset{
+        position: relative;
+        height: 300vh;
+      }
+      .sc-asset .asset-wrap{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .sc-asset .asset-wrap .slide-inner{
+        display: flex;
+        align-items: center;
+        width: 600vw;
+        padding: 0 100px;
+      }
+      .sc-asset .asset-wrap .slide-inner >*{
+        flex-shrink: 0;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-title-box{
+        flex-shrink: 0;
+        padding-right: 160px;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-title-box .slide-title{
+        font-size: 72px;
+        line-height: 1.28;
+        font-weight: 700;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card{
+        display: flex;
+        gap: 40px;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item{
+        position: relative;
+        width: 400px;
+        height: 540px;
+        flex-shrink: 0;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-50%);
+        padding: 34px;
+        color: #fff;
+        overflow: hidden;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-sizing: border-box;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg1{
+        background: #e657af;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg2{
+        background: #0049ff;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg3::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('./image-sec-3-3.png') no-repeat top / cover;
+        filter: blur(30px) brightness(.8);
+        z-index: -1;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2{
+        display: flex;
+        justify-content: space-between;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-title{
+        line-height: 1.24;
+        font-size: 50px;
+        font-weight: 600;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-caption{
+        margin-top: 12px;
+        font-size: 30px;
+        line-height: .67;
+        color: #fff;
+        text-align: right;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-caption .caption-desc{
+        display: block;
+        font-size: 16px;
+        line-height: 1.63;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-contents{
+        flex: 1;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .item-contents-inner-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-contents .item-contents-inner-item-title{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 3px;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-contents .item-contents-inner-item-text{
+        font-size: 16px;
+        line-height: 1.63;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info{
+        display: flex;
+        align-items: center;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-main{
+        flex: 1;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-main-text{
+        font-size: 16px;
+        line-height: 1.63;
+        font-weight: 700;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-icon::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url("./download.png");
+        background-size: 40px;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-desc-sticky{
+        padding: 0 60px 0 160px;
+      }
+      .sc-asset .asset-wrap .slide-inner .slide-desc-sticky .slide-description{
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 700;
+      }
+
+      .sc-asset .asset-wrap .down{
+        position: absolute;
+        bottom: 5vh;
+        width: 100%;
+        opacity: 0;
+      }
+      .sc-asset .asset-wrap .down .down-arrow{
+        display: flex;
+        justify-content: center;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item{
+        display: block;
+        width: 27px;
+        height: 27px;
+        transform: rotate(45deg);
+        border-style: solid;
+        border-width: 8px;
+        border-left: 0;
+        border-bottom: 0;
+        margin-right: -6px;
+        box-sizing: border-box;
+        opacity: 0;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(1){
+        border-image: linear-gradient(60deg, #e657af 60%, #0049ff 160%);
+        border-image-slice: 1;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(2){
+        border-image: linear-gradient(60deg, #e657af 20%, #0049ff 145%);
+        border-image-slice: 1;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(3){
+        border-image: linear-gradient(60deg, #e657af, #0049ff 130%);
+        border-image-slice: 1;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(4){
+        border-image: linear-gradient(50deg, #e657af, #0049ff 100%);
+        border-image-slice: 1;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(5){
+        border-image: linear-gradient(50deg, #e657af, #0049ff 80%);
+        border-image-slice: 1;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(6){
+        border-image: linear-gradient(50deg, #0049ff 45%, #43cf2e 135%);
+        border-image-slice: 1;
+      }
+      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(7){
+        border-image: linear-gradient(51deg, #0049ff, #43cf2e 75%);
+        border-image-slice: 1;
+      }
+      .sc-asset .asset-wrap .down .down-title{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        position: relative;
+      }
+      .sc-asset .asset-wrap .down .down-title >*{
+        position: absolute;
+        top: 0;
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 600;
+        opacity: 0;
+      }
+      .sc-asset .asset-wrap .down .down-title{}
     </style>
 </head>
 <body>
@@ -592,7 +825,7 @@
               </div>
               <ul class="slide-card">
                 <li class="card-item">
-                  <div class="card-item-bg">
+                  <div class="card-item-bg bg1">
                     <div class="card-item-head card-item-head2">
                       <div class="card-item-head-title">
                         전통자산
@@ -624,7 +857,7 @@
                   </div>
                 </li>
                 <li class="card-item">
-                  <div class="card-item-bg">
+                  <div class="card-item-bg bg2">
                     <div class="card-item-head card-item-head2">
                       <div class="card-item-head-title">
                         가상자산
@@ -656,7 +889,7 @@
                   </div>
                 </li>
                 <li class="card-item">
-                  <div class="card-item-bg">
+                  <div class="card-item-bg bg3">
                     <div class="card-item-head card-item-head2">
                       <div class="card-item-head-title">
                         재능자산
@@ -695,19 +928,31 @@
               </div>
             </div>
             <div class="down">
-              <div class="down__arrow">
-                <span class="down__arrow--item"></span>
-                <span class="down__arrow--item"></span>
-                <span class="down__arrow--item"></span>
-                <span class="down__arrow--item"></span>
-                <span class="down__arrow--item"></span>
-                <span class="down__arrow--item"></span>
-                <span class="down__arrow--item"></span>
+              <div class="down-arrow">
+                <span class="down-arrow--item"></span>
+                <span class="down-arrow--item"></span>
+                <span class="down-arrow--item"></span>
+                <span class="down-arrow--item"></span>
+                <span class="down-arrow--item"></span>
+                <span class="down-arrow--item"></span>
+                <span class="down-arrow--item"></span>
               </div>
-              <div class="down__title">
-                <span class="down__title--item">전통금융</span>
-                <span class="down__title--item">미래금융</span>
+              <div class="down-title">
+                <span class="down-title--item">전통금융</span>
+                <span class="down-title--item">미래금융</span>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sc-showcase4">
+          <h2 class="blind">showcase4</h2>
+          <div class="showcase-inner">
+            <div class="showcase-desc-box">
+              <p class="showcase-description">
+                크리에이터<br>최소라 님의<br>DATA ID
+              </p>
+              <span class="showcase-description2">이렇게 기록하고, 증명하고,<br>성장할 수 있어요.</span>
             </div>
           </div>
         </section>
@@ -804,7 +1049,7 @@
       }
     })
 
-    gsap.to('.slide-inner',{
+    gsap.to('.sc-possibility .slide-inner',{
       scrollTrigger:{
         trigger:".sc-possibility",
         start:"0% 0%",
@@ -813,6 +1058,52 @@
       },
       xPercent:-53
     })
+
+    gsap.to('.sc-asset .slide-inner',{
+      scrollTrigger:{
+        trigger:".sc-asset",
+        start:"0% 0%",
+        end:"100% 100%",
+        scrub:1
+      },
+      xPercent:-36
+    })
+
+    const asset = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 0
+    })
+    asset
+    .to(".sc-asset .down-arrow--item:nth-child(1)", {opacity: 0, duration: 0}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(2)", {opacity: 0, duration: 0.6}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(3)", {opacity: 0, duration: 1.2}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(4)", {opacity: 0, duration: 1.8}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(5)", {opacity: 0, duration: 2.4}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(6)", {opacity: 0, duration: 3.0}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(7)", {opacity: 0, duration: 3.6}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(1)", {opacity: 1, duration: 0.4}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(2)", {opacity: 1, duration: 1.0}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(3)", {opacity: 1, duration: 1.6}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(4)", {opacity: 1, duration: 2.2}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(5)", {opacity: 1, duration: 2.8}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(6)", {opacity: 1, duration: 3.4}, "<")
+    .to(".sc-asset .down-arrow--item:nth-child(7)", {opacity: 1, duration: 4.0}, "<")
+
+
+    const down = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sc-asset",
+        start: "0% 0%",
+        end: "100% 100%",
+        scrub: 1
+      }
+    })
+    down.to(".down", {opacity: 1}, "a")
+    down.to(".down .down-title--item:nth-child(1)", {opacity: 1}, "a")
+    down.to(".down .down-title--item:nth-child(1)", {opacity: 0}, "b")
+    down.to(".down .down-title--item:nth-child(2)", {opacity: 1}, "b")
+    down.to(".down .down-title--item:nth-child(2)", {opacity: 0}, "c")
+    down.to(".down", {opacity: 0}, "c")
 
   </script>
 </body>
