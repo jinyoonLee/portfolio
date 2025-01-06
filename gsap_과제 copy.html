@@ -131,6 +131,7 @@
       .sc-showcase4{
         position: relative;
         background-image: url('./creator-sec-bg.jpg');
+        background-position: center -90px;
         height: 300vh;
       }
       .sc-showcase3 .showcase-inner .showcase-desc-box{
@@ -146,6 +147,9 @@
         font-weight: 600;
         line-height: 1.67;
         color: #fff;
+        opacity: 0;
+      }
+      .sc-showcase4 .showcase-inner{
         opacity: 0;
       }
       .sc-showcase4 .showcase-desc-box{
@@ -165,6 +169,12 @@
         font-size: 24px;
         line-height: 1.67;
         font-weight: 600;
+      }
+      .sc-showcase4 .intro-scroll-down{
+        position: absolute;
+        bottom: 4vh;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       /* challenge */
@@ -315,6 +325,7 @@
         border: 2px solid #fff;
         border-radius: 58px;
         flex-shrink: 0;
+        background-color: #000;
       }
       .sc-possibility .possibility-wrap .slide-inner .slide-item .square-item:not(:last-of-type) .square-icon::after{
         content: "";
@@ -396,12 +407,12 @@
         color: hsla(0, 0%, 100%, .6);
       }
 
-      /* sc-asset */
-      .sc-asset{
+      /* sc-slide */
+      .sc-slide{
         position: relative;
         height: 300vh;
       }
-      .sc-asset .asset-wrap{
+      .sc-slide .asset-wrap{
         display: flex;
         align-items: center;
         position: sticky;
@@ -409,35 +420,35 @@
         height: 100vh;
         overflow: hidden;
       }
-      .sc-asset .asset-wrap .slide-inner{
+      .sc-slide .asset-wrap .slide-inner{
         display: flex;
         align-items: center;
         width: 600vw;
         padding: 0 100px;
       }
-      .sc-asset .asset-wrap .slide-inner >*{
+      .sc-slide .asset-wrap .slide-inner >*{
         flex-shrink: 0;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-title-box{
+      .sc-slide .asset-wrap .slide-inner .slide-title-box{
         flex-shrink: 0;
         padding-right: 160px;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-title-box .slide-title{
+      .sc-slide .asset-wrap .slide-inner .slide-title-box .slide-title{
         font-size: 72px;
         line-height: 1.28;
         font-weight: 700;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card{
+      .sc-slide .asset-wrap .slide-inner .slide-card{
         display: flex;
         gap: 40px;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item{
         position: relative;
         width: 400px;
         height: 540px;
         flex-shrink: 0;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item .card-item-bg{
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -452,75 +463,132 @@
         border-radius: 20px;
         box-sizing: border-box;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg1{
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg1{
         background: #e657af;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg2{
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg2{
         background: #0049ff;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg3::before{
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .card-item:nth-of-type(3){
+        position: relative;
+        background: url('./image-sec-3-3.png') no-repeat top / cover;
+      }
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .card-item:nth-of-type(3)::after{
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('./image-sec-3-3.png') no-repeat top / cover;
-        filter: blur(30px) brightness(.8);
-        z-index: -1;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(50px) brightness(.9);
+        z-index: 10;
+        border-radius: 20px;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2{
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg3{
+        z-index: 100;
+      }
+      .sc-slide.creator .asset-wrap .slide-inner .slide-card .card-item:nth-of-type(1){
+        position: relative;
+        background: url('./creator-sec-bg.jpg') no-repeat center;
+        background-size: 1800px;
+        border-radius: 20px;
+      }
+      .sc-slide.creator .asset-wrap .slide-inner .slide-card .card-item:nth-of-type(1)::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(50px) brightness(.9);
+        z-index: 10;
+        border-radius: 20px;
+      }
+      .sc-slide.creator .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg1{
+        z-index: 100;
+      }
+      .sc-slide.creator .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg2{
+        background: #0049ff;
+      }
+      .sc-slide.creator .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg3{
+        background: #131415;
+      }
+      .sc-slide.creator .asset-wrap .slide-inner .slide-card .card-item .card-item-bg.bg4{
+        background: #00bf41;
+      }
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2{
         display: flex;
         justify-content: space-between;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-title{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-title{
         line-height: 1.24;
         font-size: 50px;
         font-weight: 600;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-caption{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-caption{
         margin-top: 12px;
         font-size: 30px;
         line-height: .67;
         color: #fff;
         text-align: right;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-caption .caption-desc{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-head.card-item-head2 .card-item-head-caption .caption-desc{
         display: block;
         font-size: 16px;
         line-height: 1.63;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-contents{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-contents{
         flex: 1;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .item-contents-inner-list{
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .item-contents-inner-list{
         display: flex;
         flex-direction: column;
         gap: 30px;
         margin-top: 40px;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-contents .item-contents-inner-item-title{
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .card-item-contents .item-contents-inner-item-title{
         font-size: 20px;
         font-weight: 600;
         margin: 0 0 3px;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-contents .item-contents-inner-item-text{
+      .sc-slide.asset .asset-wrap .slide-inner .slide-card .card-item-contents .item-contents-inner-item-text{
         font-size: 16px;
         line-height: 1.63;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info{
+      .sc-slide.creator .item-contents-inner-text{
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: 1.63;
+        font-weight: 600;
+        letter-spacing: -1px;
+      }
+      .sc-slide.creator .item-contents-inner-text p:nth-of-type(1){
+        padding-top: 40px;
+      }
+      .sc-slide.creator .item-contents-inner-text p:nth-of-type(2){
+        padding-top: 8px;
+      }
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-info{
         display: flex;
         align-items: center;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-main{
+      .sc-slide.creator .asset-wrap .slide-inner .slide-card .card-item-info .profile-img .profile-bg{
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #ff009d;
+        margin-right: 9px;
+      }
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-main{
         flex: 1;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-main-text{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-main-text{
         font-size: 16px;
         line-height: 1.63;
         font-weight: 700;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-icon::after{
+      .sc-slide .asset-wrap .slide-inner .slide-card .card-item-info .card-item-info-icon::after{
         content: "";
         display: block;
         width: 40px;
@@ -528,26 +596,26 @@
         background-image: url("./download.png");
         background-size: 40px;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-desc-sticky{
+      .sc-slide .asset-wrap .slide-inner .slide-desc-sticky{
         padding: 0 60px 0 160px;
       }
-      .sc-asset .asset-wrap .slide-inner .slide-desc-sticky .slide-description{
+      .sc-slide .asset-wrap .slide-inner .slide-desc-sticky .slide-description{
         font-size: 24px;
         line-height: 1.67;
         font-weight: 700;
       }
 
-      .sc-asset .asset-wrap .down{
+      .sc-slide .asset-wrap .down{
         position: absolute;
         bottom: 5vh;
         width: 100%;
         opacity: 0;
       }
-      .sc-asset .asset-wrap .down .down-arrow{
+      .sc-slide .asset-wrap .down .down-arrow{
         display: flex;
         justify-content: center;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item{
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item{
         display: block;
         width: 27px;
         height: 27px;
@@ -560,41 +628,41 @@
         box-sizing: border-box;
         opacity: 0;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(1){
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item:nth-child(1){
         border-image: linear-gradient(60deg, #e657af 60%, #0049ff 160%);
         border-image-slice: 1;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(2){
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item:nth-child(2){
         border-image: linear-gradient(60deg, #e657af 20%, #0049ff 145%);
         border-image-slice: 1;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(3){
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item:nth-child(3){
         border-image: linear-gradient(60deg, #e657af, #0049ff 130%);
         border-image-slice: 1;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(4){
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item:nth-child(4){
         border-image: linear-gradient(50deg, #e657af, #0049ff 100%);
         border-image-slice: 1;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(5){
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item:nth-child(5){
         border-image: linear-gradient(50deg, #e657af, #0049ff 80%);
         border-image-slice: 1;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(6){
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item:nth-child(6){
         border-image: linear-gradient(50deg, #0049ff 45%, #43cf2e 135%);
         border-image-slice: 1;
       }
-      .sc-asset .asset-wrap .down .down-arrow .down-arrow--item:nth-child(7){
+      .sc-slide .asset-wrap .down .down-arrow .down-arrow--item:nth-child(7){
         border-image: linear-gradient(51deg, #0049ff, #43cf2e 75%);
         border-image-slice: 1;
       }
-      .sc-asset .asset-wrap .down .down-title{
+      .sc-slide .asset-wrap .down .down-title{
         display: flex;
         justify-content: center;
         margin-top: 15px;
         position: relative;
       }
-      .sc-asset .asset-wrap .down .down-title >*{
+      .sc-slide .asset-wrap .down .down-title >*{
         position: absolute;
         top: 0;
         font-size: 24px;
@@ -602,7 +670,111 @@
         font-weight: 600;
         opacity: 0;
       }
-      .sc-asset .asset-wrap .down .down-title{}
+      
+      /* sc-ground */
+      .sc-ground{
+        padding: 0 100px;
+      }
+      .sc-ground .ground-container{
+        padding: 200px 0;
+      }
+      .sc-ground .ground-container .ground-content-title{
+        font-size: 72px;
+        line-height: 1.28;
+        font-weight: 600;
+        margin-bottom: 34px;
+      }
+      .sc-ground .ground-container .ground-content-desc span{
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 600;
+      }
+      .sc-ground .ground-container .ground-button-wrap{
+        margin-top: 70px;
+        display: flex;
+        gap: 18px;
+      }
+      .sc-ground .ground-container .ground-button-item{
+        display: block;
+        font-size: 18px;
+        line-height: 2.22;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid #000;
+        padding: 3px 21px 1px;
+        color: #000;
+      }
+      .sc-ground .ground-container .ground-button-item.ground-button-download{
+        color: #fff;
+        background-color: #000;
+      }
+
+      /* join-active */
+      .join-active .join-content-inner-box{
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .join-active .join-content-inner-box::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(40px);
+        z-index: 10;
+      }
+      .join-active .join-content-inner-box .join-content-list{
+        font-size: 24px;
+        line-height: 1.67;
+        display: block;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 72px;
+        white-space: nowrap;
+      }
+      .join-active .join-content-inner-box .join-content-list:nth-child(3n + 1){
+        background-color: #00bf41;
+      }
+      .join-active .join-content-inner-box .join-content-list:nth-child(3n + 2){
+        background-color: #0049ff;
+      }
+      .join-active .join-content-inner-box .join-content-list:nth-child(3n + 3){
+        background-color: #e657af;
+      }
+      .join-active .join-content-inner-box .join-content-list .join-content-item{
+        position: relative;
+        z-index: 100;
+      }
+
+      /* footer */
+      footer{
+        position: relative;
+        background: #000;
+        color: #fff;
+        padding: 0 100px;
+        z-index: 10;
+      }
+      footer .footer-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 58px 0;
+      }
+      footer .footer-container .footer-info-text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+      }
+      footer .footer-container .footer-info-copyright{
+        margin-top: 10px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      footer .footer-container .footer-logo img{
+        width: 193px;
+      }
+
     </style>
 </head>
 <body>
@@ -797,6 +969,22 @@
             </p>
           </section>
 
+          <section class="sc-feature">
+            <div class="feature-content">
+              <div class="feature-item">
+              </div>
+          
+              <div class="feature-item">
+              </div>
+          
+              <div class="feature-item">
+              </div>
+            </div>
+            <div class="feature-title">
+              DATA ID는<br> 당신을 기록하고 증명하며,<br> 당신의 성장을 도울 수 있어요.
+            </div>
+          </section>
+
         </div>
 
         <section class="sc-challenge challenge2">
@@ -816,7 +1004,7 @@
           <span class="prove-white-box1"></span><span class="prove-white-box2"></span>
         </section>
 
-        <section class="sc-asset">
+        <section class="sc-slide asset">
           <h2 class="blind">asset</h2>
           <div class="asset-wrap">
             <div class="slide-inner">
@@ -954,11 +1142,215 @@
               </p>
               <span class="showcase-description2">이렇게 기록하고, 증명하고,<br>성장할 수 있어요.</span>
             </div>
+            <div class="intro-scroll-down">
+              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M40 40V0H0v40z"></path>
+                  <g stroke="#FFF" stroke-width="2">
+                    <path d="M20 31.18V6.566M31.429 21.29 20 32.72 8.571 21.29"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
           </div>
         </section>
 
+        <section class="sc-slide creator">
+          <h2 class="blind">creator</h2>
+          <div class="asset-wrap">
+            <div class="slide-inner">
+              <div class="slide-title-box">
+                <p class="slide-title">슬기롭게<br>사용하는 법.</p>
+              </div>
+              <ul class="slide-card">
+                <li class="card-item">
+                  <div class="card-item-bg bg1">
+                    <div class="card-item-head card-item-head2">
+                      <div class="card-item-head-title">
+                        CHOI<br>SORA
+                      </div>
+                      <span class="card-item-head-caption">****</span>
+                    </div>
+                    <div class="card-item-contents card-item-contents-list">
+                      <div class="item-contents-inner-text">
+                        베이커리 레시피를 창작하고 유튜브와
+                        <br>쿠킹 클래스를 운영하는 크리에이터 최소라 님은
+                        <br>쿠킹 클래스 수강 이력, 레시피 사용 이력을
+                        <br>DATA ID에 기록해 관리하고 있어요.
+                      </div>
+                    </div>
+                    <div class="card-item-info">
+                      <div class="profile-img">
+                        <span class="profile-bg type-1"></span>
+                      </div>
+                      <div class="card-item-info-main">
+                        <div class="card-item-info-main-text">baker_sora</div>
+                      </div>
+                      <span class="card-item-info-icon"></span>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="card-item-bg bg2">
+                    <div class="card-item-head card-item-head2">
+                      <div class="card-item-head-title">
+                        CERTIFICATE<br>DATA ID
+                      </div>
+                    </div>
+                    <div class="card-item-contents card-item-contents-list"> 
+                      <div class="item-contents-inner-text">
+                        아카데미 수료증과 자격증, 학위 증명서 등
+                        <br>여러 취득 내용을 모두 기록할 수 있어요.
+                        <p>- 르꼬르동블루 제과 수료</p>
+                        <p>- 나카무라 조리제과 수료</p>
+                      </div>
+                    </div>
+                    <div class="card-item-info">
+                      <div class="profile-img">
+                        <span class="profile-bg type-1"></span>
+                      </div>
+                      <div class="card-item-info-main">
+                        <div class="card-item-info-main-text">baker_sora</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="card-item-bg bg3">
+                    <div class="card-item-head card-item-head2">
+                      <div class="card-item-head-title">
+                        ASSET<br>DATA ID
+                      </div>
+                    </div>
+                    <div class="card-item-contents card-item-contents-list"> 
+                      <div class="item-contents-inner-text">
+                        개발한 오리지널 레시피를 등록해두면 레시피에
+                        <br>대한 권리를 지키기 쉬워져요.
+                        <p>- 최소라 쿠키 레시피</p>
+                        <p>- 최소라 마카롱 레시피</p>
+                      </div>
+                    </div>
+                    <div class="card-item-info">
+                      <div class="profile-img">
+                        <span class="profile-bg type-1"></span>
+                      </div>
+                      <div class="card-item-info-main">
+                        <div class="card-item-info-main-text">baker_sora</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="card-item-bg bg4">
+                    <div class="card-item-head card-item-head2">
+                      <div class="card-item-head-title">
+                        CONTRACT<br>DATA ID
+                      </div>
+                    </div>
+                    <div class="card-item-contents card-item-contents-list"> 
+                      <div class="item-contents-inner-text">
+                        누군가 내 레시피를 개량해서 다른 레시피를
+                        <br>개발하기 원한다면, 상대방과 스마트 계약을
+                        <br>체결할 수 있어요.
+                        <p>- 최소라 쿠키 레시피_오곡버전_나카페</p>
+                      </div>
+                    </div>
+                    <div class="card-item-info">
+                      <div class="profile-img">
+                        <span class="profile-bg type-1"></span>
+                      </div>
+                      <div class="card-item-info-main">
+                        <div class="card-item-info-main-text">baker_sora</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="slide-desc-sticky">
+                <p class="slide-description">
+                  이력과 거래 내역이 모두<br>DATA ID로 생성되고,<br>스마트 계약으로 재능을<br>손쉽게 자산화 할 수 있어요.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sc-ground">
+          <div class="ground-container">
+            <div class="ground-content">
+              <div class="ground-content-title ground-content-title-main">
+                오픈 이노베이션 그라운드
+              </div> 
+              <p class="ground-content-desc">
+                <span>
+                  글로벌 블록체인 네트워크 DATA ID를 통해
+                  <br>EBC가 만들어갈 오픈 이노베이션 그라운드에
+                  <br>참여하세요.
+                </span>
+              </p>
+              <div class="ground-button-wrap">
+                <a class="ground-button-item ground-button-download" href="">회사소개서 다운로드</a> 
+                <a class="ground-button-item ground-button-link" href="">제휴문의</a>
+                <a class="ground-button-item ground-button-link" href="">채용문의</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="join-active">
+          <div class="join-content join-marquee">
+            <div class="join-content-inner marquee">
+              <div class="join-content-inner-box">
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+                <div class="join-content-list marquee-unit"><span class="join-content-item">JOIN <em class="join-item-italic">us</em></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </main>
-    <footer></footer>
+    
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <div class="footer-info-text">
+            <div class="footer-info-address">
+              서울특별시 강남구 테헤란로 424, 19층 (주)엔터프라이즈블록체인
+            </div>
+            <div class="footer-info-copyright">
+              Copyright © Enterprise Blockchain co., ltd. All rights reserved.
+            </div>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <img src="./ft-logo-hori.png" alt="">
+        </div>
+      </div>
+    </footer>
 
   <script>
     const intro = gsap.timeline({
@@ -1059,9 +1451,9 @@
       xPercent:-53
     })
 
-    gsap.to('.sc-asset .slide-inner',{
+    gsap.to('.sc-slide.asset .slide-inner',{
       scrollTrigger:{
-        trigger:".sc-asset",
+        trigger:".sc-slide.asset",
         start:"0% 0%",
         end:"100% 100%",
         scrub:1
@@ -1074,25 +1466,25 @@
       repeatDelay: 0
     })
     asset
-    .to(".sc-asset .down-arrow--item:nth-child(1)", {opacity: 0, duration: 0}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(2)", {opacity: 0, duration: 0.6}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(3)", {opacity: 0, duration: 1.2}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(4)", {opacity: 0, duration: 1.8}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(5)", {opacity: 0, duration: 2.4}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(6)", {opacity: 0, duration: 3.0}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(7)", {opacity: 0, duration: 3.6}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(1)", {opacity: 1, duration: 0.4}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(2)", {opacity: 1, duration: 1.0}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(3)", {opacity: 1, duration: 1.6}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(4)", {opacity: 1, duration: 2.2}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(5)", {opacity: 1, duration: 2.8}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(6)", {opacity: 1, duration: 3.4}, "<")
-    .to(".sc-asset .down-arrow--item:nth-child(7)", {opacity: 1, duration: 4.0}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(1)", {opacity: 0, duration: 0}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(2)", {opacity: 0, duration: 0.6}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(3)", {opacity: 0, duration: 1.2}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(4)", {opacity: 0, duration: 1.8}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(5)", {opacity: 0, duration: 2.4}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(6)", {opacity: 0, duration: 3.0}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(7)", {opacity: 0, duration: 3.6}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(1)", {opacity: 1, duration: 0.4}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(2)", {opacity: 1, duration: 1.0}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(3)", {opacity: 1, duration: 1.6}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(4)", {opacity: 1, duration: 2.2}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(5)", {opacity: 1, duration: 2.8}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(6)", {opacity: 1, duration: 3.4}, "<")
+    .to(".sc-slide.asset .down-arrow--item:nth-child(7)", {opacity: 1, duration: 4.0}, "<")
 
 
     const down = gsap.timeline({
       scrollTrigger: {
-        trigger: ".sc-asset",
+        trigger: ".sc-slide",
         start: "0% 0%",
         end: "100% 100%",
         scrub: 1
@@ -1104,6 +1496,45 @@
     down.to(".down .down-title--item:nth-child(2)", {opacity: 1}, "b")
     down.to(".down .down-title--item:nth-child(2)", {opacity: 0}, "c")
     down.to(".down", {opacity: 0}, "c")
+
+    const showcase4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sc-showcase4",
+        start: "0% 0%",
+        end: "100% 100%",
+        scrub: 1
+      }
+    })
+    showcase4.to(".sc-showcase4 .showcase-inner", {opacity: 1})
+    showcase4.to(".sc-showcase4 .showcase-inner", {opacity: 0})
+
+    gsap.to('.sc-slide.creator .slide-inner',{
+      scrollTrigger:{
+        trigger:".sc-slide.creator",
+        start:"0% 0%",
+        end:"100% 100%",
+        scrub:1
+      },
+      xPercent:-41
+    })
+
+    /* 흐르는애니메이션????????????? */ 
+    const active = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 0
+    })
+    // active.to(".join-active .join-content-inner-box", {xPercent:100})
+
+    gsap.set(".join-content-inner-box", {y: 61})
+    gsap.to('.join-content-inner-box',{
+      scrollTrigger:{
+        trigger:".sc-ground",
+        start:"0% 0%",
+        end:"100% 100%",
+        scrub:1
+      },
+      y:0
+    })
 
   </script>
 </body>
