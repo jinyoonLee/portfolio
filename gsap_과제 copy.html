@@ -407,6 +407,49 @@
         color: hsla(0, 0%, 100%, .6);
       }
 
+      /* sc-feature */
+      .sc-feature{
+        position: relative;
+        overflow: hidden;
+      }
+      .sc-feature .feature-content{
+        display: flex;
+        position: relative;
+        height: 175px;
+      }
+      .sc-feature .feature-content::after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(50px) brightness(.9);
+        z-index: 10;
+        border-radius: 20px;
+        opacity: 0;
+      }
+      .sc-feature .feature-content >*{
+        width: 33.33%;
+      }
+      .sc-feature .feature-content .feature-item:nth-of-type(1){background-color: #e657af;}
+      .sc-feature .feature-content .feature-item:nth-of-type(2){background-color: #0049ff;}
+      .sc-feature .feature-content .feature-item:nth-of-type(3){background-color: #00bf41;}
+      .sc-feature .feature-title{
+        z-index: 100;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.25;
+        font-weight: 600;
+        color: #fff;
+        opacity: 0;
+      }
+
       /* sc-slide */
       .sc-slide{
         position: relative;
@@ -981,7 +1024,7 @@
               </div>
             </div>
             <div class="feature-title">
-              DATA ID는<br> 당신을 기록하고 증명하며,<br> 당신의 성장을 도울 수 있어요.
+              DATA ID는 당신을 기록하고 증명하며, 당신의 성장을 도울 수 있어요.
             </div>
           </section>
 
@@ -1450,6 +1493,24 @@
       },
       xPercent:-53
     })
+
+    gsap.set(".sc-feature .feature-item:nth-of-type(1)", {xPercent: -50})
+    gsap.set(".sc-feature .feature-item:nth-of-type(2)", {xPercent: -50})
+    gsap.set(".sc-feature .feature-item:nth-of-type(3)", {xPercent: 50})
+    const feature = gsap.timeline({
+      scrollTrigger:{
+        trigger:".sc-feature",
+        start:"0% 90%",
+        end:"100% 30%",
+        scrub:1,
+        markers:"true"
+      }
+    })
+    feature.to(".sc-feature .feature-item:nth-of-type(1)", {xPercent: 0}, "a")
+    feature.to(".sc-feature .feature-item:nth-of-type(2)", {xPercent: 0}, "a")
+    feature.to(".sc-feature .feature-item:nth-of-type(3)", {xPercent: 0}, "a")
+    feature.to(".sc-feature .feature-content::after", {opacity: 1}, "b")
+    feature.to(".sc-feature .feature-title", {opacity: 1}, "b")
 
     gsap.to('.sc-slide.asset .slide-inner',{
       scrollTrigger:{
