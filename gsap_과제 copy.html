@@ -449,10 +449,102 @@
         opacity: 0;
       }
 
+      /* sc-service */
+      .sc-service .service-container{
+        margin-left: 500px;
+      }
+      .sc-service .service-container .service-main-area{
+        padding: 911px 0 0 260px;
+      }
+      .sc-service .service-container .service-content-title-text{
+        font-size: 72px;
+        line-height: 1.28;
+        font-weight: 700;
+        color: #fff;
+      }
+      .sc-service .service-container .service-content-description{
+        max-width: 750px;
+        margin-top: 34px;
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 700;
+        color: #fff;
+        word-break: keep-all;
+      }
+      .sc-service .service-container .service-content-info{
+        margin-top: 80px;
+      }
+      .sc-service .service-container .service-content-info-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+      .sc-service .service-container .service-content-info-item .info-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0.5 400px;
+        height: 200px;
+        border-radius: 20px;
+        border: 2px solid transparent;
+        background-image: linear-gradient(#000, #000), linear-gradient(300deg, #e657af, #0049ff, #43cf2e);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+      }
+      .sc-service .service-container .service-content-info-item .info-box .info-box-item{
+        font-size: 28px;
+        line-height: 1.43;
+        font-weight: 700;
+        text-align: center;
+      }
+      .sc-service .service-container .service-content-info-item .info-box .info-box-item .text-gradient{
+        background-image: linear-gradient(90deg, #43cf2e, #0049ff, #e657af);
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .sc-service .service-container .info-title{
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 52px;
+      }
+      .sc-service .service-container .service-slide{
+        margin-top: 160px;
+      }
+      .sc-service .service-container .service-slide-title{
+        font-size: 60px;
+        line-height: 1;
+        color: #fff;
+        font-weight: 600;
+      }
+      .sc-service .service-container .service-slide-box{
+        margin-top: 80px;
+      }
+      .sc-service .service-container .swiper-wrapper{
+        display: flex;
+        gap: 50px;
+      }
+      .sc-service .service-container .swiper-wrapper >*{
+        flex: 0 1 300px;
+      }
+      .sc-service .service-container .swiper-wrapper .service-slide-item-title{
+        font-size: 24px;
+        line-height: 1.67;
+        font-weight: 700;
+        color: #fff;
+        margin-top: 24px;
+      }
+      .sc-service .service-container .swiper-wrapper .service-slide-item-title{}
+
       /* slide */
       .slide{
         position: relative;
         height: 300vh;
+      }
+      .slide.service1{
+        z-index: 999;
       }
       .slide .slide-wrap{
         display: flex;
@@ -496,6 +588,39 @@
       .slide.service1 .slide-wrap .slide-inner .slide-card .card-item{
         border: 2px solid #fff;
         border-radius: 20px;
+        background: #000;
+      }
+      .slide.service1 .slide-wrap .slide-inner .slide-card .card-item.lock-icon{
+        border: 2px solid transparent;
+        background-image: linear-gradient(#000,#000),linear-gradient(315deg,#e657af,#0049ff,#43cf2e);
+        background-clip: content-box,border-box;
+        z-index: 100;
+      }
+      .slide.service1 .slide-wrap .slide-inner .slide-card .card-item.lock-icon .card-item-bg{
+        position: relative;
+      }
+      .slide.service1 .slide-wrap .slide-inner .slide-card .card-item.lock-icon .card-item-bg >*{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .slide.service1 .slide-wrap .slide-inner .slide-card .card-item.lock-icon .card-item-bg img{
+        width: 150px;
+      }
+      .slide.service1 .slide-wrap .slide-inner .slide-card .card-item.lock-icon .card-item-bg img.icon-card-img-active{
+        opacity: 0;
+      }
+      .slide.service1 .slide-wrap .slide-inner .slide-card .card-item.lock-icon .card-item-bg span{
+        background-image: linear-gradient(90deg, #43cf2e, #0049ff, #e657af);
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        line-height: 1.25;
+        font-weight: 700;
+        text-align: center;
+        opacity: 0;
       }
       .slide .slide-wrap .slide-inner .slide-card .card-item .card-item-bg{
         position: absolute;
@@ -552,6 +677,40 @@
         backdrop-filter: blur(50px) brightness(.9);
         z-index: 10;
         border-radius: 20px;
+      }
+      .slide.service2{
+        padding-left: 444px;
+      }
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item{
+        position: relative;
+        background-size: 1800px;
+        border-radius: 20px;
+      }
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item:nth-of-type(1){
+        background: url('./image-sec-2-1.png') no-repeat center;
+        z-index: 90;
+      }
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item:nth-of-type(2){
+        background: url('./image-sec-2-2.png') no-repeat center;
+        z-index: 80;
+      }
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item:nth-of-type(3){
+        background: url('./image-sec-2-3.png') no-repeat center;
+        z-index: 70;
+      }
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(50px) brightness(.9);
+        z-index: 10;
+        border-radius: 20px;
+      }
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item .card-item-bg{
+        z-index: 100;
       }
       .slide.creator .slide-wrap .slide-inner .slide-card .card-item .card-item-bg.bg1{
         z-index: 100;
@@ -638,6 +797,8 @@
         background: #ff009d;
         margin-right: 9px;
       }
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item:nth-of-type(2) .card-item-info .profile-img .profile-bg{background: #0049ff;}
+      .slide.service2 .slide-wrap .slide-inner .slide-card .card-item:nth-of-type(3) .card-item-info .profile-img .profile-bg{background: #26ff00;}
       .slide .slide-wrap .slide-inner .slide-card .card-item-info .card-item-info-main{
         flex: 1;
       }
@@ -1057,7 +1218,7 @@
                     <p class="slide-title">안전하고 <br>대체불가능한 <br>DATA ID.</p>
                   </div>
                   <ul class="slide-card">
-                    <li class="card-item">
+                    <li class="card-item slide-card-item1">
                       <div class="card-item-bg bg1">
                         <div class="card-item-head card-item-head2">
                           <div class="card-item-head-title">
@@ -1076,7 +1237,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item slide-card-item2">
                       <div class="card-item-bg bg2">
                         <div class="card-item-head card-item-head2">
                           <div class="card-item-head-title">
@@ -1095,7 +1256,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item slide-card-item3">
                       <div class="card-item-bg bg3">
                         <div class="card-item-head card-item-head2">
                           <div class="card-item-head-title">
@@ -1114,42 +1275,29 @@
                         </div>
                       </div>
                     </li>
-                    <li class="card-item lock-icon">
-                      <div class="card-item-bg line-color">
-                        <div class="card-item-box-icon">
-                          <img class="icon-card-img" src="./unlock-icon.png" alt="">
-                          <img class="icon-card-img-active" src="./lock-icon.png" alt="">
-                        </div>
+                    <li class="card-item slide-card-item4 lock-icon">
+                      <div class="card-item-bg">
+                        <img class="icon-card-img" src="./unlock-icon.png" alt="">
+                        <img class="icon-card-img-active" src="./lock-icon.png" alt="">
+                        <span>DATA ID</span>
                       </div>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="service__container">
-              <div class="service__main--title">
-                <div>
-                  <p>안전하고 <br>대체불가능한 <br>DATA ID.</p>
-                  <div class="service__main--title-card">
-                    <div>
-                      <div class="card-text">
-                        <div class="text-gradient">DATA ID</div>
-                      </div>
-                    </div>
+            <div class="service-container">
+              <div class="service-main-area">
+                <div class="service-content">
+                  <div class="service-content-title">
+                    <p class="service-content-title-text">더 나은 일거리와 재능 거래,</p>
+                    <p class="service-content-title-text">금융 서비스 이용까지. <br class="pc-br"> 모든 게 가능해져요.</p>
                   </div>
-                </div>
-              </div>
-              <div class="service__main--area">
-                <div class="service__content">
-                  <div class="service__content--title">
-                    <p class="service__content--title-text">더 나은 일거리와 <br class="mobile-br"> 재능 거래,</p>
-                    <p class="service__content--title-text">금융 서비스 <br class="mobile-br">이용까지. <br class="pc-br"> 모든 게 가능해져요.</p>
-                  </div>
-                  <div class="service__content--description">DATA ID는 또 다른 기회와 가치를 연결합니다. DATA ID를 통해 나에게 맞는 일을 쉽고 빠르게 찾을 수 있고, 금융 서비스 이용이 가능해집니다. 창작물의 권리를 지키고, 그 재능을 판매해 수익을 나누는 선순환의 구조도 만들 수 있습니다.</div>
+                  <div class="service-content-description">DATA ID는 또 다른 기회와 가치를 연결합니다. DATA ID를 통해 나에게 맞는 일을 쉽고 빠르게 찾을 수 있고, 금융 서비스 이용이 가능해집니다. 창작물의 권리를 지키고, 그 재능을 판매해 수익을 나누는 선순환의 구조도 만들 수 있습니다.</div>
           
-                  <div class="service__content-info">
-                    <ul class="service__content-info-list">
-                      <li class="service__content-info-item">
+                  <div class="service-content-info">
+                    <ul class="service-content-info-list">
+                      <li class="service-content-info-item">
                         <div class="info-box">
                           <div class="info-box-item">
                             <div class="text-gradient">
@@ -1160,7 +1308,7 @@
                         </div>
                         <p class="info-title">DATA ID 기반 지역 일거리 매칭 서비스</p>
                       </li>
-                      <li class="service__content-info-item">
+                      <li class="service-content-info-item">
                         <div class="info-box">
                           <div class="info-box-item">
                             <div class="text-gradient">
@@ -1171,7 +1319,7 @@
                         </div>
                         <p class="info-title">긱 이코노미 최적화 디지털 금융 솔루션</p>
                       </li>
-                      <li class="service__content-info-item">
+                      <li class="service-content-info-item">
                         <div class="info-box">
                           <div class="info-box-item">
                             <div class="text-gradient">
@@ -1187,47 +1335,30 @@
                 </div>
           
                 <div class="service-slide">
-                  <div class="service-slide__title">운영중인 서비스</div>
-                  <div class="service-slide__box">
-                    <div class="swiper swiper-service service-slide__list">
-                      <div class="swiper__wrapper swiper-wrapper">
-                        <div class="swiper__item swiper-slide service-slide__item">
+                  <div class="service-slide-title">운영중인 서비스</div>
+                  <div class="service-slide-box">
+                    <div class="swiper swiper-service service-slide-list">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-item swiper-slide service-slide-item">
                           <a target="_blank" href="https://www.yogig.com">
-                            <div class="service-slide__item-img">
-                              <picture class="service-slide__item-img--img">
-                                <source srcset="/assets/img/service/service-item-1.png" media="(min-width: 750px)">
-                                <img src="/assets/img/service/service-item-1.png" alt="">
-                              </picture>
+                            <div class="service-slide-item-img">
+                              <img src="./service-item-1.png" alt="">
                             </div>
                           </a>
-                          <div class="service-slide__item-title">일거리 매칭 서비스 <br>요긱(Yogig)</div>
+                          <div class="service-slide-item-title">일거리 매칭 서비스 <br>요긱(Yogig)</div>
                         </div>
-                        <div class="swiper__item swiper-slide service-slide__item">
-                          <div class="service-slide__item-img">
-                            <picture class="service-slide__item-img--img">
-                              <source srcset="/assets/img/service/service-item-2.png" media="(min-width: 750px)">
-                              <img src="/assets/img/service/service-item-2.png" alt="">
-                            </picture>
+                        <div class="swiper-item swiper-slide service-slide-item">
+                          <div class="service-slide-item-img">
+                            <img src="./service-item-2.png" alt="">
                           </div>
-                          <div class="service-slide__item-title">크리에이터 커뮤니티 마켓<br>어랏(Alot)</div>
+                          <div class="service-slide-item-title">크리에이터 커뮤니티 마켓<br>어랏(Alot)</div>
                         </div>
-                        <div class="swiper__item swiper-slide service-slide__item">
-                          <div class="service-slide__item-img">
-                            <picture class="service-slide__item-img--img">
-                              <source srcset="/assets/img/service/service-item-3.png" media="(min-width: 750px)">
-                              <img src="/assets/img/service/service-item-3.png" alt="">
-                            </picture>
+                        <div class="swiper-item swiper-slide service-slide-item">
+                          <div class="service-slide-item-img">
+                            <img src="./service-item-3.png" alt="">
                           </div>
-                          <div class="service-slide__item-title">글로벌 재능 매칭 플랫폼<br>JOOB</div>
+                          <div class="service-slide-item-title">글로벌 재능 매칭 플랫폼<br>JOOB</div>
                         </div>
-                      </div>
-                      <div class="swiper__navi swiper__navi--white">
-                        <button class="navi__button navi__button--prev">
-                          <span class="blind">prev</span>
-                        </button>
-                        <button class="navi__button navi__button--next">
-                          <span class="blind">next</span>
-                        </button>
                       </div>
                     </div>
                   </div>
@@ -1238,7 +1369,7 @@
               <div class="slide-wrap">
                 <div class="slide-inner">
                   <ul class="slide-card card-list-v2">
-                    <li class="card-item title-card-item">
+                    <!-- <li class="card-item title-card-item">
                       <div class="card-item-box card-item-box-line">
                         <div class="service-main-title-card">
                           <div class="card-text">
@@ -1246,8 +1377,8 @@
                           </div>
                         </div>
                       </div>
-                    </li>
-                    <li class="card-item">
+                    </li> -->
+                    <li class="card-item slide-card-item1">
                       <div class="card-item-bg bg1">
                         <div class="card-item-head card-item-head2">
                           <div class="card-item-head-title">
@@ -1271,7 +1402,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item slide-card-item2">
                       <div class="card-item-bg bg2">
                         <div class="card-item-head card-item-head2">
                           <div class="card-item-head-title">
@@ -1295,7 +1426,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item slide-card-item3">
                       <div class="card-item-bg bg3">
                         <div class="card-item-head card-item-head2">
                           <div class="card-item-head-title">
@@ -1831,6 +1962,29 @@
     .to(".sc-feature .feature-item:nth-of-type(3)", {xPercent: 0}, "a")
     .to(".sc-feature .feature-content::after", {opacity: 0}, "b")
     .to(".sc-feature .feature-title", {opacity: 1}, "b")
+
+    const service = gsap.timeline({
+      scrollTrigger:{
+        trigger:".sc-service",
+        start:"0% 0%",
+        end:"100% 100%",
+        scrub:1
+      }
+    })
+    service
+    .to(".service1 .slide-inner", {x: -592}, "a")
+    .to(".service1 .slide-card-item2", {x: -444}, "b")
+    .to(".service1 .slide-card-item3", {x: -444*2}, "b")
+    .to(".service1 .slide-card-item4", {x: -444*3}, "b")
+    .to(".service1 .icon-card-img", {opacity: 0}, "b")
+    .to(".service1 .icon-card-img-active", {opacity: 1}, "c")
+    .to(".service1.slide .slide-wrap", {position: "fixed"}, "b")
+    .to(".service1 .icon-card-img-active", {opacity: 0}, "d")
+    .to(".service1 .card-item-bg span", {opacity: 1}, "e")
+    .to(".service2 .slide-card-item1", {x: -444}, "f")
+    .to(".service2 .slide-card-item2", {x: -444*2}, "f")
+    .to(".service2 .slide-card-item3", {x: -444*3}, "f")
+    .to(".service2.slide .slide-wrap", {position: "fixed"}, "g")
 
     gsap.to('.slide.asset .slide-inner',{
       scrollTrigger:{
