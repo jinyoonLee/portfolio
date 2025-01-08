@@ -542,12 +542,15 @@
         margin-top: 24px;
       }
       .sc-service .service-footer{
-        height: 100vh;
+        height: 300vh;
+        padding-left: 65px;
+      }
+      .sc-service .service-footer .service-footer-inner{
+        position: sticky;
+        top: 50%;
+        transform: translateY(-50%);
         display: flex;
         align-items: center;
-        padding-left: 65px;
-        position: sticky;
-        top: 0;
       }
       .sc-service .service-footer .card-item{
         position: relative;
@@ -1521,14 +1524,16 @@
               </div>
             </div>
             <div class="service-footer">
-              <div class="card-item">
-                <div class="card-item-bg">
-                  <span>DATA ID</span>
+              <div class="service-footer-inner">
+                <div class="card-item">
+                  <div class="card-item-bg">
+                    <span>DATA ID</span>
+                  </div>
                 </div>
-              </div>
-              <div class="inner">
-                <div class="service-desc-box">
-                  <p class="">누구든<br> 무엇이든</p>
+                <div class="inner">
+                  <div class="service-desc-box">
+                    <p class="">누구든<br> 무엇이든</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2061,7 +2066,8 @@
         trigger:".sc-service .service-footer",
         start:"0% 0%",
         end:"100% 100%",
-        scrub:1
+        scrub:1,
+        markers:"true"
       }
     })
     service3
