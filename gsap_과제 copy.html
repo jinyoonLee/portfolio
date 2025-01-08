@@ -450,11 +450,16 @@
       }
 
       /* sc-service */
+      .sc-service{
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
       .sc-service .service-container{
         margin-left: 500px;
       }
       .sc-service .service-container .service-main-area{
-        padding: 911px 0 0 260px;
+        padding-left: 260px;
       }
       .sc-service .service-container .service-content-title-text{
         font-size: 72px;
@@ -536,7 +541,77 @@
         color: #fff;
         margin-top: 24px;
       }
-      .sc-service .service-container .swiper-wrapper .service-slide-item-title{}
+      .sc-service .service-footer{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-left: 65px;
+        position: sticky;
+        top: 0;
+      }
+      .sc-service .service-footer .card-item{
+        position: relative;
+        border: 2px solid transparent;
+        background-image: linear-gradient(#000, #000), linear-gradient(315deg, #e657af, #0049ff, #43cf2e);
+        background-clip: content-box, border-box;
+        z-index: 100;
+        border-radius: 20px;
+        width: 400px;
+        height: 540px;
+        opacity: 0;
+      }
+      .sc-service .service-footer .card-item::before{
+        content: '';
+        display: block;
+        background-image: url('./card-glow.png');
+        background-repeat: no-repeat;
+        width: 160%;
+        height: 160%;
+        left: -30%;
+        top: -30%;
+        position: absolute;
+        background-size: cover;
+        z-index: 9;
+
+      }
+      .sc-service .service-footer .card-item .card-item-bg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 10;
+        border-radius: 20px;
+      }
+      .sc-service .service-footer .card-item .card-item-bg span{
+        background-image: linear-gradient(90deg, #43cf2e, #0049ff, #e657af);
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        line-height: 1.25;
+        font-weight: 700;
+        text-align: center;
+      }
+      .sc-service .service-footer .inner{
+        padding-left: 200px;
+      }
+      .sc-service .service-footer .inner .service-desc-box{
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      .sc-service .service-footer .inner .service-desc-box p{
+        position: absolute;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 1.28;
+        color: #fff;
+        opacity: 0;
+      }
 
       /* slide */
       .slide{
@@ -679,7 +754,7 @@
         border-radius: 20px;
       }
       .slide.service2{
-        padding-left: 444px;
+        padding-left: 414px;
       }
       .slide.service2 .slide-wrap .slide-inner .slide-card .card-item{
         position: relative;
@@ -1369,15 +1444,6 @@
               <div class="slide-wrap">
                 <div class="slide-inner">
                   <ul class="slide-card card-list-v2">
-                    <!-- <li class="card-item title-card-item">
-                      <div class="card-item-box card-item-box-line">
-                        <div class="service-main-title-card">
-                          <div class="card-text">
-                            <div class="text-gradient">DATA ID</div>
-                          </div>
-                        </div>
-                      </div>
-                    </li> -->
                     <li class="card-item slide-card-item1">
                       <div class="card-item-bg bg1">
                         <div class="card-item-head card-item-head2">
@@ -1455,19 +1521,13 @@
               </div>
             </div>
             <div class="service-footer">
-              <div class="inner">
-                <div class="left">
-                  <div class="service-main-title-card">
-                    <div>
-                      <div class="card-inner">
-                        <div class="card-text">
-                          <div class="text-gradient">DATA ID</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="card-item">
+                <div class="card-item-bg">
+                  <span>DATA ID</span>
                 </div>
-                <div>
+              </div>
+              <div class="inner">
+                <div class="service-desc-box">
                   <p class="">누구든<br> 무엇이든</p>
                 </div>
               </div>
@@ -1963,15 +2023,15 @@
     .to(".sc-feature .feature-content::after", {opacity: 0}, "b")
     .to(".sc-feature .feature-title", {opacity: 1}, "b")
 
-    const service = gsap.timeline({
+    const service1 = gsap.timeline({
       scrollTrigger:{
-        trigger:".sc-service",
+        trigger:".service1",
         start:"0% 0%",
         end:"100% 100%",
         scrub:1
       }
     })
-    service
+    service1
     .to(".service1 .slide-inner", {x: -592}, "a")
     .to(".service1 .slide-card-item2", {x: -444}, "b")
     .to(".service1 .slide-card-item3", {x: -444*2}, "b")
@@ -1981,10 +2041,34 @@
     .to(".service1.slide .slide-wrap", {position: "fixed"}, "b")
     .to(".service1 .icon-card-img-active", {opacity: 0}, "d")
     .to(".service1 .card-item-bg span", {opacity: 1}, "e")
-    .to(".service2 .slide-card-item1", {x: -444}, "f")
-    .to(".service2 .slide-card-item2", {x: -444*2}, "f")
-    .to(".service2 .slide-card-item3", {x: -444*3}, "f")
-    .to(".service2.slide .slide-wrap", {position: "fixed"}, "g")
+
+    const service2 = gsap.timeline({
+      scrollTrigger:{
+        trigger:".service2",
+        start:"0% 0%",
+        end:"100% 80%",
+        scrub:1
+      }
+    })
+    service2
+    .to(".service2 .slide-card-item1", {x: -474}, "a")
+    .to(".service2 .slide-card-item2", {x: -474*2}, "a")
+    .to(".service2 .slide-card-item3", {x: -474*3}, "a")
+    .to(".service2.slide .slide-wrap", {position: "fixed"}, "b")
+
+    const service3 = gsap.timeline({
+      scrollTrigger:{
+        trigger:".sc-service .service-footer",
+        start:"0% 0%",
+        end:"100% 100%",
+        scrub:1
+      }
+    })
+    service3
+    .to(".service-desc-box p", {opacity: 1}, "a")
+    .to(".sc-service .service-footer .card-item", {opacity: 1}, "a")
+    .to(".service1.slide .slide-wrap", {position: "static"}, "b")
+    .to(".service2.slide .slide-wrap", {position: "static"}, "b")
 
     gsap.to('.slide.asset .slide-inner',{
       scrollTrigger:{
