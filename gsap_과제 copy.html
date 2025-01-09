@@ -57,9 +57,63 @@
       }
       #header .header-content .header-logo{
         width: 100px;
+        fill: #fff;
+        padding: 17px 0;
       }
-      #header .header-content .header-logo{}
-      #header .header-content{}
+      #header .header-content .header-nav{
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      #header .header-content .header-nav .listitem .header-nav-link{
+        text-decoration: none;
+        transition: color .5s;
+        display: inline-block;
+        padding: 23px 25px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+      }
+      #header .header-content .header-nav .header-lang .header-lang-title{
+        display: flex;
+        align-items: center;
+        padding: 20px 0 18px 25px;
+      }
+      #header .header-content .header-nav .header-lang .header-lang-title .header-lang-text{
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+      }
+
+      /* header-white */
+      #header.white .header-content .header-logo{
+        fill: #fff;
+      }
+      #header.white .header-content .header-nav .listitem .header-nav-link{
+        color: #fff;
+      }
+      #header.white .header-content .header-nav .header-lang .header-lang-title .header-lang-text{
+        color: #fff;
+      }
+      #header.white .header-content .header-nav .header-lang .header-lang-title span svg path{
+        stroke: #fff;
+      }
+
+      /* header-dark */
+      #header.dark .header-content .header-logo{
+        fill: #000;
+      }
+      #header.dark .header-content .header-nav .listitem .header-nav-link{
+        color: #000;
+      }
+      #header.dark .header-content .header-nav .header-lang .header-lang-title .header-lang-text{
+        color: #000;
+      }
+      #header.dark .header-content .header-nav .header-lang .header-lang-title span svg path{
+        stroke: #000;
+      }
 
       /* intro */
       .sc-intro{
@@ -1168,7 +1222,7 @@
                 </svg>
               </span>
             </span>
-            <ul class="header-lang-subnav" role="list">
+            <!-- <ul class="header-lang-subnav" role="list">
               <li class="header-lang-subnav-item" role="listitem">
                 <a href="/" tabindex="-1" class="header-lang-subnav-link active">
                   <span>KR</span>
@@ -1179,13 +1233,15 @@
                   <span>EN</span>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </li>
         </ul>
       </div>
     </header>
 
     <main>
+      <div class="white">
+
         <section class="sc-intro">
           <h2 class="blind">intro</h2>
           <div class="intro-inner">
@@ -1245,6 +1301,10 @@
           </p>
         </section>
 
+      </div>
+
+      <div class="dark">
+
         <section class="sc-prove prove1">
           <h2 class="blind">prove1</h2>
           <ul class="prove-text-box">
@@ -1287,7 +1347,9 @@
           </div>
         </section>
 
-        <div id="bg-dark">
+      </div>
+
+        <div id="bg-dark" class="white">
 
           <section class="sc-possibility">
             <h2 class="blind">possibility</h2>
@@ -1646,6 +1708,8 @@
 
         </div>
 
+      <div class="dark">
+
         <section class="sc-challenge challenge2">
           <h2>재능 자산을 기축으로<br>시장은 변화하고 있어요.</h2>
           <p class="challenge-description">
@@ -1991,9 +2055,11 @@
           </div>
         </div>
 
+      </div>
+
     </main>
     
-    <footer class="footer">
+    <footer class="footer dark">
       <div class="footer-container">
         <div class="footer-info">
           <div class="footer-info-text">
@@ -2012,6 +2078,23 @@
     </footer>
 
   <script>
+    gsap.set("#header", {y: -143})
+
+    gsap.registerPlugin(ScrollTrigger)
+    ScrollTrigger.create({
+      trigger: ".dark",
+      start: "top top",
+      end: "bottom top",
+      toggleClass: { targets: "#header", className: "dark" }
+    })
+
+    ScrollTrigger.create({
+      trigger: ".white",
+      start: "top top",
+      end: "bottom top",
+      toggleClass: { targets: "#header", className: "white" }
+    })
+
     const intro = gsap.timeline({
       scrollTrigger: {
         trigger: ".sc-intro",
@@ -2022,6 +2105,7 @@
     })
     intro
     .to(".sc-intro .intro-text-box", {background: "#00000080"}, "a")
+    .to("#header", {y: 0}, "a")
     .to(".sc-intro .intro-text1", {opacity: 1}, "a")
     .to(".sc-intro .intro-text1", {opacity: 0})
     .to(".sc-intro .intro-text2", {opacity: 1})
