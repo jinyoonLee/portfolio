@@ -59,6 +59,7 @@
         width: 100px;
         fill: #fff;
         padding: 17px 0;
+        fill: #000;
       }
       #header .header-content .header-nav{
         position: relative;
@@ -73,6 +74,7 @@
         font-size: 18px;
         font-weight: 600;
         line-height: 1;
+        color: #000;
       }
       #header .header-content .header-nav .header-lang .header-lang-title{
         display: flex;
@@ -85,6 +87,10 @@
         font-size: 18px;
         font-weight: 600;
         line-height: 1;
+        color: #000;
+      }
+      #header .header-content .header-nav .header-lang .header-lang-title span svg path{
+        stroke: #000;
       }
 
       /* header-white */
@@ -1294,16 +1300,16 @@
           </div>
         </section>
 
+      </div>
+
+      <div class="dark">
+
         <section class="sc-challenge challenge1">
           <h2>긱 워커<br>개인사업자<br>크리에이터</h2>
           <p class="challenge-description">
             파트타임 단기업무, 부업, 프리랜서 활동.<br> 그 어떤 것도 상관없어요.<br> 분산되어 있던 소득과 거래 이력부터 자격, 창작물 등의<br class="pc-block"> 재능 상세를 담은 포트폴리오까지.<br> 나의 이력과 재능을 증명할 정보를 모두 담을 수 있어요.
           </p>
         </section>
-
-      </div>
-
-      <div class="dark">
 
         <section class="sc-prove prove1">
           <h2 class="blind">prove1</h2>
@@ -1349,7 +1355,7 @@
 
       </div>
 
-        <div id="bg-dark" class="white">
+        <div id="bg-dark">
 
           <section class="sc-possibility">
             <h2 class="blind">possibility</h2>
@@ -1708,8 +1714,6 @@
 
         </div>
 
-      <div class="dark">
-
         <section class="sc-challenge challenge2">
           <h2>재능 자산을 기축으로<br>시장은 변화하고 있어요.</h2>
           <p class="challenge-description">
@@ -2055,11 +2059,9 @@
           </div>
         </div>
 
-      </div>
-
     </main>
     
-    <footer class="footer dark">
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-info">
           <div class="footer-info-text">
@@ -2090,6 +2092,13 @@
 
     ScrollTrigger.create({
       trigger: ".white",
+      start: "top top",
+      end: "bottom top",
+      toggleClass: { targets: "#header", className: "white" }
+    })
+
+    ScrollTrigger.create({
+      trigger: "#bg-dark",
       start: "top top",
       end: "bottom top",
       toggleClass: { targets: "#header", className: "white" }
