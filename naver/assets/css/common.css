@@ -1,0 +1,79 @@
+.blind{position: absolute;width: 1px;height: 1px;margin: -1px;clip: 0,0,0,0;overflow: hidden;}
+#skipNav{
+    position: absolute;
+}
+#skipNav a{
+    position: absolute;
+    white-space: nowrap;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    top: -100px;
+}
+#skipNav a:focus,
+#skipNav a:active{
+    top: 0;
+}
+
+
+/** sp-bg */
+#header .group-search .btn-keyboard::after,
+#header .group-search .btn-auto::after,
+#header .group-nav .icon::before,
+#header .group-nav .icon::after,
+#header .util-area >*::after,
+.main-tab .tab-item .tab .point::before,
+.sc-news .group-issue .issue-area .btn-all::after,
+.main-frame .control-area .btn.prev::before,
+.main-frame .control-area .btn.next::before,
+.sc-news .group-control .view-area button:first-of-type::before,
+.sc-news .group-control .view-area button:last-of-type::before,
+.sc-login .link-login::before,
+.type-shopping .group-shopping .shopping-pagination .btn.prev::before,
+.type-shopping .group-shopping .shopping-pagination .btn.next::before,
+.sc-shop .group-head .content-page .btn.prev::before,
+.sc-shop .group-head .content-page .btn.next::before,
+.sc-widget .tool-content .tool-wrap .vibe-box .vibe-top i,
+.sc-widget .tool-content .tool-wrap .vibe-box .vibe-top .btn-refresh::after{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 463px auto;
+}
+
+
+/** sp-main */
+.sc-shop .group-media .shopping-desc .quick-link .link-item a .item-thumb::before{
+    background-image: url(../images/sp-main.png);
+    background-size: 158px auto;
+    background-repeat: no-repeat;
+}
+
+
+/** sp-down */
+.ad-mark-area .ad-mark{
+    background-image: url(../images/sp-down.png);
+    background-size: 100px 90px;
+    background-repeat: no-repeat;
+}
+
+/** a underline */
+.main-tab .tab-item .tab:hover,
+.main-frame .group-issue a:hover,
+.sc-shop .group-media .shopping-desc .mall-name .name-list .name-link:hover,
+.sc-shop .group-media .shopping-desc .quick-link .link-item:hover a .item-text,
+.sc-shop .group-media .shopping-desc .ad-banner a:hover .ad-text,
+.shopping-item:hover,
+.recommend-item:hover .item-title,
+.recommend-item.ad-item:hover .cont-title,
+.sc-login .more-area .link-more:hover,
+.right-board .group-header h3:hover,
+.sc-finance .group-info .stock-list .stock-item:hover a,
+.sc-widget .tool-link:hover,
+.bn-box .banner-wrap:hover .banner-desc,
+#footer .nBanner-area .nBanner-list .nBanner-item a:hover .item-content .title,
+#footer .notice-area a:hover,
+#footer .aside-area .service-box-wrap .service-box .item-content .desc:hover,
+#footer .partner-item .partner-link:hover,
+#footer .corp-area .addr:hover{
+    text-decoration: underline;
+}
