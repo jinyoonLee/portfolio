@@ -26,17 +26,12 @@
                         word-break: keep-all;
                         >a{
                             display: flex;
-                            align-items: center;
+                            align-items: flex-end;
                             gap: 12px;
                             >img{
                                 width: 40px;
                                 height: 44px;
                                 padding-top: 4px;
-                                opacity: 1;
-                                transition: opacity 0.5s;
-                            }
-                            &:hover img{
-                                opacity: 0.7;
                             }
                         }
                     }
