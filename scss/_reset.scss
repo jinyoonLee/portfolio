@@ -11,11 +11,24 @@ ul li{list-style: none;}
 /* color */
 $color-primary: #28522d;
 $color-accent: #DA4B26;
-$color-hover: #c53b19;
-$color-text: #42403b;
-$color-sub: #5f5c55;
-$color-bg: #ebe4d4;
+$color-hover: #d4401b;
 $color-black: #000;
-$color-white: #fff;
+$color-white: #f3f2f6;
 $color-light-gray: #b9b9b9;
-$color-gray: #919191;
+$color-gray: #858585;
+$color-dark-gray: #4d4d4d;
+$color-line: #e9e9e9;
+
+/* font */
+$font-size-mini: 0.5rem;   // 8px
+$font-size-xxs: 0.875rem;  // 14px
+$font-size-xs: 1rem;       // 16px
+$font-size-sm: 1.125rem;   // 18px
+$font-size-md: 1.25rem;    // 20px
+$font-size-lg: 2rem;       // 32px
+$font-size-xl: 3rem;       // 48px
+
+$font-weight-thin: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
