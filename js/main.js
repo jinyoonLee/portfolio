@@ -19,7 +19,7 @@ gsap.to(".clouds.right img", {
 gsap.registerPlugin(ScrollTrigger);
 
 //! 진행바
-if (window.innerWidth >= 1024) {
+if (window.innerWidth >= 1280) {
     const progressEl = document.querySelector(".parallax__progress progress")
     let current = 0;
     
@@ -91,37 +91,6 @@ tl.to(".section-main p", {
     ease: "power2.out"
 }, "b")
 
-//! section-about-wrap
-if (window.innerWidth >= 1024) {
-    const secAbout = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".about-wrap",
-            start: "top top",
-            end: "+=2000",
-            scrub: true,
-            pin: true
-        }
-    })
-
-
-    secAbout.fromTo(".about-intro",
-        { y: 100, autoAlpha: 0 },
-        { y: 0, autoAlpha: 1, duration: 1 }
-    )
-    .to(".about-intro",
-        { y: -100, autoAlpha: 0, duration: 1 },
-        "+=2"
-    )
-    .fromTo(".about-work",
-        { yPercent: 100, autoAlpha: 0 },
-        { yPercent: 0, autoAlpha: 1, duration: 1 }
-    )
-    .to(".about-work",
-        { yPercent: 0, autoAlpha: 1, duration: 1 },
-        "+=2"
-    )
-}
-
 //! section-work h2
 if (window.innerWidth >= 450) {
     gsap.from(".section-work h2", {
@@ -148,7 +117,7 @@ if (window.innerWidth >= 450) {
 }
 
 //! section-work article
-if (window.innerWidth >= 1024) {
+if (window.innerWidth >= 1280) {
     const panels = gsap.utils.toArray(".work")
     
     panels.forEach((panel, i) => {
@@ -198,7 +167,7 @@ if (window.innerWidth >= 1024) {
 }
 
 //! project h2 x값
-if (window.innerWidth >= 1024) {
+if (window.innerWidth >= 1280) {
     // h2 위치 계산
     const h2 = document.querySelector(".section-work h2");
     const rect = h2.getBoundingClientRect();
@@ -233,7 +202,7 @@ if (window.innerWidth >= 1024) {
 }
 
 //! project slide 가로스크롤
-if (window.innerWidth >= 1024) {
+if (window.innerWidth >= 1280) {
     const slideInner = document.querySelector('.projects')
     
     gsap.to(slideInner, {
@@ -277,12 +246,10 @@ targets.forEach((target) => {
 })
 
 //! 모바일용
-if (window.innerWidth < 1024) {
+if (window.innerWidth < 1280) {
     const targets = [
         ".work-content",
         ".work-media",
-        ".about-intro",
-        ".about-work"
     ]
 
     targets.forEach(selector => {
