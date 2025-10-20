@@ -226,23 +226,6 @@
             }
         }
     }
-    .btnHome{
-        opacity: 0;
-        pointer-events: none;
-        position: fixed; 
-        bottom: 117px; 
-        right: 40px;
-        background: url('../images/home.png') no-repeat center;
-        width: 34px; 
-        height: 34px; 
-        text-indent: -9999px;
-        z-index: 100;
-        transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-        &.scroll{
-            opacity: 1;
-            pointer-events: auto;
-        }
-    }
 }
 
 
@@ -472,23 +455,6 @@
             &:not(.active) img:hover{
                 transform: scale(1);
             }
-        }
-    }
-    .btnHome{
-        opacity: 0;
-        pointer-events: none;
-        position: fixed; 
-        bottom: 117px; 
-        right: 40px;
-        background: url('../images/home.png') no-repeat center;
-        width: 34px; 
-        height: 34px; 
-        text-indent: -9999px;
-        z-index: 100;
-        transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-        &.scroll{
-            opacity: 1;
-            pointer-events: auto;
         }
     }
 }

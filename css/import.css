@@ -408,6 +408,23 @@ body {
     opacity: 1;
     pointer-events: auto;
   }
+  .btnHome {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    bottom: 62px;
+    right: 16px;
+    background: url("../images/home.png") no-repeat center;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    z-index: 100;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btnHome.scroll {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   em {
@@ -747,6 +764,23 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
   }
   .btnTop.scroll {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .btnHome {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    bottom: 72px;
+    right: 16px;
+    background: url("../images/home.png") no-repeat center;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    z-index: 100;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btnHome.scroll {
     opacity: 1;
     pointer-events: auto;
   }
@@ -1098,6 +1132,23 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
   }
   .btnTop.scroll {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .btnHome {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    bottom: 72px;
+    right: 32px;
+    background: url("../images/home.png") no-repeat center;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    z-index: 100;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btnHome.scroll {
     opacity: 1;
     pointer-events: auto;
   }
@@ -1491,6 +1542,23 @@ body {
     opacity: 1;
     pointer-events: auto;
   }
+  .btnHome {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    bottom: 117px;
+    right: 40px;
+    background: url("../images/home.png") no-repeat center;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    z-index: 100;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btnHome.scroll {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 .detail-wrap {
   background-color: #f3f2f6;
@@ -1704,23 +1772,6 @@ body {
   .splide .splide__slide:not(.active) img:hover {
     transform: scale(1);
   }
-  .btnHome {
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    bottom: 117px;
-    right: 40px;
-    background: url("../images/home.png") no-repeat center;
-    width: 34px;
-    height: 34px;
-    text-indent: -9999px;
-    z-index: 100;
-    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .btnHome.scroll {
-    opacity: 1;
-    pointer-events: auto;
-  }
 }
 @media screen and (min-width: 768px) {
   .detail-wrap {
@@ -1933,23 +1984,6 @@ body {
   }
   .splide .splide__slide:not(.active) img:hover {
     transform: scale(1);
-  }
-  .btnHome {
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    bottom: 117px;
-    right: 40px;
-    background: url("../images/home.png") no-repeat center;
-    width: 34px;
-    height: 34px;
-    text-indent: -9999px;
-    z-index: 100;
-    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .btnHome.scroll {
-    opacity: 1;
-    pointer-events: auto;
   }
 }
 
