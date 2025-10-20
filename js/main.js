@@ -299,7 +299,6 @@ if (window.innerWidth < 480) {
             trigger: ".section-project",
             start: "top top",
             end: "bottom bottom",
-            markers: true
         }
     })
     tl.to("body", {
