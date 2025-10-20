@@ -184,6 +184,9 @@ body {
     line-height: 1.6;
     word-break: keep-all;
   }
+  .section-about {
+    background-color: #000;
+  }
   .section-about .about-wrap > div h3, .section-about .about-wrap > div h4 {
     font-size: 1.125rem;
     font-weight: 400;
@@ -540,6 +543,9 @@ body {
     color: #4d4d4d;
     line-height: 1.6;
     word-break: keep-all;
+  }
+  .section-about {
+    background-color: #000;
   }
   .section-about .about-wrap > div h3, .section-about .about-wrap > div h4 {
     font-size: 1.125rem;
