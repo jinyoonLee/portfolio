@@ -19,7 +19,7 @@ gsap.to(".clouds.right img", {
 gsap.registerPlugin(ScrollTrigger);
 
 //! 진행바
-if (window.innerWidth >= 768) {
+if (window.innerWidth >= 1024) {
     const progressEl = document.querySelector(".parallax__progress progress")
     let current = 0;
     
@@ -92,7 +92,7 @@ tl.to(".section-main p", {
 }, "b")
 
 //! section-about-wrap
-if (window.innerWidth >= 768) {
+if (window.innerWidth >= 1024) {
     const secAbout = gsap.timeline({
         scrollTrigger: {
             trigger: ".about-wrap",
@@ -148,7 +148,7 @@ if (window.innerWidth >= 450) {
 }
 
 //! section-work article
-if (window.innerWidth >= 768) {
+if (window.innerWidth >= 1024) {
     const panels = gsap.utils.toArray(".work")
     
     panels.forEach((panel, i) => {
@@ -198,7 +198,7 @@ if (window.innerWidth >= 768) {
 }
 
 //! project h2 x값
-if (window.innerWidth >= 768) {
+if (window.innerWidth >= 1024) {
     // h2 위치 계산
     const h2 = document.querySelector(".section-work h2");
     const rect = h2.getBoundingClientRect();
@@ -233,7 +233,7 @@ if (window.innerWidth >= 768) {
 }
 
 //! project slide 가로스크롤
-if (window.innerWidth >= 768) {
+if (window.innerWidth >= 1024) {
     const slideInner = document.querySelector('.projects')
     
     gsap.to(slideInner, {
@@ -277,7 +277,7 @@ targets.forEach((target) => {
 })
 
 //! 모바일용
-if (window.innerWidth < 768) {
+if (window.innerWidth < 1024) {
     const targets = [
         ".work-content",
         ".work-media",
