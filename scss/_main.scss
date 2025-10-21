@@ -12,6 +12,9 @@ body{
     clip: 0,0,0,0;
     overflow: hidden;
 }
+[lang="en"] {
+    font-family: 'Montserrat', sans-serif;
+}
 
 @media screen and (max-width: 479px){
     em{
@@ -1223,10 +1226,9 @@ body{
         }
     }
     .section-about{
-        padding: 150px 0 400px;
+        padding: 150px 32px 400px;
         background-color: $color-black;
         >*{
-            padding: 0 32px;
             max-width: 1440px;
             margin: 0 auto;
         }
@@ -1235,30 +1237,26 @@ body{
         }
     }
     .section-work{
-        padding: 200px 0 0;
+        padding: 200px 32px 0;
         margin: 0 auto;
         h2{
             max-width: 1440px;
             margin: 0 auto 200px;
-            padding: 0 32px;
-        }
-        .work-inner{
-            padding: 32px;
         }
     }
     .section-project{
-        padding: 0 0 200px;
+        padding: 0 32px 200px;
         background-color: $color-black;
         h2{
-            padding: 150px 32px 400px;
+            padding: 150px 0 400px;
             max-width: 1440px;
             margin: 0 auto;
         }
     }
     .section-contact{ 
         background: $color-white url('../images/contact.png') no-repeat right top / 250px auto;
+        padding: 0 32px;
         .contact-wrap{
-            padding: 0 32px;
             max-width: 1440px;
             margin: 0 auto;
         }

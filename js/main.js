@@ -138,7 +138,7 @@ if (window.innerWidth >= 1280) {
                 scrub: 1,
                 pin: true,
                 pinSpacing: false,
-                snap: 1,
+                // snap: 1,
                 onEnter: () => panel.classList.add("active"),
                 onLeave: () => panel.classList.remove("active"),
                 onEnterBack: () => panel.classList.add("active"),
@@ -152,7 +152,7 @@ if (window.innerWidth >= 1280) {
         )
         // 중앙에서 잠시 머무르기
         .to(media, 
-            { x: "0", autoAlpha: 1, duration: 1.2 }, "c")
+            { x: "0", autoAlpha: 1, duration: 1 }, "c")
         // 중앙 -> 오른쪽
         .to(media,
             { x: "100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b"
@@ -160,14 +160,14 @@ if (window.innerWidth >= 1280) {
     
         // work-content: 오른쪽 -> 중앙
         .fromTo(content,
-            { y: "100vw", autoAlpha: 0 },
-            { y: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a")
+            { X: "100vw", autoAlpha: 0 },
+            { X: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a")
          // 중앙에서 머무름
             .to(content,
-            { y: "0", autoAlpha: 1, duration: 1.2 }, "c")
+            { X: "0", autoAlpha: 1, duration: 1 }, "c")
         // 중앙 -> 왼쪽
         .to(content,
-            { y: "-100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b")
+            { X: "-100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b")
     })
 }
 
@@ -191,7 +191,7 @@ if (window.innerWidth >= 1280) {
     function updateEmptyBoxWidth() {
         const rect = h2.getBoundingClientRect();
         const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-        const newWidth = rect.left + scrollLeft + 32; // +32 유지
+        const newWidth = rect.left + scrollLeft - 32;
 
         emptyBoxes.forEach(box => {
             box.style.width = `${newWidth}px`;
