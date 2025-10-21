@@ -216,6 +216,7 @@ body {
   }
   .section-about {
     background-color: #000;
+    margin-top: -10px;
   }
   .section-about .about-wrap > div h3, .section-about .about-wrap > div h4 {
     font-size: 1.125rem;
@@ -593,6 +594,7 @@ body {
   }
   .section-about {
     background-color: #000;
+    margin-top: -10px;
   }
   .section-about .about-wrap > div h3, .section-about .about-wrap > div h4 {
     font-size: 1.125rem;
@@ -984,6 +986,9 @@ body {
     color: #4d4d4d;
     line-height: 1.6;
     word-break: keep-all;
+  }
+  .section-about {
+    margin-top: -10px;
   }
   .section-about .about-wrap > div h3, .section-about .about-wrap > div h4 {
     font-size: 1.125rem;
