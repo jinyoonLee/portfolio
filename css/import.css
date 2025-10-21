@@ -913,6 +913,9 @@ body {
   }
   .section-about {
     padding: 140px 32px 300px;
+    background-color: #000;
+  }
+  .section-about > * {
     max-width: 800px;
     margin: 0 auto;
   }

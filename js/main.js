@@ -110,10 +110,12 @@ if (window.innerWidth >= 450) {
             scrub: true,
             onEnter: () => {
                 gsap.to("body", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" })
+                gsap.to(".section-about", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" })
                 gsap.to(".section-work h2", { color: "#000000", duration: 0.5, ease: "power2.out" })
             },
             onLeaveBack: () => {
                 gsap.to("body", { backgroundColor: "#000000", duration: 0.5, ease: "power2.out" })
+                gsap.to(".section-about", { backgroundColor: "#000000", duration: 0.5, ease: "power2.out" })
                 gsap.to(".section-work h2", { color: "#f3f2f6", duration: 0.5, ease: "power2.out" })
             },
         },
