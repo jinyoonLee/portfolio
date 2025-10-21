@@ -1180,6 +1180,38 @@ body {
     min-width: 150vw;
     scale: 2;
   }
+  main .pre-wrap {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+  }
+  main .pre-wrap img {
+    width: 10px;
+    opacity: 0;
+    rotate: 90deg;
+    animation: fadeIn 1.2s ease forwards 0.2s, scrollDown 0.6s ease-in-out infinite 0.4s;
+  }
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.9;
+    }
+  }
   section + section,
   .section-about,
   .section-project h2 {

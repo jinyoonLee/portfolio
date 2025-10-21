@@ -54,42 +54,46 @@ const tl = gsap.timeline({
     }
 })
 
+tl.to(".pre-wrap", {
+    autoAlpha : 0,
+}, "a")
+
 // 구름사라지며 배경색 화이트
 tl.to(".clouds.right", {
     autoAlpha : 0,
     right: "-500"
-}, "a")
+}, "b")
 
 tl.to(".section-main", {
     autoAlpha : 1
-}, "a")
+}, "b")
 
 tl.to(".clouds.left", {
     autoAlpha : 0,
     left: "-500"
-}, "a")
+}, "b")
 
 tl.to(".section-main", {
     backgroundColor: "#fff",
     ease: "power2.out"
-}, "a")
+}, "b")
 
 // div 축소
 tl.to(".section-main div", {
     scale: 0.9,
     ease: "power2.out"
-}, "b")
+}, "c")
 
 // body 배경색 & p 컬러
 tl.to(".section-main", {
     backgroundColor: "#000",
     ease: "power2.out"
-}, "b")
+}, "c")
 
 tl.to(".section-main p", {
     color: "#fff",
     ease: "power2.out"
-}, "b")
+}, "c")
 
 //! section-work h2
 if (window.innerWidth >= 450) {
