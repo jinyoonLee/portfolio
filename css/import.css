@@ -83,7 +83,7 @@ body {
     z-index: 100;
   }
   main .clouds.right {
-    right: 0;
+    display: none;
   }
   main .clouds.left {
     left: 0;
@@ -91,6 +91,38 @@ body {
   main .clouds img {
     min-width: 250vw;
     scale: 2;
+  }
+  main .pre-wrap {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+  }
+  main .pre-wrap > img {
+    width: 10px;
+    opacity: 0;
+    rotate: 90deg;
+    animation: fadeIn 1.2s ease forwards 0.2s, scrollDown 0.6s ease-in-out infinite 0.4s;
+  }
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.9;
+    }
   }
   section + section,
   .section-about {
@@ -340,7 +372,7 @@ body {
     align-items: center;
     height: 100vh;
     color: #000;
-    background: url("../imagES/clouds.png") no-repeat center top;
+    background: url("../imagES/clouds.png") no-repeat center top -100px;
     background-size: 1500px auto;
     background-attachment: fixed;
   }
@@ -444,7 +476,7 @@ body {
     z-index: 100;
   }
   main .clouds.right {
-    right: 0;
+    display: none;
   }
   main .clouds.left {
     left: 0;
@@ -452,6 +484,38 @@ body {
   main .clouds img {
     min-width: 250vw;
     scale: 2;
+  }
+  main .pre-wrap {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+  }
+  main .pre-wrap > img {
+    width: 10px;
+    opacity: 0;
+    rotate: 90deg;
+    animation: fadeIn 1.2s ease forwards 0.2s, scrollDown 0.6s ease-in-out infinite 0.4s;
+  }
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.9;
+    }
   }
   section + section,
   .section-about {
@@ -701,7 +765,7 @@ body {
     align-items: center;
     height: 100vh;
     color: #000;
-    background: url("../imagES/clouds.png") no-repeat center top;
+    background: url("../imagES/clouds.png") no-repeat center top -100px;
     background-size: 2000px auto;
     background-attachment: fixed;
   }
@@ -811,6 +875,38 @@ body {
   main .clouds img {
     min-width: 250vw;
     scale: 2;
+  }
+  main .pre-wrap {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+  }
+  main .pre-wrap > img {
+    width: 10px;
+    opacity: 0;
+    rotate: 90deg;
+    animation: fadeIn 1.2s ease forwards 0.2s, scrollDown 0.6s ease-in-out infinite 0.4s;
+  }
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.9;
+    }
   }
   section + section {
     padding: 140px 32px 300px;
@@ -1069,7 +1165,7 @@ body {
     align-items: center;
     height: 100vh;
     color: #000;
-    background: url("../imagES/clouds.png") no-repeat center top;
+    background: url("../imagES/clouds.png") no-repeat center top -100px;
     background-size: 2000px auto;
     background-attachment: fixed;
   }
@@ -1187,7 +1283,7 @@ body {
     transform: translateX(-50%);
     z-index: 200;
   }
-  main .pre-wrap img {
+  main .pre-wrap > img {
     width: 10px;
     opacity: 0;
     rotate: 90deg;

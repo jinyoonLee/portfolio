@@ -61,39 +61,39 @@ tl.to(".pre-wrap", {
 // 구름사라지며 배경색 화이트
 tl.to(".clouds.right", {
     autoAlpha : 0,
-    right: "-500"
-}, "b")
+    right: "-2000"
+}, "a")
 
 tl.to(".section-main", {
     autoAlpha : 1
-}, "b")
+}, "a")
 
 tl.to(".clouds.left", {
     autoAlpha : 0,
-    left: "-500"
-}, "b")
+    left: "-2000"
+}, "a")
 
 tl.to(".section-main", {
     backgroundColor: "#fff",
     ease: "power2.out"
-}, "b")
+}, "a")
 
 // div 축소
 tl.to(".section-main div", {
     scale: 0.9,
     ease: "power2.out"
-}, "c")
+}, "b")
 
 // body 배경색 & p 컬러
 tl.to(".section-main", {
     backgroundColor: "#000",
     ease: "power2.out"
-}, "c")
+}, "b")
 
 tl.to(".section-main p", {
     color: "#fff",
     ease: "power2.out"
-}, "c")
+}, "b")
 
 //! section-work h2
 if (window.innerWidth >= 450) {
