@@ -73,11 +73,6 @@ tl.to(".clouds.left", {
     left: "-2000"
 }, "a")
 
-tl.to(".section-main", {
-    backgroundColor: "#fff",
-    ease: "power2.out"
-}, "a")
-
 // div 축소
 tl.to(".section-main div", {
     scale: 0.9,
