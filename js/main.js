@@ -85,6 +85,11 @@ tl.to(".section-main", {
     ease: "power2.out"
 }, "b")
 
+tl.to(".body", {
+    backgroundColor: "#000",
+    ease: "power2.out"
+}, "b")
+
 tl.to(".section-main p", {
     color: "#fff",
     ease: "power2.out"
@@ -105,7 +110,8 @@ if (window.innerWidth >= 480) {
             onEnter: () => {
                 const tl = gsap.timeline()
                 // 1번
-                tl .to(".section-work h2", { color: "#000", duration: 0.5, ease: "power2.out" }, "start")
+                tl .to(".body", { color: "#f3f2f6", ease: "power2.out" }, "start")
+                    .to(".section-work h2", { color: "#000", duration: 0.5, ease: "power2.out" }, "start")
                     .to(".section-about", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" }, "start")
                     .to(".section-work", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" }, "start")
                 // 4번
@@ -156,13 +162,15 @@ if (window.innerWidth >= 1280) {
         // work-content: 오른쪽 -> 중앙
         .fromTo(content,
             { X: "100vw", autoAlpha: 0 },
-            { X: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a")
+            { X: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a"
+        )
          // 중앙에서 머무름
             .to(content,
             { X: "0", autoAlpha: 1, duration: 1 }, "c")
         // 중앙 -> 왼쪽
         .to(content,
-            { X: "-100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b")
+            { X: "-100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b"
+        )
     })
 }
 
