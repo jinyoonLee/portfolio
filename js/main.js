@@ -37,18 +37,18 @@ if (window.innerWidth >= 1280) {
     }
     
     animateProgress();
-}
 
 // pin, absolute 영역이 많은 경우엔 반드시 refresh
 window.addEventListener("load", () => ScrollTrigger.refresh())
 window.addEventListener("resize", () => ScrollTrigger.refresh())
+}
 
 //! 배경색 전환
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".section-main",
         start: "top top",
-        end: "+=3000",
+        end: "+=1000",
         scrub: 2,
         pin: true,
     }
@@ -111,7 +111,7 @@ if (window.innerWidth >= 450) {
                 gsap.to("body", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" })
                 gsap.to(".section-about", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" })
                 gsap.to(".section-work h2", { color: "#000000", duration: 0.5, ease: "power2.out" })
-                gsap.to(".section-about", { backgroundColor: "#000", duration: 0.5, delay:2, ease: "power2.out" })
+                gsap.to(".section-about", { backgroundColor: "#000", duration: 0.5, delay:0.5, ease: "power2.out" })
             }
         }
     })
