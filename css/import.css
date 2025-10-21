@@ -159,12 +159,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120vh;
+    height: 130vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 20vh;
+    margin-bottom: 30vh;
   }
   .section-main > div .main-title {
     text-align: center;
@@ -536,12 +536,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120vh;
+    height: 130vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 20vh;
+    margin-bottom: 30vh;
   }
   .section-main > div .main-title {
     text-align: center;
@@ -930,12 +930,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120vh;
+    height: 130vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 20vh;
+    margin-bottom: 30vh;
   }
   .section-main > div .main-title {
     text-align: center;
@@ -1322,12 +1322,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120vh;
+    height: 130vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 20vh;
+    margin-bottom: 30vh;
   }
   .section-main > div .main-title {
     position: relative;
