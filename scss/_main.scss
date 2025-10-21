@@ -86,6 +86,9 @@ body{
         padding: 140px 16px;
         background-color: $color-black;
     }
+    .section-contact{ 
+        background-color: $color-white;
+    }
     h2, .h2{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
@@ -315,9 +318,6 @@ body{
         align-items: center;
         height: 100vh;
         color: $color-black;
-        background: url("../imagES/clouds.png") no-repeat center top -100px;
-        background-size: 1500px auto;
-        background-attachment: fixed;
         .contact-wrap{
             width: 100%;
             display: flex;
@@ -478,6 +478,9 @@ body{
         padding: 140px 16px;
         background-color: $color-black;
     }
+    .section-contact{ 
+        background-color: $color-white;
+    }
     h2, .h2{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
@@ -708,9 +711,6 @@ body{
         align-items: center;
         height: 100vh;
         color: $color-black;
-        background: url("../imagES/clouds.png") no-repeat center top -100px;
-        background-size: 2000px auto;
-        background-attachment: fixed;
         .contact-wrap{
             width: 100%;
             display: flex;
@@ -738,7 +738,7 @@ body{
                 }
                 >div{
                     &:nth-of-type(1) >a{
-                        font-size: $font-size-lg;
+                        font-size: 7vw;
                         color: $color-black;
                         border-bottom: 2px solid $color-black;
                         transition: border-color 0.75s ease-in-out;
@@ -883,6 +883,7 @@ body{
         }
     }
     .section-contact{
+        background-color: $color-white;
         .contact-wrap{
             max-width: 800px;
             margin: 0 auto;
@@ -1117,9 +1118,6 @@ body{
         align-items: center;
         height: 100vh;
         color: $color-black;
-        background: url("../imagES/clouds.png") no-repeat center top -100px;
-        background-size: 2000px auto;
-        background-attachment: fixed;
         .contact-wrap{
             width: 100%;
             display: flex;
@@ -1147,7 +1145,7 @@ body{
                 }
                 >div{
                     &:nth-of-type(1) >a{
-                        font-size: $font-size-lg;
+                        font-size: $font-size-xl;
                         color: $color-black;
                         border-bottom: 2px solid $color-black;
                         transition: border-color 0.75s ease-in-out;
@@ -1290,10 +1288,13 @@ body{
         padding: 0 0 200px;
         background-color: $color-black;
     }
-    .section-contact .contact-wrap{
-        padding: 0 32px 0;
-        max-width: 1440px;
-        margin: 0 auto;
+    .section-contact{ 
+        background-color: $color-white;
+        .contact-wrap{
+            padding: 0 32px 0;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
     }
     h2, .h2{
         font-size: $font-size-lg;
@@ -1542,9 +1543,6 @@ body{
         align-items: center;
         height: 100vh;
         color: $color-black;
-        background: url("../imagES/clouds.png") no-repeat center top;
-        background-size: 2500px auto;
-        background-attachment: fixed;
         .contact-wrap{
             width: 100%;
             display: flex;

@@ -151,6 +151,9 @@ body {
     padding: 140px 16px;
     background-color: #000;
   }
+  .section-contact {
+    background-color: #f3f2f6;
+  }
   h2, .h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -372,9 +375,6 @@ body {
     align-items: center;
     height: 100vh;
     color: #000;
-    background: url("../imagES/clouds.png") no-repeat center top -100px;
-    background-size: 1500px auto;
-    background-attachment: fixed;
   }
   .section-contact .contact-wrap {
     width: 100%;
@@ -540,6 +540,9 @@ body {
     padding: 140px 16px;
     background-color: #000;
   }
+  .section-contact {
+    background-color: #f3f2f6;
+  }
   h2, .h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -762,9 +765,6 @@ body {
     align-items: center;
     height: 100vh;
     color: #000;
-    background: url("../imagES/clouds.png") no-repeat center top -100px;
-    background-size: 2000px auto;
-    background-attachment: fixed;
   }
   .section-contact .contact-wrap {
     width: 100%;
@@ -792,7 +792,7 @@ body {
     color: #4d4d4d;
   }
   .section-contact .contact-wrap > div > div:nth-of-type(1) > a {
-    font-size: 2rem;
+    font-size: 7vw;
     color: #000;
     border-bottom: 2px solid #000;
     transition: border-color 0.75s ease-in-out;
@@ -939,6 +939,9 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
+  .section-contact {
+    background-color: #f3f2f6;
+  }
   .section-contact .contact-wrap {
     max-width: 800px;
     margin: 0 auto;
@@ -1162,9 +1165,6 @@ body {
     align-items: center;
     height: 100vh;
     color: #000;
-    background: url("../imagES/clouds.png") no-repeat center top -100px;
-    background-size: 2000px auto;
-    background-attachment: fixed;
   }
   .section-contact .contact-wrap {
     width: 100%;
@@ -1192,7 +1192,7 @@ body {
     color: #4d4d4d;
   }
   .section-contact .contact-wrap > div > div:nth-of-type(1) > a {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #000;
     border-bottom: 2px solid #000;
     transition: border-color 0.75s ease-in-out;
@@ -1337,6 +1337,9 @@ body {
   .section-project {
     padding: 0 0 200px;
     background-color: #000;
+  }
+  .section-contact {
+    background-color: #f3f2f6;
   }
   .section-contact .contact-wrap {
     padding: 0 32px 0;
@@ -1584,9 +1587,6 @@ body {
     align-items: center;
     height: 100vh;
     color: #000;
-    background: url("../imagES/clouds.png") no-repeat center top;
-    background-size: 2500px auto;
-    background-attachment: fixed;
   }
   .section-contact .contact-wrap {
     width: 100%;
