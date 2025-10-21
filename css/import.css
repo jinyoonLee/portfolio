@@ -151,9 +151,6 @@ body {
     padding: 140px 16px;
     background-color: #000;
   }
-  .section-contact {
-    background-color: #f3f2f6;
-  }
   h2, .h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -164,12 +161,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
   }
   .section-main > div .main-title {
     text-align: center;
@@ -530,18 +527,12 @@ body {
     max-width: 1440px;
     margin: 0 auto 0 16px;
   }
-  .section-work .works {
-    background-color: #f3f2f6;
-  }
   .section-work .work-inner {
     padding: 16px;
   }
   .section-project {
     padding: 140px 16px;
     background-color: #000;
-  }
-  .section-contact {
-    background-color: #f3f2f6;
   }
   h2, .h2 {
     font-size: 2rem;
@@ -553,12 +544,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
   }
   .section-main > div .main-title {
     text-align: center;
@@ -792,7 +783,7 @@ body {
     color: #4d4d4d;
   }
   .section-contact .contact-wrap > div > div:nth-of-type(1) > a {
-    font-size: 7vw;
+    font-size: 2rem;
     color: #000;
     border-bottom: 2px solid #000;
     transition: border-color 0.75s ease-in-out;
@@ -849,7 +840,7 @@ body {
     transition: bottom 1.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1287px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   main {
     position: relative;
     width: 100%;
@@ -925,9 +916,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
-  .section-work .works {
-    background-color: #f3f2f6;
-  }
   .section-work .work-inner {
     padding: 32px;
   }
@@ -956,12 +944,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
   }
   .section-main > div .main-title {
     text-align: center;
@@ -1192,7 +1180,7 @@ body {
     color: #4d4d4d;
   }
   .section-contact .contact-wrap > div > div:nth-of-type(1) > a {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #000;
     border-bottom: 2px solid #000;
     transition: border-color 0.75s ease-in-out;
@@ -1328,9 +1316,6 @@ body {
     max-width: 1440px;
     margin: 0 auto 200px;
   }
-  .section-work .works {
-    background-color: #f3f2f6;
-  }
   .section-work .work-inner {
     padding: 32px;
   }
@@ -1356,12 +1341,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     opacity: 0;
   }
   .section-main > div {
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
   }
   .section-main > div .main-title {
     position: relative;

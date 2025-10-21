@@ -96,7 +96,7 @@ tl.to(".section-main p", {
 }, "b")
 
 //! section-work h2
-if (window.innerWidth >= 450) {
+if (window.innerWidth >= 480) {
     gsap.from(".section-work h2", {
         scale: 4.5,
         duration: 2,
@@ -109,40 +109,16 @@ if (window.innerWidth >= 450) {
             once: true,
             onEnter: () => {
                 const tl = gsap.timeline()
-
-                // 1번 + 3번 동시 실행
+                // 1번
                 tl .to(".section-work h2", { color: "#000", duration: 0.5, ease: "power2.out" }, "start")
-
-                // 2번 (그 다음 실행)
-                tl.to(".section-about", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" })
+                    .to(".section-about", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" }, "start")
                     .to(".section-work", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" }, "start")
-
-                // 4번 (0.5초 뒤 실행하고 싶다면 +=0.5)
+                // 4번
                 tl.to(".section-about", { backgroundColor: "#000", duration: 0.5, ease: "power2.out" }, "+=0.5")
             }
         }
     })
 }
-// if (window.innerWidth >= 450) {
-//     gsap.from(".section-work h2", {
-//         scale: 4.5,
-//         duration: 2,
-//         x: 0,
-//         y: 0,
-//         transformOrigin: "left center",
-//         scrollTrigger: {
-//             trigger: ".section-work h2",
-//             start: "top 40%",
-//             once: true,
-//             onEnter: () => {
-//                 gsap.to("section-work", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" })
-//                 gsap.to(".section-about", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" })
-//                 gsap.to(".section-work h2", { color: "#000000", duration: 0.5, ease: "power2.out" })
-//                 gsap.to(".section-about", { backgroundColor: "#000", duration: 0.5, delay:0.5, ease: "power2.out" })
-//             }
-//         }
-//     })
-// }
 
 //! section-work article
 if (window.innerWidth >= 1280) {
