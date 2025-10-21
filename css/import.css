@@ -140,7 +140,7 @@ body {
     background-color: #000;
   }
   .section-contact {
-    background-color: #f3f2f6;
+    background: #f3f2f6 url("../images/contact.png") no-repeat right top/150px auto;
   }
   .section-contact .contact-wrap {
     padding: 0 16px;
@@ -517,7 +517,7 @@ body {
     background-color: #000;
   }
   .section-contact {
-    background-color: #f3f2f6;
+    background: #f3f2f6 url("../images/contact.png") no-repeat right top/150px auto;
   }
   .section-contact .contact-wrap {
     padding: 0 16px;
@@ -910,7 +910,7 @@ body {
   }
   .section-contact {
     padding: 0 32px;
-    background-color: #f3f2f6;
+    background: #f3f2f6 url("../images/contact.png") no-repeat right top/200px auto;
   }
   .section-contact .contact-wrap {
     max-width: 800px;
@@ -1306,7 +1306,7 @@ body {
     margin: 0 auto;
   }
   .section-contact {
-    background-color: #f3f2f6;
+    background: #f3f2f6 url("../images/contact.png") no-repeat right top/250px auto;
   }
   .section-contact .contact-wrap {
     padding: 0 32px;

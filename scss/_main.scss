@@ -75,7 +75,7 @@ body{
         background-color: $color-black;
     }
     .section-contact{
-        background-color: $color-white;
+        background: $color-white url('../images/contact.png') no-repeat right top / 150px auto;
         .contact-wrap{
             padding: 0 16px;
         }
@@ -455,7 +455,7 @@ body{
         background-color: $color-black;
     }
     .section-contact{
-        background-color: $color-white;
+        background: $color-white url('../images/contact.png') no-repeat right top / 150px auto;
         .contact-wrap{
             padding: 0 16px;
         }
@@ -853,7 +853,7 @@ body{
     }
     .section-contact{
         padding: 0 32px;
-        background-color: $color-white;
+        background: $color-white url('../images/contact.png') no-repeat right top / 200px auto;
         .contact-wrap{
             max-width: 800px;
             margin: 0 auto;
@@ -1256,7 +1256,7 @@ body{
         }
     }
     .section-contact{ 
-        background-color: $color-white;
+        background: $color-white url('../images/contact.png') no-repeat right top / 250px auto;
         .contact-wrap{
             padding: 0 32px;
             max-width: 1440px;
