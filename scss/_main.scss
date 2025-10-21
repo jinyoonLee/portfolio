@@ -374,7 +374,7 @@ body{
         opacity: 0;
         pointer-events: none;
         position: fixed; 
-        bottom: 20px; 
+        bottom: 30px; 
         right: 16px;
         background: url('../images/top.png') no-repeat center;
         width: 34px; 
@@ -387,24 +387,21 @@ body{
         &.scroll{
             opacity: 1;
             pointer-events: auto;
+            &+.btnHome{
+                bottom: 72px;
+            }
         }
     }
     .btnHome{
-        opacity: 0;
-        pointer-events: none;
         position: fixed; 
-        bottom: 62px; 
+        bottom: 30px; 
         right: 16px;
         background: url('../images/home.png') no-repeat center;
         width: 34px; 
         height: 34px; 
         text-indent: -9999px;
         z-index: 100;
-        transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-        &.scroll{
-            opacity: 1;
-            pointer-events: auto;
-        }
+        transition: bottom 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -786,24 +783,21 @@ body{
         &.scroll{
             opacity: 1;
             pointer-events: auto;
+            &+.btnHome{
+                bottom: 72px;
+            }
         }
     }
     .btnHome{
-        opacity: 0;
-        pointer-events: none;
         position: fixed; 
-        bottom: 72px; 
+        bottom: 30px; 
         right: 16px;
         background: url('../images/home.png') no-repeat center;
         width: 34px; 
         height: 34px; 
         text-indent: -9999px;
         z-index: 100;
-        transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-        &.scroll{
-            opacity: 1;
-            pointer-events: auto;
-        }
+        transition: bottom 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -1185,7 +1179,7 @@ body{
         opacity: 0;
         pointer-events: none;
         position: fixed; 
-        bottom: 30px; 
+        bottom: 50px; 
         right: 32px;
         background: url('../images/top.png') no-repeat center;
         width: 34px; 
@@ -1198,24 +1192,21 @@ body{
         &.scroll{
             opacity: 1;
             pointer-events: auto;
+            &+.btnHome{
+                bottom: 92px;
+            }
         }
     }
     .btnHome{
-        opacity: 0;
-        pointer-events: none;
         position: fixed; 
-        bottom: 72px; 
+        bottom: 50px; 
         right: 32px;
         background: url('../images/home.png') no-repeat center;
         width: 34px; 
         height: 34px; 
         text-indent: -9999px;
         z-index: 100;
-        transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-        &.scroll{
-            opacity: 1;
-            pointer-events: auto;
-        }
+        transition: bottom 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -1630,8 +1621,8 @@ body{
         opacity: 0;
         pointer-events: none;
         position: fixed; 
-        bottom: 75px; 
-        right: 40px;
+        bottom: 50px; 
+        right: 32px;
         background: url('../images/top.png') no-repeat center;
         width: 34px; 
         height: 34px; 
@@ -1643,24 +1634,21 @@ body{
         &.scroll{
             opacity: 1;
             pointer-events: auto;
+            &+.btnHome{
+                bottom: 92px;
+            }
         }
     }
     .btnHome{
-        opacity: 0;
-        pointer-events: none;
         position: fixed; 
-        bottom: 117px; 
-        right: 40px;
+        bottom: 50px; 
+        right: 32px;
         background: url('../images/home.png') no-repeat center;
         width: 34px; 
         height: 34px; 
         text-indent: -9999px;
         z-index: 100;
-        transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-        &.scroll{
-            opacity: 1;
-            pointer-events: auto;
-        }
+        transition: bottom 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 

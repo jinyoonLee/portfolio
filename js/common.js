@@ -42,7 +42,6 @@ gsap.utils.toArray(".reveal").forEach((item) => {
 //! 탑버튼
 $(document).ready(function(){
     scrollEvent(".btnTop");
-    scrollEvent(".btnHome");
 })
 function scrollEvent(target){
     $(window).scroll(function(){
