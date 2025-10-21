@@ -1303,9 +1303,16 @@ body {
     }
   }
   section + section,
-  .section-about,
   .section-project h2 {
     padding: 150px 32px 400px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .section-about {
+    padding: 150px 32px 400px;
+    background-color: #000;
+  }
+  .section-about > * {
     max-width: 1440px;
     margin: 0 auto;
   }
