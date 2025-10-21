@@ -59,32 +59,26 @@ body{
             }
         }
     }
-    section+section,
     .section-about{
         padding: 140px 16px;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-    .section-work,
-    .section-project{
-        max-width: unset;
     }
     .section-work{
-        padding: 140px 0 0;
+        padding: 140px 16px 0;
         margin: 0 auto;
         background-color: $color-white;
         h2{
-            max-width: 1440px;
-            margin: 0 auto 0 16px;
             color: $color-black;
-        }
-        .work-inner{
-            padding: 0 16px;
         }
     }
     .section-project{
         padding: 140px 16px;
         background-color: $color-black;
+    }
+    .section-contact{
+        background-color: $color-white;
+        .contact-wrap{
+            padding: 0 16px;
+        }
     }
     h2, .h2{
         font-size: $font-size-lg;
@@ -449,28 +443,22 @@ body{
             }
         }
     }
-    section+section,
     .section-about{
         padding: 140px 16px 300px;
     }
-    .section-work,
-    .section-project{
-        max-width: unset;
-    }
     .section-work{
-        padding: 200px 0 0;
+        padding: 200px 16px 0;
         margin: 0 auto;
-        h2{
-            max-width: 1440px;
-            margin: 0 auto 0 16px;
-        }
-        .work-inner{
-            padding: 16px;
-        }
     }
     .section-project{
         padding: 140px 16px;
         background-color: $color-black;
+    }
+    .section-contact{
+        background-color: $color-white;
+        .contact-wrap{
+            padding: 0 16px;
+        }
     }
     h2, .h2{
         font-size: $font-size-lg;
@@ -836,9 +824,6 @@ body{
             }
         }
     }
-    section+section{
-        padding: 140px 32px 300px;
-    }
     .section-about{
         padding: 140px 32px 300px;
         background-color: $color-black;
@@ -846,20 +831,16 @@ body{
             max-width: 800px;
             margin: 0 auto;
         }
-    }
-    .section-work,
-    .section-project{
-        max-width: unset;
+        h2{
+            padding-bottom: 30px;
+        }
     }
     .section-work{
-        padding: 200px 0 0;
+        padding: 200px 32px 0;
         margin: 0 auto;
         h2{
             max-width: 800px;
             margin: 0 auto;
-        }
-        .work-inner{
-            padding: 32px;
         }
     }
     .section-project{
@@ -871,6 +852,7 @@ body{
         }
     }
     .section-contact{
+        padding: 0 32px;
         background-color: $color-white;
         .contact-wrap{
             max-width: 800px;
@@ -1240,23 +1222,17 @@ body{
             }
         }
     }
-    section+section,
-    .section-project h2{
-        padding: 150px 32px 400px;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
     .section-about{
-        padding: 150px 32px 400px;
+        padding: 150px 0 400px;
         background-color: $color-black;
         >*{
+            padding: 0 32px;
             max-width: 1440px;
             margin: 0 auto;
         }
-    }
-    .section-work,
-    .section-project{
-        max-width: unset;
+        h2{
+            padding-bottom: 30px;
+        }
     }
     .section-work{
         padding: 200px 0 0;
@@ -1264,6 +1240,7 @@ body{
         h2{
             max-width: 1440px;
             margin: 0 auto 200px;
+            padding: 0 32px;
         }
         .work-inner{
             padding: 32px;
@@ -1272,11 +1249,16 @@ body{
     .section-project{
         padding: 0 0 200px;
         background-color: $color-black;
+        h2{
+            padding: 150px 32px 400px;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
     }
     .section-contact{ 
         background-color: $color-white;
         .contact-wrap{
-            padding: 0 32px 0;
+            padding: 0 32px;
             max-width: 1440px;
             margin: 0 auto;
         }

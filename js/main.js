@@ -138,6 +138,7 @@ if (window.innerWidth >= 1280) {
                 scrub: 1,
                 pin: true,
                 pinSpacing: false,
+                snap: 1,
                 onEnter: () => panel.classList.add("active"),
                 onLeave: () => panel.classList.remove("active"),
                 onEnterBack: () => panel.classList.add("active"),
@@ -151,7 +152,7 @@ if (window.innerWidth >= 1280) {
         )
         // 중앙에서 잠시 머무르기
         .to(media, 
-            { x: "0", autoAlpha: 1, duration: 1 }, "c")
+            { x: "0", autoAlpha: 1, duration: 1.2 }, "c")
         // 중앙 -> 오른쪽
         .to(media,
             { x: "100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b"
@@ -159,14 +160,14 @@ if (window.innerWidth >= 1280) {
     
         // work-content: 오른쪽 -> 중앙
         .fromTo(content,
-            { x: "100vw", autoAlpha: 0 },
-            { x: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a")
+            { y: "100vw", autoAlpha: 0 },
+            { y: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a")
          // 중앙에서 머무름
             .to(content,
-            { x: "0", autoAlpha: 1, duration: 1 }, "c")
+            { y: "0", autoAlpha: 1, duration: 1.2 }, "c")
         // 중앙 -> 왼쪽
         .to(content,
-            { x: "-100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b")
+            { y: "-100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b")
     })
 }
 

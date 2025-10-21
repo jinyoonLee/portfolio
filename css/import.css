@@ -124,32 +124,26 @@ body {
       opacity: 0.9;
     }
   }
-  section + section,
   .section-about {
     padding: 140px 16px;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  .section-work,
-  .section-project {
-    max-width: unset;
   }
   .section-work {
-    padding: 140px 0 0;
+    padding: 140px 16px 0;
     margin: 0 auto;
     background-color: #f3f2f6;
   }
   .section-work h2 {
-    max-width: 1440px;
-    margin: 0 auto 0 16px;
     color: #000;
-  }
-  .section-work .work-inner {
-    padding: 0 16px;
   }
   .section-project {
     padding: 140px 16px;
     background-color: #000;
+  }
+  .section-contact {
+    background-color: #f3f2f6;
+  }
+  .section-contact .contact-wrap {
+    padding: 0 16px;
   }
   h2, .h2 {
     font-size: 2rem;
@@ -511,28 +505,22 @@ body {
       opacity: 0.9;
     }
   }
-  section + section,
   .section-about {
     padding: 140px 16px 300px;
   }
-  .section-work,
-  .section-project {
-    max-width: unset;
-  }
   .section-work {
-    padding: 200px 0 0;
+    padding: 200px 16px 0;
     margin: 0 auto;
-  }
-  .section-work h2 {
-    max-width: 1440px;
-    margin: 0 auto 0 16px;
-  }
-  .section-work .work-inner {
-    padding: 16px;
   }
   .section-project {
     padding: 140px 16px;
     background-color: #000;
+  }
+  .section-contact {
+    background-color: #f3f2f6;
+  }
+  .section-contact .contact-wrap {
+    padding: 0 16px;
   }
   h2, .h2 {
     font-size: 2rem;
@@ -893,9 +881,6 @@ body {
       opacity: 0.9;
     }
   }
-  section + section {
-    padding: 140px 32px 300px;
-  }
   .section-about {
     padding: 140px 32px 300px;
     background-color: #000;
@@ -904,20 +889,16 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
-  .section-work,
-  .section-project {
-    max-width: unset;
+  .section-about h2 {
+    padding-bottom: 30px;
   }
   .section-work {
-    padding: 200px 0 0;
+    padding: 200px 32px 0;
     margin: 0 auto;
   }
   .section-work h2 {
     max-width: 800px;
     margin: 0 auto;
-  }
-  .section-work .work-inner {
-    padding: 32px;
   }
   .section-project {
     padding: 140px 32px;
@@ -928,6 +909,7 @@ body {
     margin: 0 auto;
   }
   .section-contact {
+    padding: 0 32px;
     background-color: #f3f2f6;
   }
   .section-contact .contact-wrap {
@@ -1290,23 +1272,17 @@ body {
       opacity: 0.9;
     }
   }
-  section + section,
-  .section-project h2 {
-    padding: 150px 32px 400px;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
   .section-about {
-    padding: 150px 32px 400px;
+    padding: 150px 0 400px;
     background-color: #000;
   }
   .section-about > * {
+    padding: 0 32px;
     max-width: 1440px;
     margin: 0 auto;
   }
-  .section-work,
-  .section-project {
-    max-width: unset;
+  .section-about h2 {
+    padding-bottom: 30px;
   }
   .section-work {
     padding: 200px 0 0;
@@ -1315,6 +1291,7 @@ body {
   .section-work h2 {
     max-width: 1440px;
     margin: 0 auto 200px;
+    padding: 0 32px;
   }
   .section-work .work-inner {
     padding: 32px;
@@ -1323,11 +1300,16 @@ body {
     padding: 0 0 200px;
     background-color: #000;
   }
+  .section-project h2 {
+    padding: 150px 32px 400px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   .section-contact {
     background-color: #f3f2f6;
   }
   .section-contact .contact-wrap {
-    padding: 0 32px 0;
+    padding: 0 32px;
     max-width: 1440px;
     margin: 0 auto;
   }
