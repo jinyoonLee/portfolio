@@ -40,7 +40,7 @@ body{
                 scale: 2;
             }
         }
-        .pre-wrap{
+        .scroll-indicator{
             position: absolute;
             top: 50vh;
             left: 50%;
@@ -65,6 +65,9 @@ body{
     }
     .section-about{
         padding: 140px 16px;
+        h2{
+            padding-bottom: 50px;
+        }
     }
     .section-work{
         padding: 140px 16px 0;
@@ -72,6 +75,7 @@ body{
         background-color: $color-white;
         h2{
             color: $color-black;
+            padding-bottom: 50px;
         }
     }
     .section-project{
@@ -88,7 +92,6 @@ body{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
-        padding-bottom: 30px;
     }
     .section-main{
         display: flex;
@@ -116,7 +119,7 @@ body{
                     50%  { transform: rotate(180deg); }
                     100% { transform: rotate(360deg); }
                 }
-                p{
+                >span{
                     font-size: clamp(2rem, 8vw + 1rem, 8.96rem);
                     color: $color-black;
                     font-weight: $font-weight-bold;
@@ -159,6 +162,7 @@ body{
                     font-weight: $font-weight-regular;
                     color: $color-light-gray;
                     line-height: 1.7;
+                    background-color: $color-black;
                     &+p{
                         padding-top: 16px; 
                     }
@@ -184,8 +188,8 @@ body{
                     }
                 }
                 &.about-work{
-                    padding-top: 140px;
-                    padding-bottom: 140px;
+                    padding-top: 100px;
+                    padding-bottom: 100px;
                 }
             }
         }
@@ -256,7 +260,7 @@ body{
     .section-project{
         overflow: hidden;
         h2{
-            padding-bottom: 30px;
+            padding-bottom: 50px;
         }
         .projects{
             overflow: hidden;
@@ -363,7 +367,7 @@ body{
         }
     }
 
-    .parallax__progress progress{
+    .parallax-progress progress{
         display: none;
     }
     .btnTop{
@@ -425,7 +429,7 @@ body{
                 scale: 2;
             }
         }
-        .pre-wrap{
+        .scroll-indicator{
             position: absolute;
             top: 50vh;
             left: 50%;
@@ -449,15 +453,25 @@ body{
         }
     }
     .section-about{
-        padding: 140px 16px 300px;
+        padding: 140px 16px;
+        h2{
+            padding-bottom: 70px;
+        }
     }
     .section-work{
-        padding: 200px 16px 0;
+        padding: 140px 16px 0;
         margin: 0 auto;
+        h2{
+            color: $color-black;
+            padding-bottom: 70px;
+        }
     }
     .section-project{
         padding: 140px 16px;
         background-color: $color-black;
+        h2{
+            padding-bottom: 70px;
+        }
     }
     .section-contact{
         background: $color-white url('../images/contact.png') no-repeat right top / 150px auto;
@@ -469,7 +483,6 @@ body{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
-        padding-bottom: 30px;
     }
     .section-main{
         display: flex;
@@ -497,7 +510,7 @@ body{
                     50%  { transform: rotate(180deg); }
                     100% { transform: rotate(360deg); }
                 }
-                p{
+                >span{
                     font-size: clamp(4rem, 8vw + 1rem, 8.96rem);
                     color: $color-black;
                     font-weight: $font-weight-bold;
@@ -540,6 +553,7 @@ body{
                     font-weight: $font-weight-regular;
                     color: $color-light-gray;
                     line-height: 1.7;
+                    background-color: $color-black;
                     &+p{
                         padding-top: 16px; 
                     }
@@ -565,8 +579,8 @@ body{
                     }
                 }
                 &.about-work{
-                    padding-top: 200px;
-                    padding-bottom: 200px;
+                    padding-top: 140px;
+                    padding-bottom: 140px;
                 }
             }
         }
@@ -582,7 +596,6 @@ body{
     .section-work{
         .works{
             overflow: hidden;
-            padding-top: 100px;
             .work{
                 width: 100%;
                 display: flex;
@@ -593,7 +606,7 @@ body{
                     margin-bottom: 140px;
                 }
                 &+.work{
-                    padding-top: 140px;
+                    padding-top: 100px;
                 }
                 >a{
                     .work-inner{
@@ -637,9 +650,6 @@ body{
     }
     .section-project{
         overflow: hidden;
-        h2{
-            padding-bottom: 100px;
-        }
         .projects{
             overflow: hidden;
             padding-top: 0;
@@ -653,7 +663,7 @@ body{
                 justify-content: center;
                 flex-direction: column;
                 &+.project{
-                    padding-top: 140px;
+                    padding-top: 100px;
                 }
                 .work-inner{
                     display: flex;
@@ -748,7 +758,7 @@ body{
         }
     }
 
-    .parallax__progress progress{
+    .parallax-progress progress{
         display: none;
     }
     .btnTop{
@@ -807,7 +817,7 @@ body{
                 scale: 2;
             }
         }
-        .pre-wrap{
+        .scroll-indicator{
             position: absolute;
             top: 90vh;
             left: 50%;
@@ -831,14 +841,14 @@ body{
         }
     }
     .section-about{
-        padding: 140px 32px 300px;
+        padding: 140px 32px 200px;
         background-color: $color-black;
         >*{
             max-width: 800px;
             margin: 0 auto;
         }
         h2{
-            padding-bottom: 30px;
+            padding-bottom: 100px;
         }
     }
     .section-work{
@@ -847,10 +857,12 @@ body{
         h2{
             max-width: 800px;
             margin: 0 auto;
+            color: $color-black;
+            padding-bottom: 100px;
         }
     }
     .section-project{
-        padding: 140px 32px;
+        padding: 200px 32px;
         background-color: $color-black;
         h2{
             max-width: 800px;
@@ -869,7 +881,6 @@ body{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
-        padding-bottom: 30px;
     }
     .section-main{
         display: flex;
@@ -897,7 +908,7 @@ body{
                     50%  { transform: rotate(180deg); }
                     100% { transform: rotate(360deg); }
                 }
-                p{
+                >span{
                     font-size: clamp(4rem, 8vw + 1rem, 8.96rem);
                     color: $color-black;
                     font-weight: $font-weight-bold;
@@ -939,6 +950,7 @@ body{
                     font-weight: $font-weight-regular;
                     color: $color-light-gray;
                     line-height: 1.7;
+                    background-color: $color-black;
                     &+p{
                         padding-top: 16px; 
                     }
@@ -964,8 +976,8 @@ body{
                     }
                 }
                 &.about-work{
-                    padding-top: 200px;
-                    padding-bottom: 200px;
+                    padding-top: 140px;
+                    padding-bottom: 140px;
                 }
             }
         }
@@ -981,7 +993,6 @@ body{
     .section-work{
         .works{
             overflow: hidden;
-            padding-top: 100px;
             .work{
                 width: 100%;
                 display: flex;
@@ -989,7 +1000,7 @@ body{
                 justify-content: center;
                 flex-direction: column;
                 &:last-child{
-                    margin-bottom: 140px;
+                    margin-bottom: 200px;
                 }
                 &+.work{
                     padding-top: 140px;
@@ -1147,7 +1158,7 @@ body{
         }
     }
 
-    .parallax__progress progress{
+    .parallax-progress progress{
         display: none;
     }
     .btnTop{
@@ -1206,7 +1217,7 @@ body{
                 scale: 2;
             }
         }
-        .pre-wrap{
+        .scroll-indicator{
             position: absolute;
             top: 90vh;
             left: 50%;
@@ -1230,7 +1241,7 @@ body{
         }
     }
     .section-about{
-        padding: 150px 32px 400px;
+        padding: 150px 32px 200px;
         background-color: $color-black;
         >*{
             max-width: 1440px;
@@ -1241,11 +1252,12 @@ body{
         }
     }
     .section-work{
-        padding: 200px 32px 40px;
+        padding: 150px 32px 40px;
         margin: 0 auto;
         h2{
             max-width: 1440px;
             margin: 0 auto;
+            color: $color-black;
         }
     }
     .section-project{
@@ -1296,7 +1308,7 @@ body{
                     50%  { transform: rotate(180deg); }
                     100% { transform: rotate(360deg); }
                 }
-                p{
+                >span{
                     font-size: clamp(5.125rem, 8vw + 1rem, 8.96rem);
                     color: $color-black;
                     font-weight: $font-weight-bold;
@@ -1337,6 +1349,7 @@ body{
                     font-weight: $font-weight-regular;
                     color: $color-light-gray;
                     line-height: 1.7;
+                    background-color: $color-black;
                     &+p{
                         padding-top: 16px; 
                     }
@@ -1362,8 +1375,8 @@ body{
                     }
                 }
                 &.about-work{
-                    padding-top: 200px;
-                    padding-bottom: 200px;
+                    padding-top: 150px;
+                    padding-bottom: 150px;
                 }
             }
         }
@@ -1439,12 +1452,17 @@ body{
                             }
                         }
                         .work-media{
+                            scale: 1;
+                            transition: scale 0.75s;
                             border-radius: 20px;
                             box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.1), 0px 13px 27px -12px rgba(50, 50, 93, 0.25);
                             img{
                                 border-radius: 20px;
                             }
                         }
+                    }
+                    &:hover .work-media{
+                        scale: 1.015;
                     }
                 }
             }
@@ -1572,7 +1590,7 @@ body{
         }
     }
 
-    .parallax__progress progress {
+    .parallax-progress progress {
         position: fixed;
         top: 0;
         left: 0;

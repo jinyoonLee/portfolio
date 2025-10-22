@@ -20,7 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 //! 진행바
 gsap.matchMedia().add("(min-width: 1280px)", () => {
-    const progressEl = document.querySelector(".parallax__progress progress")
+    const progressEl = document.querySelector(".parallax-progress progress")
     let current = 0;
     
     function getScrollProgress() {
@@ -54,7 +54,7 @@ const tl = gsap.timeline({
     }
 })
 
-tl.to(".pre-wrap", {
+tl.to(".scroll-indicator", {
     autoAlpha : 0,
 }, "a")
 
@@ -85,7 +85,7 @@ tl.to(".section-main", {
     ease: "power2.out"
 }, "b")
 
-tl.to(".section-main p", {
+tl.to(".section-main .main-title >span", {
     color: "#fff",
     ease: "power2.out"
 }, "b")
@@ -102,15 +102,6 @@ gsap.matchMedia().add("(min-width: 480px)", () => {
             trigger: ".section-work h2",
             start: "top 40%",
             once: true,
-            onEnter: () => {
-                const tl = gsap.timeline()
-                // 1번
-                tl .to(".section-work h2", { color: "#000", duration: 0.5, ease: "power2.out" }, "start")
-                    .to(".section-about", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" }, "start")
-                    .to(".section-work", { backgroundColor: "#f3f2f6", duration: 0.5, ease: "power2.out" }, "start")
-                // 4번
-                tl.to(".section-about", { backgroundColor: "#000", duration: 0.5, ease: "power2.out" }, "+=0.5")
-            }
         }
     })
 })

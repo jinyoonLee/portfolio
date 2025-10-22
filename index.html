@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="웹 퍼블리싱 포트폴리오">
     <title>Jinyoon's Web Portfolio</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/import.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/split-type" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/common.js" defer></script>
-    <link rel="stylesheet" href="css/import.css">
-    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <div class="parallax__progress">
+    <nav class="parallax-progress" aria-label="스크롤 진행도">
         <progress max="100" value="0"></progress>
-    </div>
+    </nav>
 
     <main>
         <div class="clouds right" aria-hidden="true"><img src="images/clouds.png" alt="" loading="lazy"></div>
         <div class="clouds left" aria-hidden="true"><img src="images/clouds.png" alt="" loading="lazy"></div>
-        <div class="pre-wrap">
-            <img src="images/arrow_hoverw03.png" alt="scroll down">
+        <div class="scroll-indicator" aria-label="스크롤하여 다음 콘텐츠로 이동">
+            <img src="images/arrow_hoverw03.png" alt="아래로 스크롤">
         </div>
         <section class="section-main" id="home">
             <div>
                 <h1 class="main-title">
                     <img class="point-flo" src="images/main-flower.png" alt="" hidden="true">
-                    <p>저를 찾으셨나요?</p>
+                    <span>저를 찾으셨나요?</span>
                 </h1>
                 <p class="main-desc">과정을 즐기며 결과를 완성하는 <em></em>웹디자이너이자 웹퍼블리셔, 이진윤입니다.</p>
                 <p class="main-desc">즐길 줄 아는 저는 오늘도 좋아하는 일을 합니다 &#58;&#41;</p>
@@ -77,15 +78,15 @@
         </section>
         <section class="section-work" id="content1">
             <h2>WORK</h2>
-            <section class="works">
+            <div class="works">
                 <!-- Work 1 -->
                 <article class="work">
-                    <a href="work_01.html">
+                    <a href="work_01.html" target="_blank">
                         <div class="work-inner">
                             <div class="work-content">
                                 <div class="work-title-wrap">
-                                    <h4 class="work-title">오토북스 웹 프로그램</h4>
-                                    <img src="images/arrow_hoverw04.png" alt="바로가기">
+                                    <h3 class="work-title">오토북스 웹 프로그램</h3>
+                                    <img src="images/arrow_hoverw04.png" alt="" aria-hidden="true">
                                 </div>
                                 <p class="work-role" lang="en">Design / Markup</p>
                                 <p class="work-desc">
@@ -95,7 +96,8 @@
                             <div class="work-media">
                                 <div class="work-media-inner">
                                     <img src="images/work01.png" alt="오토북스 웹 프로그램">
-                                </div>                           </div>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -105,8 +107,8 @@
                         <div class="work-inner">
                             <div class="work-content">
                                 <div class="work-title-wrap">
-                                    <h4 class="work-title">머니택스 홈페이지 리뉴얼</h4>
-                                    <img src="images/arrow_hoverw04.png" alt="바로가기">
+                                    <h3 class="work-title">머니택스 홈페이지 리뉴얼</h3>
+                                    <img src="images/arrow_hoverw04.png" alt="" aria-hidden="true">
                                 </div>
                                 <p class="work-role" lang="en">Design / Markup</p>
                                 <p class="work-desc">
@@ -127,8 +129,8 @@
                         <div class="work-inner">
                             <div class="work-content">
                                 <div class="work-title-wrap">
-                                    <h4 class="work-title">머니택스 모바일 앱 리뉴얼</h4>
-                                    <img src="images/arrow_hoverw04.png" alt="바로가기">
+                                    <h3 class="work-title">머니택스 모바일 앱 리뉴얼</h3>
+                                    <img src="images/arrow_hoverw04.png" alt="" aria-hidden="true">
                                 </div>
                                 <p class="work-role" lang="en">Design / Markup</p>
                                 <p class="work-desc">
@@ -147,8 +149,8 @@
                         <div class="work-inner">
                             <div class="work-content">
                                 <div class="work-title-wrap">
-                                    <h4 class="work-title">오더머니택스 테이블오더 화면</h4>
-                                    <img src="images/arrow_hoverw04.png" alt="바로가기">
+                                    <h3 class="work-title">오더머니택스 테이블오더 화면</h3>
+                                    <img src="images/arrow_hoverw04.png" alt="" aria-hidden="true">
                                 </div>
                                 <p class="work-role" lang="en">Design / Markup</p>
                                 <p class="work-desc">
@@ -167,8 +169,8 @@
                         <div class="work-inner">
                             <div class="work-content">
                                 <div class="work-title-wrap">
-                                    <h4 class="work-title">오더머니택스 POS 화면</h4>
-                                    <img src="images/arrow_hoverw04.png" alt="바로가기">
+                                    <h3 class="work-title">오더머니택스 POS 화면</h3>
+                                    <img src="images/arrow_hoverw04.png" alt="" aria-hidden="true">
                                 </div>
                                 <p class="work-role" lang="en">Design</p>
                                 <p class="work-desc">
@@ -187,8 +189,8 @@
                         <div class="work-inner">
                             <div class="work-content">
                                 <div class="work-title-wrap">
-                                    <h4 class="work-title">로고, 영상, 전단지 작업 등</h4>
-                                    <img src="images/arrow_hoverw04.png" alt="바로가기">
+                                    <h3 class="work-title">로고, 영상, 전단지 작업 등</h3>
+                                    <img src="images/arrow_hoverw04.png" alt="" aria-hidden="true">
                                 </div>
                                 <p class="work-role" lang="en">Design</p>
                                 <p class="work-desc">
@@ -201,11 +203,11 @@
                         </div>
                     </a>
                 </article>
-            </section>
+            </div>
         </section>
         <section class="section-project" id="content2">
             <h2>PROJECT</h2>
-            <section class="projects">
+            <div class="projects">
                 <div class="emptyBox"></div>
                 <!-- project 1 -->
                 <article class="project">
@@ -215,7 +217,7 @@
                                 <img src="images/work07.png" alt="포트폴리오용 쇼핑몰 사이트">
                             </div>
                             <div class="work-content">
-                                <h4 class="work-title">포트폴리오용 쇼핑몰 사이트</h4>
+                                <h3 class="work-title">포트폴리오용 쇼핑몰 사이트</h3>
                                 <p class="work-role" lang="en">Design / Markup</p>
                                 <p class="work-desc">
                                     포트폴리오용으로 디자인, 마크업까지 단독으로 진행한 쇼핑몰 사이트
@@ -232,7 +234,7 @@
                                 <img src="images/work08.png" alt="GSAP 활용 웹페이지 클론 코딩">
                             </div>
                             <div class="work-content">
-                                <h4 class="work-title">GSAP 활용 웹페이지 클론 코딩</h4>
+                                <h3 class="work-title">GSAP 활용 웹페이지 클론 코딩</h3>
                                 <p class="work-role" lang="en">Clone Coding</p>
                                 <p class="work-desc">
                                     GSAP을 활용해 스크롤 기반 애니메이션을 구현한 연습 프로젝트
@@ -249,7 +251,7 @@
                                 <img src="images/work09.png" alt="네이버 메인 페이지 클론 코딩">
                             </div>
                             <div class="work-content">
-                                <h4 class="work-title">네이버 메인 페이지 클론 코딩</h4>
+                                <h3 class="work-title">네이버 메인 페이지 클론 코딩</h3>
                                 <p class="work-role" lang="en">Clone Coding</p>
                                 <p class="work-desc">
                                     네이버 메인 페이지를 클론 코딩하며 레이아웃과 구조 설계 연습
@@ -259,13 +261,13 @@
                     </a>
                 </article>
                 <div class="emptyBox"></div>
-            </section>
+            </div>
         </section>
         <section class="section-contact">
             <div class="contact-wrap">
                 <h2 class="blind">CONTACT</h2>
                 <div>
-                    <p class="split">저를 찾으셨다면, 연락해 주세요 &#58;&#41;</p>
+                    <p class="split">저를 찾으셨다면, 언제든 연락해 주세요 &#58;&#41;</p>
                     <div class="reveal" data-delay="1.4">
                         <a href="mailto:jinyoon.ella@gmail.com" lang="en">jinyoon.ella@gmail.com</a>
                     </div>

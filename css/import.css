@@ -97,14 +97,14 @@ body {
     min-width: 250vw;
     scale: 2;
   }
-  main .pre-wrap {
+  main .scroll-indicator {
     position: absolute;
     top: 50vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 200;
   }
-  main .pre-wrap > img {
+  main .scroll-indicator > img {
     width: 10px;
     opacity: 0;
     rotate: 90deg;
@@ -132,6 +132,9 @@ body {
   .section-about {
     padding: 140px 16px;
   }
+  .section-about h2 {
+    padding-bottom: 50px;
+  }
   .section-work {
     padding: 140px 16px 0;
     margin: 0 auto;
@@ -139,6 +142,7 @@ body {
   }
   .section-work h2 {
     color: #000;
+    padding-bottom: 50px;
   }
   .section-project {
     padding: 140px 16px;
@@ -154,7 +158,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
-    padding-bottom: 30px;
   }
   .section-main {
     display: flex;
@@ -191,17 +194,17 @@ body {
       transform: rotate(360deg);
     }
   }
-  .section-main > div .main-title p {
+  .section-main > div .main-title > span {
     font-size: clamp(2rem, 8vw + 1rem, 8.96rem);
     color: #000;
     font-weight: 700;
     line-height: 0.9;
     letter-spacing: -5px;
   }
-  .section-main > div .main-title p:nth-of-type(2) {
+  .section-main > div .main-title > span:nth-of-type(2) {
     padding-left: 2vw;
   }
-  .section-main > div .main-title p:nth-of-type(4) {
+  .section-main > div .main-title > span:nth-of-type(4) {
     padding-left: clamp(4.5rem, 8vw, 9rem);
   }
   .section-main > div .p-wrap {
@@ -230,6 +233,7 @@ body {
     font-weight: 400;
     color: #b9b9b9;
     line-height: 1.7;
+    background-color: #000;
   }
   .section-about .about-wrap > div p + p, .section-about .about-wrap > div li + p {
     padding-top: 16px;
@@ -251,8 +255,8 @@ body {
     color: #f3f2f6;
   }
   .section-about .about-wrap > div.about-work {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .section-about .about-track {
     display: flex;
@@ -315,7 +319,7 @@ body {
     overflow: hidden;
   }
   .section-project h2 {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .section-project .projects {
     overflow: hidden;
@@ -418,7 +422,7 @@ body {
     background-size: auto 13px;
     font-size: 1rem;
   }
-  .parallax__progress progress {
+  .parallax-progress progress {
     display: none;
   }
   .btnTop {
@@ -479,14 +483,14 @@ body {
     min-width: 250vw;
     scale: 2;
   }
-  main .pre-wrap {
+  main .scroll-indicator {
     position: absolute;
     top: 50vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 200;
   }
-  main .pre-wrap > img {
+  main .scroll-indicator > img {
     width: 10px;
     opacity: 0;
     rotate: 90deg;
@@ -512,15 +516,25 @@ body {
     }
   }
   .section-about {
-    padding: 140px 16px 300px;
+    padding: 140px 16px;
+  }
+  .section-about h2 {
+    padding-bottom: 70px;
   }
   .section-work {
-    padding: 200px 16px 0;
+    padding: 140px 16px 0;
     margin: 0 auto;
+  }
+  .section-work h2 {
+    color: #000;
+    padding-bottom: 70px;
   }
   .section-project {
     padding: 140px 16px;
     background-color: #000;
+  }
+  .section-project h2 {
+    padding-bottom: 70px;
   }
   .section-contact {
     background: #f3f2f6 url("../images/contact.png") no-repeat right top/150px auto;
@@ -532,7 +546,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
-    padding-bottom: 30px;
   }
   .section-main {
     display: flex;
@@ -569,17 +582,17 @@ body {
       transform: rotate(360deg);
     }
   }
-  .section-main > div .main-title p {
+  .section-main > div .main-title > span {
     font-size: clamp(4rem, 8vw + 1rem, 8.96rem);
     color: #000;
     font-weight: 700;
     line-height: 0.9;
     letter-spacing: -5px;
   }
-  .section-main > div .main-title p:nth-of-type(2) {
+  .section-main > div .main-title > span:nth-of-type(2) {
     padding-left: 2vw;
   }
-  .section-main > div .main-title p:nth-of-type(4) {
+  .section-main > div .main-title > span:nth-of-type(4) {
     padding-left: clamp(4.5rem, 8vw, 9rem);
   }
   .section-main > div .p-wrap {
@@ -608,6 +621,7 @@ body {
     font-weight: 400;
     color: #b9b9b9;
     line-height: 1.7;
+    background-color: #000;
   }
   .section-about .about-wrap > div p + p, .section-about .about-wrap > div li + p {
     padding-top: 16px;
@@ -629,8 +643,8 @@ body {
     color: #f3f2f6;
   }
   .section-about .about-wrap > div.about-work {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
   .section-about .about-track {
     display: flex;
@@ -642,7 +656,6 @@ body {
   }
   .section-work .works {
     overflow: hidden;
-    padding-top: 100px;
   }
   .section-work .works .work {
     width: 100%;
@@ -655,7 +668,7 @@ body {
     margin-bottom: 140px;
   }
   .section-work .works .work + .work {
-    padding-top: 140px;
+    padding-top: 100px;
   }
   .section-work .works .work > a .work-inner {
     width: 100%;
@@ -693,9 +706,6 @@ body {
   .section-project {
     overflow: hidden;
   }
-  .section-project h2 {
-    padding-bottom: 100px;
-  }
   .section-project .projects {
     overflow: hidden;
     padding-top: 0;
@@ -711,7 +721,7 @@ body {
     flex-direction: column;
   }
   .section-project .projects .project + .project {
-    padding-top: 140px;
+    padding-top: 100px;
   }
   .section-project .projects .project .work-inner {
     display: flex;
@@ -798,7 +808,7 @@ body {
     background-size: auto 13px;
     font-size: 1rem;
   }
-  .parallax__progress progress {
+  .parallax-progress progress {
     display: none;
   }
   .btnTop {
@@ -856,14 +866,14 @@ body {
     min-width: 250vw;
     scale: 2;
   }
-  main .pre-wrap {
+  main .scroll-indicator {
     position: absolute;
     top: 90vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 200;
   }
-  main .pre-wrap > img {
+  main .scroll-indicator > img {
     width: 10px;
     opacity: 0;
     rotate: 90deg;
@@ -889,7 +899,7 @@ body {
     }
   }
   .section-about {
-    padding: 140px 32px 300px;
+    padding: 140px 32px 200px;
     background-color: #000;
   }
   .section-about > * {
@@ -897,7 +907,7 @@ body {
     margin: 0 auto;
   }
   .section-about h2 {
-    padding-bottom: 30px;
+    padding-bottom: 100px;
   }
   .section-work {
     padding: 200px 32px 0;
@@ -906,9 +916,11 @@ body {
   .section-work h2 {
     max-width: 800px;
     margin: 0 auto;
+    color: #000;
+    padding-bottom: 100px;
   }
   .section-project {
-    padding: 140px 32px;
+    padding: 200px 32px;
     background-color: #000;
   }
   .section-project h2 {
@@ -927,7 +939,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
-    padding-bottom: 30px;
   }
   .section-main {
     display: flex;
@@ -964,17 +975,17 @@ body {
       transform: rotate(360deg);
     }
   }
-  .section-main > div .main-title p {
+  .section-main > div .main-title > span {
     font-size: clamp(4rem, 8vw + 1rem, 8.96rem);
     color: #000;
     font-weight: 700;
     line-height: 0.9;
     letter-spacing: -5px;
   }
-  .section-main > div .main-title p:nth-of-type(2) {
+  .section-main > div .main-title > span:nth-of-type(2) {
     padding-left: 2vw;
   }
-  .section-main > div .main-title p:nth-of-type(4) {
+  .section-main > div .main-title > span:nth-of-type(4) {
     padding-left: clamp(4.5rem, 8vw, 9rem);
   }
   .section-main > div .p-wrap {
@@ -1002,6 +1013,7 @@ body {
     font-weight: 400;
     color: #b9b9b9;
     line-height: 1.7;
+    background-color: #000;
   }
   .section-about .about-wrap > div p + p, .section-about .about-wrap > div li + p {
     padding-top: 16px;
@@ -1023,8 +1035,8 @@ body {
     color: #f3f2f6;
   }
   .section-about .about-wrap > div.about-work {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
   .section-about .about-track {
     display: flex;
@@ -1036,7 +1048,6 @@ body {
   }
   .section-work .works {
     overflow: hidden;
-    padding-top: 100px;
   }
   .section-work .works .work {
     width: 100%;
@@ -1046,7 +1057,7 @@ body {
     flex-direction: column;
   }
   .section-work .works .work:last-child {
-    margin-bottom: 140px;
+    margin-bottom: 200px;
   }
   .section-work .works .work + .work {
     padding-top: 140px;
@@ -1192,7 +1203,7 @@ body {
     background-size: auto 13px;
     font-size: 1rem;
   }
-  .parallax__progress progress {
+  .parallax-progress progress {
     display: none;
   }
   .btnTop {
@@ -1250,14 +1261,14 @@ body {
     min-width: 150vw;
     scale: 2;
   }
-  main .pre-wrap {
+  main .scroll-indicator {
     position: absolute;
     top: 90vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 200;
   }
-  main .pre-wrap > img {
+  main .scroll-indicator > img {
     width: 10px;
     opacity: 0;
     rotate: 90deg;
@@ -1283,7 +1294,7 @@ body {
     }
   }
   .section-about {
-    padding: 150px 32px 400px;
+    padding: 150px 32px 200px;
     background-color: #000;
   }
   .section-about > * {
@@ -1294,12 +1305,13 @@ body {
     padding-bottom: 30px;
   }
   .section-work {
-    padding: 200px 32px 40px;
+    padding: 150px 32px 40px;
     margin: 0 auto;
   }
   .section-work h2 {
     max-width: 1440px;
     margin: 0 auto;
+    color: #000;
   }
   .section-project {
     padding: 0 32px 200px;
@@ -1358,17 +1370,17 @@ body {
       transform: rotate(360deg);
     }
   }
-  .section-main > div .main-title p {
+  .section-main > div .main-title > span {
     font-size: clamp(5.125rem, 8vw + 1rem, 8.96rem);
     color: #000;
     font-weight: 700;
     line-height: 0.9;
     letter-spacing: -5px;
   }
-  .section-main > div .main-title p:nth-of-type(2) {
+  .section-main > div .main-title > span:nth-of-type(2) {
     padding-left: 2vw;
   }
-  .section-main > div .main-title p:nth-of-type(4) {
+  .section-main > div .main-title > span:nth-of-type(4) {
     padding-left: clamp(4.5rem, 8vw, 9rem);
   }
   .section-main > div .p-wrap {
@@ -1395,6 +1407,7 @@ body {
     font-weight: 400;
     color: #b9b9b9;
     line-height: 1.7;
+    background-color: #000;
   }
   .section-about .about-wrap > div p + p, .section-about .about-wrap > div li + p {
     padding-top: 16px;
@@ -1416,8 +1429,8 @@ body {
     color: #f3f2f6;
   }
   .section-about .about-wrap > div.about-work {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   .section-about .about-track {
     display: flex;
@@ -1499,11 +1512,16 @@ body {
     font-weight: 400;
   }
   .section-work .works .work > a .work-inner .work-media {
+    scale: 1;
+    transition: scale 0.75s;
     border-radius: 20px;
     box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.1), 0px 13px 27px -12px rgba(50, 50, 93, 0.25);
   }
   .section-work .works .work > a .work-inner .work-media img {
     border-radius: 20px;
+  }
+  .section-work .works .work > a:hover .work-media {
+    scale: 1.015;
   }
   .section-work .works .work.active:not(.work-last) {
     filter: blur(12px);
@@ -1618,7 +1636,7 @@ body {
     background-color: #d4401b;
     background-image: url("../images/arrow_hoverw02.png");
   }
-  .parallax__progress progress {
+  .parallax-progress progress {
     position: fixed;
     top: 0;
     left: 0;
