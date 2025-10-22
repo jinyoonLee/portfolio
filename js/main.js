@@ -93,7 +93,7 @@ tl.to(".section-main .main-title >span", {
 //! section-work h2
 gsap.matchMedia().add("(min-width: 480px)", () => {
     gsap.from(".section-work h2", {
-        scale: 4.5,
+        scale: 4,
         duration: 2,
         x: 0,
         y: 0,
