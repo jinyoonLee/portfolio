@@ -46,7 +46,7 @@ $(document).ready(function(){
 function scrollEvent(target){
     $(window).scroll(function(){
         var top = $(window).scrollTop();
-        if(top>80){
+        if(top>50){
             $(target).addClass("scroll");
         }else {
             $(target).removeClass("scroll");
