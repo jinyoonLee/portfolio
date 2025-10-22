@@ -1294,12 +1294,12 @@ body {
     padding-bottom: 30px;
   }
   .section-work {
-    padding: 200px 32px 0;
+    padding: 200px 32px 40px;
     margin: 0 auto;
   }
   .section-work h2 {
     max-width: 1440px;
-    margin: 0 auto 200px;
+    margin: 0 auto;
   }
   .section-project {
     padding: 0 32px 200px;
@@ -1427,6 +1427,9 @@ body {
   .section-about .about-track img {
     width: 50px;
   }
+  .section-work .pin-spacer {
+    pointer-events: none; /* 스페이서가 클릭을 막지 않도록 */
+  }
   .section-work .works {
     overflow: hidden;
   }
@@ -1439,12 +1442,16 @@ body {
     justify-content: center;
     flex-direction: column;
     pointer-events: none;
+    background-color: #f3f2f6;
   }
   .section-work .works .work.active {
     pointer-events: auto;
   }
   .section-work .works .work:last-child {
-    margin-bottom: 200vh;
+    margin-bottom: 100vh;
+  }
+  .section-work .works .work > a {
+    pointer-events: auto;
   }
   .section-work .works .work > a .work-inner {
     width: 100%;
@@ -1497,6 +1504,9 @@ body {
   }
   .section-work .works .work > a .work-inner .work-media img {
     border-radius: 20px;
+  }
+  .section-work .works .work.active:not(.work-last) {
+    filter: blur(12px);
   }
   .section-project {
     min-height: 100vh;

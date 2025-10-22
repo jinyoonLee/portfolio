@@ -19,7 +19,7 @@ gsap.to(".clouds.right img", {
 gsap.registerPlugin(ScrollTrigger);
 
 //! 진행바
-if (window.innerWidth >= 1280) {
+gsap.matchMedia().add("(min-width: 1280px)", () => {
     const progressEl = document.querySelector(".parallax__progress progress")
     let current = 0;
     
@@ -38,10 +38,10 @@ if (window.innerWidth >= 1280) {
     
     animateProgress();
 
-// pin, absolute 영역이 많은 경우엔 반드시 refresh
-window.addEventListener("load", () => ScrollTrigger.refresh())
-window.addEventListener("resize", () => ScrollTrigger.refresh())
-}
+    // pin, absolute 영역이 많은 경우엔 반드시 refresh
+    window.addEventListener("load", () => ScrollTrigger.refresh())
+    window.addEventListener("resize", () => ScrollTrigger.refresh())
+})
 
 //! 배경색 전환
 const tl = gsap.timeline({
@@ -91,7 +91,7 @@ tl.to(".section-main p", {
 }, "b")
 
 //! section-work h2
-if (window.innerWidth >= 480) {
+gsap.matchMedia().add("(min-width: 480px)", () => {
     gsap.from(".section-work h2", {
         scale: 4.5,
         duration: 2,
@@ -113,63 +113,32 @@ if (window.innerWidth >= 480) {
             }
         }
     })
-}
+})
 
 //! section-work article
-if (window.innerWidth >= 1280) {
+gsap.matchMedia().add("(min-width: 1280px)", () => {
     const panels = gsap.utils.toArray(".work")
     
     panels.forEach((panel, i) => {
-        const media = panel.querySelector(".work-media")
-        const content = panel.querySelector(".work-content")
-    
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: panel,
-                start: "top top",
-                end: () => i === panels.length - 1
-                    ? panel.offsetTop + panel.offsetHeight + window.innerHeight
-                    : panel.offsetTop + panel.offsetHeight,
-                scrub: 1,
-                pin: true,
-                pinSpacing: false,
-                // snap: 1,
-                onEnter: () => panel.classList.add("active"),
-                onLeave: () => panel.classList.remove("active"),
-                onEnterBack: () => panel.classList.add("active"),
-                onLeaveBack: () => panel.classList.remove("active")
-            }
+        ScrollTrigger.create({
+            trigger: panel,
+            start: "top top",
+            end: "bottom top",
+            scrub: 1,
+            pin: true,
+            pinSpacing: false,
+                    snap: {
+                        snapTo: 1,
+                        duration: 0.15,
+                        ease: "power2.out" 
+                    },
+            toggleClass: { targets: panel, className: "active" },
         })
-        // work-media: 왼쪽 -> 중앙
-        .fromTo(media,
-            { x: "-100vw", autoAlpha: 0 },
-            { x: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a"
-        )
-        // 중앙에서 잠시 머무르기
-        .to(media, 
-            { x: "0", autoAlpha: 1, duration: 1 }, "c")
-        // 중앙 -> 오른쪽
-        .to(media,
-            { x: "100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b"
-        )
-    
-        // work-content: 오른쪽 -> 중앙
-        .fromTo(content,
-            { x: "100vw", autoAlpha: 0 },
-            { x: "0", autoAlpha: 1, duration: 1, ease: "power2.out" }, "a"
-        )
-         // 중앙에서 머무름
-            .to(content,
-            { x: "0", autoAlpha: 1, duration: 1 }, "c")
-        // 중앙 -> 왼쪽
-        .to(content,
-            { x: "-100vw", autoAlpha: 0, duration: 1, ease: "power2.in" }, "b"
-        )
     })
-}
+})
 
 //! project h2 x값
-if (window.innerWidth >= 1280) {
+gsap.matchMedia().add("(min-width: 1280px)", () => {
     // h2 위치 계산
     const h2 = document.querySelector(".section-work h2");
     const rect = h2.getBoundingClientRect();
@@ -201,10 +170,10 @@ if (window.innerWidth >= 1280) {
 
     // 초기 계산
     updateEmptyBoxWidth()
-}
+})
 
 //! project slide 가로스크롤
-if (window.innerWidth >= 1280) {
+gsap.matchMedia().add("(min-width: 1280px)", () => {
     const slideInner = document.querySelector('.projects')
     
     gsap.to(slideInner, {
@@ -221,7 +190,7 @@ if (window.innerWidth >= 1280) {
     })
     
     window.addEventListener("resize", () => ScrollTrigger.refresh())
-}
+})
 
 //! section-contact
 const targets = gsap.utils.toArray(".split");
@@ -248,7 +217,7 @@ targets.forEach((target) => {
 })
 
 //! 모바일용
-if (window.innerWidth < 1280) {
+gsap.matchMedia().add("(max-width: 1279px)", () => {
     const targets = [
         ".work-content",
         ".work-media",
@@ -259,9 +228,9 @@ if (window.innerWidth < 1280) {
             el.classList.add("reveal", "reveal-BTT");
         })
     })
-}
+})
 
-if (window.innerWidth < 480) {
+gsap.matchMedia().add("(max-width: 479px)", () => {
     //! 배경색 전환
     const tl = gsap.timeline({
         scrollTrigger: {
@@ -274,4 +243,4 @@ if (window.innerWidth < 480) {
         backgroundColor: "#fff",
         ease: "power2.out"
     })
-}
+})
