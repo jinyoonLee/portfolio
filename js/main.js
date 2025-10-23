@@ -54,41 +54,19 @@ const tl = gsap.timeline({
     }
 })
 
-tl.to(".scroll-indicator", {
-    autoAlpha : 0,
-}, "a")
+tl.to(".scroll-indicator", { autoAlpha : 0, }, "a")
 
 // 구름사라지며 배경색 화이트
-tl.to(".clouds.right", {
-    autoAlpha : 0,
-    right: "-2000"
-}, "a")
-
-tl.to(".section-main", {
-    autoAlpha : 1
-}, "a")
-
-tl.to(".clouds.left", {
-    autoAlpha : 0,
-    left: "-2000"
-}, "a")
+tl.to(".clouds.right", { autoAlpha : 0, right: "-2000" }, "a")
+tl.to(".section-main", { autoAlpha : 1 }, "a")
+tl.to(".clouds.left", { autoAlpha : 0, left: "-2000" }, "a")
 
 // div 축소
-tl.to(".section-main div", {
-    scale: 0.9,
-    ease: "power2.out"
-}, "b")
+tl.to(".section-main div", { scale: 0.9, ease: "power2.out" }, "b")
 
 // body 배경색 & p 컬러
-tl.to(".section-main", {
-    backgroundColor: "#000",
-    ease: "power2.out"
-}, "b")
-
-tl.to(".section-main .main-title >span", {
-    color: "#fff",
-    ease: "power2.out"
-}, "b")
+tl.to(".section-main", { backgroundColor: "#000", ease: "power2.out" }, "b")
+tl.to(".section-main .main-title >span", { color: "#fff", ease: "power2.out" }, "b")
 
 //! section-work h2
 gsap.matchMedia().add("(min-width: 480px)", () => {

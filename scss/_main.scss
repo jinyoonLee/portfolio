@@ -18,7 +18,7 @@ body{
 }
 
 @media screen and (max-width: 479px){
-    em{
+    .br{
         display: block;
     }
     main{
@@ -62,33 +62,34 @@ body{
                 to   { opacity: 0.9; }
             }
         }
-    }
-    .section-about{
-        padding: 140px 16px;
-        h2{
-            padding-bottom: 50px;
+        // 레이아웃관리용
+        .section-about{
+            padding: 140px 16px;
+            h2{
+                padding-bottom: 50px;
+            }
+        }
+        .section-work{
+            padding: 140px 16px 0;
+            margin: 0 auto;
+            background-color: $color-white;
+            h2{
+                color: $color-black;
+                padding-bottom: 50px;
+            }
+        }
+        .section-project{
+            padding: 140px 16px;
+            background-color: $color-black;
+        }
+        .section-contact{
+            background: $color-white url('../images/contact.png') no-repeat right top / 150px auto;
+            .contact-wrap{
+                padding: 0 16px;
+            }
         }
     }
-    .section-work{
-        padding: 140px 16px 0;
-        margin: 0 auto;
-        background-color: $color-white;
-        h2{
-            color: $color-black;
-            padding-bottom: 50px;
-        }
-    }
-    .section-project{
-        padding: 140px 16px;
-        background-color: $color-black;
-    }
-    .section-contact{
-        background: $color-white url('../images/contact.png') no-repeat right top / 150px auto;
-        .contact-wrap{
-            padding: 0 16px;
-        }
-    }
-    h2, .h2{
+    h2{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
@@ -110,7 +111,7 @@ body{
                 .point-flo{
                     position: absolute;
                     top: clamp(-6.4rem, -6.5vw, -2.0rem);
-                    right: clamp(1.2rem, 8.5vw, 2.5rem);
+                    right: clamp(1rem, 5vw, 2.5rem);
                     width: clamp(2rem, 7vw, 6.964rem);
                     animation: spin 3s infinite cubic-bezier(0.55, 0.06, 0.68, 0.19);
                 }
@@ -354,7 +355,7 @@ body{
                 p{
                     word-break: keep-all;
                     &:nth-of-type(1){
-                        line-height: 0.8;
+                        line-height: 1.2;
                         font-size: $font-size-md;
                         font-weight: $font-weight-thin;
                         color: $color-black;
@@ -429,7 +430,7 @@ body{
 
 
 @media screen and (min-width: 480px) and (max-width: 767px){
-    em{
+    .br{
         display: block;
     }
     main{
@@ -473,35 +474,36 @@ body{
                 to   { opacity: 0.9; }
             }
         }
-    }
-    .section-about{
-        padding: 140px 16px;
-        h2{
-            padding-bottom: 70px;
+        // 레이아웃관리용
+        .section-about{
+            padding: 140px 16px;
+            h2{
+                padding-bottom: 70px;
+            }
+        }
+        .section-work{
+            padding: 140px 16px 0;
+            margin: 0 auto;
+            h2{
+                color: $color-black;
+                padding-bottom: 70px;
+            }
+        }
+        .section-project{
+            padding: 140px 16px;
+            background-color: $color-black;
+            h2{
+                padding-bottom: 70px;
+            }
+        }
+        .section-contact{
+            background: $color-white url('../images/contact.png') no-repeat right top / 150px auto;
+            .contact-wrap{
+                padding: 0 16px;
+            }
         }
     }
-    .section-work{
-        padding: 140px 16px 0;
-        margin: 0 auto;
-        h2{
-            color: $color-black;
-            padding-bottom: 70px;
-        }
-    }
-    .section-project{
-        padding: 140px 16px;
-        background-color: $color-black;
-        h2{
-            padding-bottom: 70px;
-        }
-    }
-    .section-contact{
-        background: $color-white url('../images/contact.png') no-repeat right top / 150px auto;
-        .contact-wrap{
-            padding: 0 16px;
-        }
-    }
-    h2, .h2{
+    h2{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
@@ -763,7 +765,7 @@ body{
                 p{
                     word-break: keep-all;
                     &:nth-of-type(1){
-                        line-height: 0.8;
+                        line-height: 1.2;
                         font-size: $font-size-md;
                         font-weight: $font-weight-thin;
                         color: $color-black;
@@ -860,6 +862,7 @@ body{
                 min-width: 250vw;
                 scale: 2;
             }
+            
         }
         .scroll-indicator{
             position: absolute;
@@ -883,45 +886,46 @@ body{
                 to   { opacity: 0.9; }
             }
         }
-    }
-    .section-about{
-        padding: 140px 32px 200px;
-        background-color: $color-black;
-        >*{
-            max-width: 800px;
+        // 레이아웃관리용
+        .section-about{
+            padding: 140px 32px 200px;
+            background-color: $color-black;
+            >*{
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            h2{
+                padding-bottom: 100px;
+            }
+        }
+        .section-work{
+            padding: 200px 32px 0;
             margin: 0 auto;
+            h2{
+                max-width: 800px;
+                margin: 0 auto;
+                color: $color-black;
+                padding-bottom: 100px;
+            }
         }
-        h2{
-            padding-bottom: 100px;
+        .section-project{
+            padding: 200px 32px;
+            background-color: $color-black;
+            h2{
+                max-width: 800px;
+                margin: 0 auto;
+            }
         }
-    }
-    .section-work{
-        padding: 200px 32px 0;
-        margin: 0 auto;
-        h2{
-            max-width: 800px;
-            margin: 0 auto;
-            color: $color-black;
-            padding-bottom: 100px;
-        }
-    }
-    .section-project{
-        padding: 200px 32px;
-        background-color: $color-black;
-        h2{
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    }
-    .section-contact{
-        padding: 0 32px;
-        background: $color-white url('../images/contact.png') no-repeat right top / 200px auto;
-        .contact-wrap{
-            max-width: 800px;
-            margin: 0 auto;
+        .section-contact{
+            padding: 0 32px;
+            background: $color-white url('../images/contact.png') no-repeat right top / 200px auto;
+            .contact-wrap{
+                max-width: 800px;
+                margin: 0 auto;
+            }
         }
     }
-    h2, .h2{
+    h2{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
@@ -1190,7 +1194,7 @@ body{
                 p{
                     word-break: keep-all;
                     &:nth-of-type(1){
-                        line-height: 0.8;
+                        line-height: 1.2;
                         font-size: $font-size-md;
                         font-weight: $font-weight-thin;
                         color: $color-black;
@@ -1310,50 +1314,53 @@ body{
                 to   { opacity: 0.9; }
             }
         }
-    }
-    .section-about{
-        padding: 150px 32px 200px;
-        background-color: $color-black;
-        >*{
-            max-width: 1440px;
+        // 레이아웃관리용
+        .section-about{
+            padding: 150px 32px 200px;
+            background-color: $color-black;
+            >*{
+                max-width: 1440px;
+                margin: 0 auto;
+            }
+            h2{
+                padding-bottom: 30px;
+            }
+        }
+        .section-work{
+            padding: 150px 32px 40px;
             margin: 0 auto;
+            h2{
+                max-width: 1440px;
+                margin: 0 auto;
+                color: $color-black;
+            }
         }
-        h2{
-            padding-bottom: 30px;
+        .section-project{
+            padding: 0 32px 200px;
+            background-color: $color-black;
+            h2{
+                padding: 150px 0 30px;
+                max-width: 1440px;
+                margin: 0 auto;
+            }
         }
-    }
-    .section-work{
-        padding: 150px 32px 40px;
-        margin: 0 auto;
-        h2{
-            max-width: 1440px;
-            margin: 0 auto;
-            color: $color-black;
-        }
-    }
-    .section-project{
-        padding: 0 32px 200px;
-        background-color: $color-black;
-        h2{
-            padding: 150px 0 400px;
-            max-width: 1440px;
-            margin: 0 auto;
-        }
-    }
-    .section-contact{ 
-        background: $color-white url('../images/contact.png') no-repeat right top / 250px auto;
-        padding: 0 32px;
-        .contact-wrap{
-            max-width: 1440px;
-            margin: 0 auto;
+        .section-contact{ 
+            background: $color-white url('../images/contact.png') no-repeat right top / 250px auto;
+            padding: 0 32px;
+            .contact-wrap{
+                max-width: 1440px;
+                margin: 0 auto;
+            }
         }
     }
-    h2, .h2{
+
+    h2{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
         padding-bottom: 30px;
     }
+
     .section-main{
         display: flex;
         align-items: center;
@@ -1572,9 +1579,6 @@ body{
     .section-project{
         min-height: 100vh;
         overflow: hidden;
-        h2{
-            padding-bottom: 30px;
-        }
         .projects{
             display: flex;
             padding-top: 0;
@@ -1644,7 +1648,7 @@ body{
                 }
                 p{
                     &:nth-of-type(1){
-                        line-height: 0.8;
+                        line-height: 1.2;
                         font-size: $font-size-lg;
                         font-weight: $font-weight-thin;
                         color: $color-black;
@@ -1692,7 +1696,7 @@ body{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 300;
         appearance: none;
         width: 100%;
         height: 3px;

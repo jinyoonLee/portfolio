@@ -74,7 +74,7 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  em {
+  .br {
     display: block;
   }
   main {
@@ -129,32 +129,32 @@ body {
       opacity: 0.9;
     }
   }
-  .section-about {
+  main .section-about {
     padding: 140px 16px;
   }
-  .section-about h2 {
+  main .section-about h2 {
     padding-bottom: 50px;
   }
-  .section-work {
+  main .section-work {
     padding: 140px 16px 0;
     margin: 0 auto;
     background-color: #f3f2f6;
   }
-  .section-work h2 {
+  main .section-work h2 {
     color: #000;
     padding-bottom: 50px;
   }
-  .section-project {
+  main .section-project {
     padding: 140px 16px;
     background-color: #000;
   }
-  .section-contact {
+  main .section-contact {
     background: #f3f2f6 url("../images/contact.png") no-repeat right top/150px auto;
   }
-  .section-contact .contact-wrap {
+  main .section-contact .contact-wrap {
     padding: 0 16px;
   }
-  h2, .h2 {
+  h2 {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
@@ -179,7 +179,7 @@ body {
   .section-main > div .main-title .point-flo {
     position: absolute;
     top: clamp(-6.4rem, -6.5vw, -2rem);
-    right: clamp(1.2rem, 8.5vw, 2.5rem);
+    right: clamp(1rem, 5vw, 2.5rem);
     width: clamp(2rem, 7vw, 6.964rem);
     animation: spin 3s infinite cubic-bezier(0.55, 0.06, 0.68, 0.19);
   }
@@ -414,7 +414,7 @@ body {
     word-break: keep-all;
   }
   .section-contact .contact-wrap > div p:nth-of-type(1) {
-    line-height: 0.8;
+    line-height: 1.2;
     font-size: 1.25rem;
     font-weight: 300;
     color: #000;
@@ -480,7 +480,7 @@ body {
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  em {
+  .br {
     display: block;
   }
   main {
@@ -535,34 +535,34 @@ body {
       opacity: 0.9;
     }
   }
-  .section-about {
+  main .section-about {
     padding: 140px 16px;
   }
-  .section-about h2 {
+  main .section-about h2 {
     padding-bottom: 70px;
   }
-  .section-work {
+  main .section-work {
     padding: 140px 16px 0;
     margin: 0 auto;
   }
-  .section-work h2 {
+  main .section-work h2 {
     color: #000;
     padding-bottom: 70px;
   }
-  .section-project {
+  main .section-project {
     padding: 140px 16px;
     background-color: #000;
   }
-  .section-project h2 {
+  main .section-project h2 {
     padding-bottom: 70px;
   }
-  .section-contact {
+  main .section-contact {
     background: #f3f2f6 url("../images/contact.png") no-repeat right top/150px auto;
   }
-  .section-contact .contact-wrap {
+  main .section-contact .contact-wrap {
     padding: 0 16px;
   }
-  h2, .h2 {
+  h2 {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
@@ -816,7 +816,7 @@ body {
     word-break: keep-all;
   }
   .section-contact .contact-wrap > div p:nth-of-type(1) {
-    line-height: 0.8;
+    line-height: 1.2;
     font-size: 1.25rem;
     font-weight: 300;
     color: #000;
@@ -938,44 +938,44 @@ body {
       opacity: 0.9;
     }
   }
-  .section-about {
+  main .section-about {
     padding: 140px 32px 200px;
     background-color: #000;
   }
-  .section-about > * {
+  main .section-about > * {
     max-width: 800px;
     margin: 0 auto;
   }
-  .section-about h2 {
+  main .section-about h2 {
     padding-bottom: 100px;
   }
-  .section-work {
+  main .section-work {
     padding: 200px 32px 0;
     margin: 0 auto;
   }
-  .section-work h2 {
+  main .section-work h2 {
     max-width: 800px;
     margin: 0 auto;
     color: #000;
     padding-bottom: 100px;
   }
-  .section-project {
+  main .section-project {
     padding: 200px 32px;
     background-color: #000;
   }
-  .section-project h2 {
+  main .section-project h2 {
     max-width: 800px;
     margin: 0 auto;
   }
-  .section-contact {
+  main .section-contact {
     padding: 0 32px;
     background: #f3f2f6 url("../images/contact.png") no-repeat right top/200px auto;
   }
-  .section-contact .contact-wrap {
+  main .section-contact .contact-wrap {
     max-width: 800px;
     margin: 0 auto;
   }
-  h2, .h2 {
+  h2 {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
@@ -1236,7 +1236,7 @@ body {
     word-break: keep-all;
   }
   .section-contact .contact-wrap > div p:nth-of-type(1) {
-    line-height: 0.8;
+    line-height: 1.2;
     font-size: 1.25rem;
     font-weight: 300;
     color: #000;
@@ -1358,44 +1358,44 @@ body {
       opacity: 0.9;
     }
   }
-  .section-about {
+  main .section-about {
     padding: 150px 32px 200px;
     background-color: #000;
   }
-  .section-about > * {
+  main .section-about > * {
     max-width: 1440px;
     margin: 0 auto;
   }
-  .section-about h2 {
+  main .section-about h2 {
     padding-bottom: 30px;
   }
-  .section-work {
+  main .section-work {
     padding: 150px 32px 40px;
     margin: 0 auto;
   }
-  .section-work h2 {
+  main .section-work h2 {
     max-width: 1440px;
     margin: 0 auto;
     color: #000;
   }
-  .section-project {
+  main .section-project {
     padding: 0 32px 200px;
     background-color: #000;
   }
-  .section-project h2 {
-    padding: 150px 0 400px;
+  main .section-project h2 {
+    padding: 150px 0 30px;
     max-width: 1440px;
     margin: 0 auto;
   }
-  .section-contact {
+  main .section-contact {
     background: #f3f2f6 url("../images/contact.png") no-repeat right top/250px auto;
     padding: 0 32px;
   }
-  .section-contact .contact-wrap {
+  main .section-contact .contact-wrap {
     max-width: 1440px;
     margin: 0 auto;
   }
-  h2, .h2 {
+  h2 {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
@@ -1620,9 +1620,6 @@ body {
     min-height: 100vh;
     overflow: hidden;
   }
-  .section-project h2 {
-    padding-bottom: 30px;
-  }
   .section-project .projects {
     display: flex;
     padding-top: 0;
@@ -1689,7 +1686,7 @@ body {
     display: inline-block;
   }
   .section-contact .contact-wrap > div p:nth-of-type(1) {
-    line-height: 0.8;
+    line-height: 1.2;
     font-size: 2rem;
     font-weight: 300;
     color: #000;
@@ -1730,7 +1727,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 300;
     appearance: none;
     width: 100%;
     height: 3px;
