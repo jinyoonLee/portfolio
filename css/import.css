@@ -1884,7 +1884,7 @@ body {
     padding-bottom: 40px;
     position: relative;
   }
-  .detail-area .work .work-inner .work-content > span {
+  .detail-area .work .work-inner .work-content > h3 {
     display: block;
     font-size: 0.875rem;
     font-weight: 700;
@@ -2099,7 +2099,7 @@ body {
     padding-bottom: 40px;
     position: relative;
   }
-  .detail-area .work .work-inner .work-content > span {
+  .detail-area .work .work-inner .work-content > h3 {
     display: block;
     font-size: 1.125rem;
     font-weight: 700;
