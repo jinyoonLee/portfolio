@@ -254,6 +254,26 @@ body {
     padding-right: 16px;
     color: #f3f2f6;
   }
+  .section-about .about-wrap > div .about-link {
+    display: flex;
+    gap: 12px;
+    padding-top: 30px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #f3f2f6;
+    font-size: 0.875rem;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 17px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link img {
+    margin-top: 1px;
+    width: auto;
+    height: 12px;
+  }
   .section-about .about-wrap > div.about-work {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -641,6 +661,26 @@ body {
     font-weight: 300;
     padding-right: 16px;
     color: #f3f2f6;
+  }
+  .section-about .about-wrap > div .about-link {
+    display: flex;
+    gap: 12px;
+    padding-top: 30px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #f3f2f6;
+    font-size: 0.875rem;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 17px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link img {
+    margin-top: 1px;
+    width: auto;
+    height: 12px;
   }
   .section-about .about-wrap > div.about-work {
     padding-top: 140px;
@@ -1033,6 +1073,31 @@ body {
     font-weight: 300;
     padding-right: 16px;
     color: #f3f2f6;
+  }
+  .section-about .about-wrap > div .about-link {
+    display: flex;
+    gap: 12px;
+    padding-top: 30px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #f3f2f6;
+    font-size: 0.875rem;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 17px;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: box-shadow 0.5s ease-in;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link img {
+    margin-top: 1px;
+    width: auto;
+    height: 12px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
   }
   .section-about .about-wrap > div.about-work {
     padding-top: 140px;
@@ -1427,6 +1492,31 @@ body {
     font-weight: 300;
     padding-right: 16px;
     color: #f3f2f6;
+  }
+  .section-about .about-wrap > div .about-link {
+    display: flex;
+    gap: 12px;
+    padding-top: 30px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #f3f2f6;
+    font-size: 1rem;
+    color: #000;
+    padding: 5px 14px 6px;
+    border-radius: 17px;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: box-shadow 0.5s ease-in;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link img {
+    margin-top: 1px;
+    width: auto;
+    height: 12px;
+  }
+  .section-about .about-wrap > div .about-link > li .btn-link:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   }
   .section-about .about-wrap > div.about-work {
     padding-top: 150px;

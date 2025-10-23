@@ -187,6 +187,28 @@ body{
                         }
                     }
                 }
+                .about-link{
+                    display: flex;
+                    gap: 12px;
+                    padding-top: 30px;
+                    >li{
+                        .btn-link{
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+                            background-color: $color-white;
+                            font-size: $font-size-xxs;
+                            color: $color-black;
+                            padding: 4px 12px;
+                            border-radius: 17px;
+                            img{
+                                margin-top: 1px;
+                                width: auto;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
                 &.about-work{
                     padding-top: 100px;
                     padding-bottom: 100px;
@@ -575,6 +597,28 @@ body{
                             font-weight: $font-weight-thin;
                             padding-right: 16px;
                             color: $color-white;
+                        }
+                    }
+                }
+                .about-link{
+                    display: flex;
+                    gap: 12px;
+                    padding-top: 30px;
+                    >li{
+                        .btn-link{
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+                            background-color: $color-white;
+                            font-size: $font-size-xxs;
+                            color: $color-black;
+                            padding: 4px 12px;
+                            border-radius: 17px;
+                            img{
+                                margin-top: 1px;
+                                width: auto;
+                                height: 12px;
+                            }
                         }
                     }
                 }
@@ -975,6 +1019,33 @@ body{
                         }
                     }
                 }
+                .about-link{
+                    display: flex;
+                    gap: 12px;
+                    padding-top: 30px;
+                    >li{
+                        .btn-link{
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+                            background-color: $color-white;
+                            font-size: $font-size-xxs;
+                            color: $color-black;
+                            padding: 4px 12px;
+                            border-radius: 17px;
+                            box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+                            transition: box-shadow 0.5s ease-in;
+                            img{
+                                margin-top: 1px;
+                                width: auto;
+                                height: 12px;
+                            }
+                            &:hover{
+                                box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+                            }
+                        }
+                    }
+                }
                 &.about-work{
                     padding-top: 140px;
                     padding-bottom: 140px;
@@ -1371,6 +1442,33 @@ body{
                             font-weight: $font-weight-thin;
                             padding-right: 16px;
                             color: $color-white;
+                        }
+                    }
+                }
+                .about-link{
+                    display: flex;
+                    gap: 12px;
+                    padding-top: 30px;
+                    >li{
+                        .btn-link{
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+                            background-color: $color-white;
+                            font-size: $font-size-xs;
+                            color: $color-black;
+                            padding: 5px 14px 6px;
+                            border-radius: 17px;
+                            box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+                            transition: box-shadow 0.5s ease-in;
+                            img{
+                                margin-top: 1px;
+                                width: auto;
+                                height: 12px;
+                            }
+                            &:hover{
+                                box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+                            }
                         }
                     }
                 }
