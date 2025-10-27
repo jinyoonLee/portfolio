@@ -876,7 +876,7 @@
             .overview{
                 max-width: 1440px;
                 margin: 0 auto;
-                padding: 150px 32px;
+                padding: 150px 32px 0;
                 .overview-wrap{
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
@@ -1386,7 +1386,7 @@
             .overview{
                 max-width: 1440px;
                 margin: 0 auto;
-                padding: 150px 32px;
+                padding: 150px 32px 0;
                 .overview-wrap{
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);

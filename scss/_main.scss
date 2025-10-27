@@ -74,8 +74,7 @@ body{
             margin: 0 auto;
             background: url('../images/work03_main.png') 
                         no-repeat 
-                        right -35vw top 30px / clamp(500px, 140vw, 670px) auto
-                        fixed;
+                        right -35vw top 30px / clamp(500px, 140vw, 670px) auto;
             h2{
                 color: $color-black;
                 padding-bottom: 50px;
@@ -512,8 +511,7 @@ body{
             margin: 0 auto;
             background: url('../images/work03_main.png') 
                         no-repeat 
-                        right -155px center / clamp(650px, 104vw, 900px) auto
-                        fixed;
+                        right -155px top 100px / clamp(650px, 104vw, 900px) auto;
             h2{
                 color: $color-black;
                 padding-bottom: 70px;
@@ -956,8 +954,7 @@ body{
             margin: 0 auto;
             background: url('../images/work03_main.png') 
                         no-repeat 
-                        right -155px center / clamp(900px, 69vw, 1200px) auto
-                        fixed;
+                        right -155px top / clamp(900px, 69vw, 1200px) auto;
             h2{
                 max-width: 864px;
                 margin: 0 auto;
@@ -1422,8 +1419,7 @@ body{
             margin: 0 auto;
             background: url('../images/work03_main.png') 
                         no-repeat 
-                        right 32px center / clamp(900px, 69vw, 1200px) auto
-                        fixed;
+                        right 32px top -130px / clamp(900px, 69vw, 1200px) auto;
             h2{
                 max-width: 1440px;
                 margin: 0 auto;
@@ -1434,7 +1430,7 @@ body{
                     max-width: 1440px;
                     margin: 0 auto;
                     padding-left: 32px;
-                    padding-bottom: 50px;
+                    padding-bottom: 150px;
                 }
             }
         }
