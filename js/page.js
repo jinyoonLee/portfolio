@@ -3,7 +3,7 @@ document.body.style.backgroundColor = "#f3f2f6";
 
 //! 리스트 열기
 $(document).ready(function(){
-    listControl(".detail-wrap .list-title")
+    listControl(".work-list .list-title")
 })
 
 function listControl(listBtn) {
