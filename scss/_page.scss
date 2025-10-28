@@ -470,7 +470,7 @@
         }
     }
     .design-system{
-        padding: 150px 32px;
+        padding: 150px 16px;
         max-width: 880px;
         margin: 0 auto;
         >h2{
@@ -491,83 +491,71 @@
                     .typography-list{
                         display: flex;
                         flex-direction: column;
+                        gap: 10px 0;
                         .typography-item{
                             .font-item{
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                height: 60px;
+                                min-height: 60px;
+                                flex-wrap: wrap;
                                 .font-type{
                                     display: flex;
                                     align-items: center;
                                     color: $color-black;
-                                    &::before{
-                                        content: '';
-                                        display: block;
-                                        background-color: $color-accent;
-                                        width: 8px;
-                                        height: 8px;
-                                        border-radius: 4px;
-                                        margin: 2px 8px 0 0;
-                                    }
+                                    flex-shrink: 0;
+                                    width: 180px;
                                 }
                                 .font-style{
                                     color: $color-dark-gray;
                                     font-size: $font-size-xxs;
+                                    flex-shrink: 0;
                                 }
                             }
                             &:nth-child(1){
                                 .font-type{
-                                    width: 180px;
                                     font-weight: $font-weight-medium;
                                     font-size: 28px;
                                 }
                             } 
                             &:nth-child(2){
                                 .font-type{
-                                    width: 180px;
                                     font-weight: $font-weight-medium;
                                     font-size: 22px;
                                 }
                             } 
                             &:nth-child(3){
                                 .font-type{
-                                    width: 180px;
                                     font-weight: $font-weight-medium;
                                     font-size: 17px;
                                 }
                             } 
                             &:nth-child(4){
                                 .font-type{
-                                    width: 180px;
                                     font-weight: $font-weight-bold;
                                     font-size: 17px;
                                 }
                             } 
                             &:nth-child(5){
                                 .font-type{
-                                    width: 100px;
                                     font-weight: $font-weight-regular;
                                     font-size: 18px;
                                 }
                             } 
                             &:nth-child(6){
                                 .font-type{
-                                    width: 100px;
                                     font-weight: $font-weight-regular;
                                     font-size: 16px;
                                 }
                             } 
                             &:nth-child(7){
                                 .font-type{
-                                    width: 100px;
                                     font-weight: $font-weight-regular;
                                     font-size: 14px;
                                 }
                             } 
                             &:nth-child(8){
                                 .font-type{
-                                    width: 100px;
                                     font-weight: $font-weight-regular;
                                     font-size: 12px;
                                 }

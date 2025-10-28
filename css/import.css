@@ -2261,7 +2261,7 @@ body {
     display: none;
   }
   .design-system {
-    padding: 150px 32px;
+    padding: 150px 16px;
     max-width: 880px;
     margin: 0 auto;
   }
@@ -2282,68 +2282,56 @@ body {
   .design-system > ul li.typography .typography-list {
     display: flex;
     flex-direction: column;
+    gap: 10px 0;
   }
   .design-system > ul li.typography .typography-list .typography-item .font-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    min-height: 60px;
+    flex-wrap: wrap;
   }
   .design-system > ul li.typography .typography-list .typography-item .font-item .font-type {
     display: flex;
     align-items: center;
     color: #000;
-  }
-  .design-system > ul li.typography .typography-list .typography-item .font-item .font-type::before {
-    content: "";
-    display: block;
-    background-color: #DA4B26;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
-    margin: 2px 8px 0 0;
+    flex-shrink: 0;
+    width: 180px;
   }
   .design-system > ul li.typography .typography-list .typography-item .font-item .font-style {
     color: #4d4d4d;
     font-size: 0.875rem;
+    flex-shrink: 0;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(1) .font-type {
-    width: 180px;
     font-weight: 500;
     font-size: 28px;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(2) .font-type {
-    width: 180px;
     font-weight: 500;
     font-size: 22px;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(3) .font-type {
-    width: 180px;
     font-weight: 500;
     font-size: 17px;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(4) .font-type {
-    width: 180px;
     font-weight: 700;
     font-size: 17px;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(5) .font-type {
-    width: 100px;
     font-weight: 400;
     font-size: 18px;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(6) .font-type {
-    width: 100px;
     font-weight: 400;
     font-size: 16px;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(7) .font-type {
-    width: 100px;
     font-weight: 400;
     font-size: 14px;
   }
   .design-system > ul li.typography .typography-list .typography-item:nth-child(8) .font-type {
-    width: 100px;
     font-weight: 400;
     font-size: 12px;
   }
