@@ -173,6 +173,61 @@
                 }
             }
         }
+        .bfimg-wrap{
+            li{
+                .media-box{
+                    background-color: $color-line;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    height: 50vw;
+                    border: 2px solid $color-line;
+                    img{
+                        max-width: unset;
+                        border-radius: 17px;
+                    }
+                }
+                p{
+                    font-size: $font-size-xs;
+                    color: $color-dark-gray;
+                    line-height: 1.8;
+                    padding: 15px 0 40px;
+                }
+                &.problem{
+                    .media-box{
+                        img{
+                            margin-left: 5vw;
+                            margin-top: 5vw;
+                            width: 100vw;
+                        }
+                    }
+                }
+                &.solution{
+                    .media-box{
+                        img{
+                            margin-top: 5vw;
+                            margin-left: 5vw;
+                            width: 100vw;
+                        }
+                    }
+                }
+            }
+        }
+        .work-01+.bfimg-wrap{
+            &+.detail{
+                margin-top: 0;
+            }
+        }
+        .work-02+.bfimg-wrap{
+            &+.detail{
+                display: block;
+                margin-top: 0;
+                div{
+                    img{
+                        border: none;
+                    }
+                }
+            }
+        }
     }
     .detail-wrap-main{
         padding-top: 30px;
@@ -645,6 +700,87 @@
                 }
             }
         }
+        .bfimg-wrap{
+            li{
+                .media-box{
+                    background-color: $color-line;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    height: 400px;
+                    border: 2px solid $color-line;
+                    img{
+                        max-width: unset;
+                        border-radius: 17px;
+                    }
+                }
+                p{
+                    font-size: $font-size-sm;
+                    color: $color-dark-gray;
+                    line-height: 1.8;
+                    padding: 15px 0 40px;
+                }
+                &.problem{
+                    .media-box{
+                        img{
+                            margin-left: 45px;
+                            margin-top: 45px;
+                        }
+                    }
+                }
+                &.solution{
+                    .media-box{
+                        img{
+                            margin-top: 45px;
+                            margin-left: 45px;
+                        }
+                    }
+                }
+            }
+        }
+        .work-01+.bfimg-wrap{
+            .problem{
+                .media-box{
+                    img{
+                        width: 770px;
+                    }
+                }
+            }
+            .solution{
+                .media-box{
+                    img{
+                        width: 763px;
+                    }
+                }
+            }
+            &+.detail{
+                margin-top: 0;
+            }
+        }
+        .work-02+.bfimg-wrap{
+            .problem{
+                .media-box{
+                    img{
+                        width: 761px;
+                    }
+                }
+            }
+            .solution{
+                .media-box{
+                    img{
+                        width: 765px;
+                    }
+                }
+            }
+            &+.detail{
+                display: block;
+                margin-top: 0;
+                div{
+                    img{
+                        border: none;
+                    }
+                }
+            }
+        }
     }
     .detail-wrap-main{
         padding-top: 50px;
@@ -802,6 +938,7 @@
                     order: 0;
                     height: 400px;
                     margin-bottom: 30px;
+                    border: 2px solid #f3f2f6;
                     img{
                         margin-left: auto;
                         margin-right: auto;
@@ -1122,6 +1259,89 @@
                 }
             }
         }
+        .bfimg-wrap{
+            li{
+                .media-box{
+                    background-color: $color-line;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    height: 500px;
+                    border: 2px solid $color-line;
+                    img{
+                        max-width: unset;
+                        border-radius: 17px;
+                        //margin-right: auto;
+                        //margin-left: auto;
+                    }
+                }
+                p{
+                    font-size: $font-size-sm;
+                    color: $color-dark-gray;
+                    line-height: 1.8;
+                    padding: 15px 0 40px;
+                }
+                &.problem{
+                    .media-box{
+                        img{
+                            margin-left: 55px;
+                            margin-top: 55px;
+                        }
+                    }
+                }
+                &.solution{
+                    .media-box{
+                        img{
+                            margin-top: 55px;
+                            margin-left: 55px;
+                        }
+                    }
+                }
+            }
+        }
+        .work-01+.bfimg-wrap{
+            .problem{
+                .media-box{
+                    img{
+                        width: 1000px;
+                    }
+                }
+            }
+            .solution{
+                .media-box{
+                    img{
+                        width: 750px;
+                    }
+                }
+            }
+            &+.detail{
+                margin-top: 0;
+            }
+        }
+        .work-02+.bfimg-wrap{
+            .problem{
+                .media-box{
+                    img{
+                        width: 782px;
+                    }
+                }
+            }
+            .solution{
+                .media-box{
+                    img{
+                        width: 765px;
+                    }
+                }
+            }
+            &+.detail{
+                display: block;
+                margin-top: 0;
+                div{
+                    img{
+                        border: none;
+                    }
+                }
+            }
+        }
     }
     .detail-wrap-main{
         padding-bottom: 50px;
@@ -1288,6 +1508,7 @@
                     overflow: hidden;
                     border-radius: 30px;
                     height: 500px;
+                    border: 2px solid #f3f2f6;
                     img{
                         margin-left: auto;
                         margin-right: auto;
