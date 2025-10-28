@@ -2853,6 +2853,7 @@ body {
   }
   .design-system > h2 {
     color: #000;
+    text-align: center;
   }
   .design-system > ul li h3 {
     font-size: 1.125rem;
@@ -3512,6 +3513,7 @@ body {
   }
   .design-system > h2 {
     color: #000;
+    text-align: center;
   }
   .design-system > ul li h3 {
     font-size: 1.125rem;
