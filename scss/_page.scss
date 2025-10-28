@@ -469,6 +469,172 @@
             }
         }
     }
+    .design-system{
+        padding: 150px 32px;
+        max-width: 880px;
+        margin: 0 auto;
+        >h2{
+            color: $color-black;
+            font-size: $font-size-md;
+        }
+        >ul{
+            li{
+                h3{
+                    font-size: $font-size-xs;
+                    color: $color-accent;
+                    padding: 50px 0 30px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid $color-light-gray;
+                }
+                &.typography{
+                    padding-bottom: 50px;
+                    .typography-list{
+                        display: flex;
+                        flex-direction: column;
+                        .typography-item{
+                            .font-item{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                height: 60px;
+                                .font-type{
+                                    display: flex;
+                                    align-items: center;
+                                    color: $color-black;
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        background-color: $color-accent;
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 4px;
+                                        margin: 2px 8px 0 0;
+                                    }
+                                }
+                                .font-style{
+                                    color: $color-dark-gray;
+                                    font-size: $font-size-xxs;
+                                }
+                            }
+                            &:nth-child(1){
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 28px;
+                                }
+                            } 
+                            &:nth-child(2){
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 22px;
+                                }
+                            } 
+                            &:nth-child(3){
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 17px;
+                                }
+                            } 
+                            &:nth-child(4){
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-bold;
+                                    font-size: 17px;
+                                }
+                            } 
+                            &:nth-child(5){
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 18px;
+                                }
+                            } 
+                            &:nth-child(6){
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 16px;
+                                }
+                            } 
+                            &:nth-child(7){
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 14px;
+                                }
+                            } 
+                            &:nth-child(8){
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 12px;
+                                }
+                            } 
+                        }
+                    }
+                }
+                &.color-swatches{
+                    .color-st-list{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 15px 0;
+                        .color-st-item{
+                            .color-item{
+                                .color-type{
+                                    color: $color-black;
+                                    padding-bottom: 10px;
+                                    font-size: $font-size-xxs;
+                                }
+                                .color-style{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 40px;
+                                    padding-left: 10px;
+                                    font-size: $font-size-xxs;
+                                    border: 1px solid rgba(0, 0, 0, 0.1);
+                                }
+                            }
+                            &:nth-child(1),
+                            &:nth-child(4){
+                                grid-column: 1 / -1;
+                            }
+                            &:nth-child(1) .color-style{
+                                background-color: #238F51;
+                            }
+                            &:nth-child(2) .color-style{
+                                background-color: #FFB700;
+                                border-right: none;
+                            }
+                            &:nth-child(3) .color-style{
+                                background-color: #F05D4D;
+                            }
+                            &:nth-child(4) .color-style{
+                                background-color: #14142B;
+                            }
+                            &:nth-child(5) .color-style{
+                                background-color: #6E6E79;
+                                border-right: none;
+                            }
+                            &:nth-child(6) .color-style{
+                                background-color: #9999A6;
+                            }
+                            &:nth-child(7) .color-style{
+                                background-color: #F3F4F6;
+                                border-right: none;
+                                color: $color-dark-gray;
+                            }
+                            &:nth-child(8) .color-style{
+                                background-color: #FFFFFF;
+                                color: $color-dark-gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     .splide{
         .splide__slide+.splide__slide {
@@ -1020,6 +1186,179 @@
                     img{
                         width: 100%;
                         height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .design-system{
+        padding: 150px 32px;
+        max-width: 880px;
+        margin: 0 auto;
+        >h2{
+            color: $color-black;
+        }
+        >ul{
+            li{
+                h3{
+                    font-size: $font-size-sm;
+                    color: $color-accent;
+                    padding: 50px 0 30px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid $color-light-gray;
+                }
+                &.typography{
+                    padding-bottom: 50px;
+                    .typography-list{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .typography-item{
+                            .font-item{
+                                display: flex;
+                                align-items: center;
+                                height: 60px;
+                                .font-type{
+                                    display: flex;
+                                    align-items: center;
+                                    color: $color-black;
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        background-color: $color-accent;
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 4px;
+                                        margin: 2px 8px 0 0;
+                                    }
+                                }
+                                .font-style{
+                                    color: $color-dark-gray;
+                                    font-size: $font-size-xxs;
+                                }
+                            }
+                            &:nth-child(1){
+                                order: 1;
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 28px;
+                                }
+                            } 
+                            &:nth-child(2){
+                                order: 3;
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 22px;
+                                }
+                            } 
+                            &:nth-child(3){
+                                order: 5;
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 17px;
+                                }
+                            } 
+                            &:nth-child(4){
+                                order: 7;
+                                .font-type{
+                                    width: 180px;
+                                    font-weight: $font-weight-bold;
+                                    font-size: 17px;
+                                }
+                            } 
+                            &:nth-child(5){
+                                order: 2;
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 18px;
+                                }
+                            } 
+                            &:nth-child(6){
+                                order: 4;
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 16px;
+                                }
+                            } 
+                            &:nth-child(7){
+                                order: 6;
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 14px;
+                                }
+                            } 
+                            &:nth-child(8){
+                                order: 8;
+                                .font-type{
+                                    width: 100px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 12px;
+                                }
+                            } 
+                        }
+                    }
+                }
+                &.color-swatches{
+                    .color-st-list{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 15px 0;
+                        .color-st-item{
+                            .color-item{
+                                .color-type{
+                                    color: $color-black;
+                                    padding-bottom: 10px;
+                                    font-size: $font-size-xs;
+                                }
+                                .color-style{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 40px;
+                                    padding-left: 10px;
+                                    font-size: $font-size-xxs;
+                                    border: 1px solid rgba(0, 0, 0, 0.1);
+                                }
+                            }
+                            &:nth-child(1),
+                            &:nth-child(4){
+                                grid-column: 1 / -1;
+                            }
+                            &:nth-child(1) .color-style{
+                                background-color: #238F51;
+                            }
+                            &:nth-child(2) .color-style{
+                                background-color: #FFB700;
+                                border-right: none;
+                            }
+                            &:nth-child(3) .color-style{
+                                background-color: #F05D4D;
+                            }
+                            &:nth-child(4) .color-style{
+                                background-color: #14142B;
+                            }
+                            &:nth-child(5) .color-style{
+                                background-color: #6E6E79;
+                                border-right: none;
+                            }
+                            &:nth-child(6) .color-style{
+                                background-color: #9999A6;
+                            }
+                            &:nth-child(7) .color-style{
+                                background-color: #F3F4F6;
+                                border-right: none;
+                                color: $color-dark-gray;
+                            }
+                            &:nth-child(8) .color-style{
+                                background-color: #FFFFFF;
+                                color: $color-dark-gray;
+                            }
+                        }
                     }
                 }
             }
@@ -1618,6 +1957,186 @@
                 }
             }
         }
+    }
+    .design-system{
+        padding: 150px 32px;
+        max-width: 880px;
+        margin: 0 auto;
+        >h2{
+            color: $color-black;
+        }
+        >ul{
+            li{
+                h3{
+                    font-size: $font-size-sm;
+                    color: $color-accent;
+                    padding: 50px 0 30px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid $color-light-gray;
+                }
+                &.typography{
+                    padding-bottom: 50px;
+                    .typography-list{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .typography-item{
+                            .font-item{
+                                display: flex;
+                                align-items: center;
+                                height: 60px;
+                                .font-type{
+                                    display: flex;
+                                    align-items: center;
+                                    color: $color-black;
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        background-color: $color-accent;
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 4px;
+                                        margin: 2px 8px 0 0;
+                                    }
+                                }
+                                .font-style{
+                                    color: $color-dark-gray;
+                                    font-size: $font-size-xs;
+                                }
+                            }
+                            &:nth-child(1){
+                                order: 1;
+                                .font-type{
+                                    width: 200px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 28px;
+                                }
+                            } 
+                            &:nth-child(2){
+                                order: 3;
+                                .font-type{
+                                    width: 200px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 22px;
+                                }
+                            } 
+                            &:nth-child(3){
+                                order: 5;
+                                .font-type{
+                                    width: 200px;
+                                    font-weight: $font-weight-medium;
+                                    font-size: 17px;
+                                }
+                            } 
+                            &:nth-child(4){
+                                order: 7;
+                                .font-type{
+                                    width: 200px;
+                                    font-weight: $font-weight-bold;
+                                    font-size: 17px;
+                                }
+                            } 
+                            &:nth-child(5){
+                                order: 2;
+                                .font-type{
+                                    width: 120px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 18px;
+                                }
+                            } 
+                            &:nth-child(6){
+                                order: 4;
+                                .font-type{
+                                    width: 120px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 16px;
+                                }
+                            } 
+                            &:nth-child(7){
+                                order: 6;
+                                .font-type{
+                                    width: 120px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 14px;
+                                }
+                            } 
+                            &:nth-child(8){
+                                order: 8;
+                                .font-type{
+                                    width: 120px;
+                                    font-weight: $font-weight-regular;
+                                    font-size: 12px;
+                                }
+                            } 
+                        }
+                    }
+                }
+                &.color-swatches{
+                    .color-st-list{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 15px 0;
+                        .color-st-item{
+                            .color-item{
+                                .color-type{
+                                    color: $color-black;
+                                    padding-bottom: 10px;
+                                    font-size: $font-size-xs;
+                                }
+                                .color-style{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 40px;
+                                    padding-left: 10px;
+                                    font-size: $font-size-xxs;
+                                    border: 1px solid rgba(0, 0, 0, 0.1);
+                                }
+                            }
+                            &:nth-child(1),
+                            &:nth-child(4){
+                                grid-column: 1 / -1;
+                            }
+                            &:nth-child(1) .color-style{
+                                background-color: #238F51;
+                            }
+                            &:nth-child(2) .color-style{
+                                background-color: #FFB700;
+                                border-right: none;
+                            }
+                            &:nth-child(3) .color-style{
+                                background-color: #F05D4D;
+                            }
+                            &:nth-child(4) .color-style{
+                                background-color: #14142B;
+                            }
+                            &:nth-child(5) .color-style{
+                                background-color: #6E6E79;
+                                border-right: none;
+                            }
+                            &:nth-child(6) .color-style{
+                                background-color: #9999A6;
+                            }
+                            &:nth-child(7) .color-style{
+                                background-color: #F3F4F6;
+                                border-right: none;
+                                color: $color-dark-gray;
+                            }
+                            &:nth-child(8) .color-style{
+                                background-color: #FFFFFF;
+                                color: $color-dark-gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .component{
+        background-color: #fff;
+        padding: 150px 32px;
+        max-width: 880px;
+        margin: 0 auto;
+        color: $color-black;
     }
 
     .splide{

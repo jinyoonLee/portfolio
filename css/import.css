@@ -2260,6 +2260,143 @@ body {
   .detail-wrap-main .detail-area .overview .overview-wrap img:nth-child(4) {
     display: none;
   }
+  .design-system {
+    padding: 150px 32px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .design-system > h2 {
+    color: #000;
+    font-size: 1.25rem;
+  }
+  .design-system > ul li h3 {
+    font-size: 1rem;
+    color: #DA4B26;
+    padding: 50px 0 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  .design-system > ul li.typography {
+    padding-bottom: 50px;
+  }
+  .design-system > ul li.typography .typography-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-type {
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-type::before {
+    content: "";
+    display: block;
+    background-color: #DA4B26;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: 2px 8px 0 0;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-style {
+    color: #4d4d4d;
+    font-size: 0.875rem;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(1) .font-type {
+    width: 180px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(2) .font-type {
+    width: 180px;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(3) .font-type {
+    width: 180px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(4) .font-type {
+    width: 180px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(5) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(6) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(7) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(8) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .design-system > ul li.color-swatches .color-st-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 0;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item .color-item .color-type {
+    color: #000;
+    padding-bottom: 10px;
+    font-size: 0.875rem;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item .color-item .color-style {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(1), .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(4) {
+    grid-column: 1/-1;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(1) .color-style {
+    background-color: #238F51;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(2) .color-style {
+    background-color: #FFB700;
+    border-right: none;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(3) .color-style {
+    background-color: #F05D4D;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(4) .color-style {
+    background-color: #14142B;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(5) .color-style {
+    background-color: #6E6E79;
+    border-right: none;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(6) .color-style {
+    background-color: #9999A6;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(7) .color-style {
+    background-color: #F3F4F6;
+    border-right: none;
+    color: #4d4d4d;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(8) .color-style {
+    background-color: #FFFFFF;
+    color: #4d4d4d;
+  }
   .splide .splide__slide + .splide__slide {
     margin-left: 3px;
   }
@@ -2708,6 +2845,166 @@ body {
   .detail-wrap-main .detail-area .overview .overview-wrap img {
     width: 100%;
     height: auto;
+  }
+  .design-system {
+    padding: 150px 32px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .design-system > h2 {
+    color: #000;
+  }
+  .design-system > ul li h3 {
+    font-size: 1.125rem;
+    color: #DA4B26;
+    padding: 50px 0 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  .design-system > ul li.typography {
+    padding-bottom: 50px;
+  }
+  .design-system > ul li.typography .typography-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-type {
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-type::before {
+    content: "";
+    display: block;
+    background-color: #DA4B26;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: 2px 8px 0 0;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-style {
+    color: #4d4d4d;
+    font-size: 0.875rem;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(1) {
+    order: 1;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(1) .font-type {
+    width: 180px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(2) {
+    order: 3;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(2) .font-type {
+    width: 180px;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(3) {
+    order: 5;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(3) .font-type {
+    width: 180px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(4) {
+    order: 7;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(4) .font-type {
+    width: 180px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(5) {
+    order: 2;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(5) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(6) {
+    order: 4;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(6) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(7) {
+    order: 6;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(7) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(8) {
+    order: 8;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(8) .font-type {
+    width: 100px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .design-system > ul li.color-swatches .color-st-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 0;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item .color-item .color-type {
+    color: #000;
+    padding-bottom: 10px;
+    font-size: 1rem;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item .color-item .color-style {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(1), .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(4) {
+    grid-column: 1/-1;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(1) .color-style {
+    background-color: #238F51;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(2) .color-style {
+    background-color: #FFB700;
+    border-right: none;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(3) .color-style {
+    background-color: #F05D4D;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(4) .color-style {
+    background-color: #14142B;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(5) .color-style {
+    background-color: #6E6E79;
+    border-right: none;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(6) .color-style {
+    background-color: #9999A6;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(7) .color-style {
+    background-color: #F3F4F6;
+    border-right: none;
+    color: #4d4d4d;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(8) .color-style {
+    background-color: #FFFFFF;
+    color: #4d4d4d;
   }
   .splide .splide__slide + .splide__slide {
     margin-left: 3px;
@@ -3207,6 +3504,173 @@ body {
   .detail-wrap-main .detail-area .overview .overview-wrap img {
     width: 100%;
     height: auto;
+  }
+  .design-system {
+    padding: 150px 32px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .design-system > h2 {
+    color: #000;
+  }
+  .design-system > ul li h3 {
+    font-size: 1.125rem;
+    color: #DA4B26;
+    padding: 50px 0 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  .design-system > ul li.typography {
+    padding-bottom: 50px;
+  }
+  .design-system > ul li.typography .typography-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-type {
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-type::before {
+    content: "";
+    display: block;
+    background-color: #DA4B26;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: 2px 8px 0 0;
+  }
+  .design-system > ul li.typography .typography-list .typography-item .font-item .font-style {
+    color: #4d4d4d;
+    font-size: 1rem;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(1) {
+    order: 1;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(1) .font-type {
+    width: 200px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(2) {
+    order: 3;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(2) .font-type {
+    width: 200px;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(3) {
+    order: 5;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(3) .font-type {
+    width: 200px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(4) {
+    order: 7;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(4) .font-type {
+    width: 200px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(5) {
+    order: 2;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(5) .font-type {
+    width: 120px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(6) {
+    order: 4;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(6) .font-type {
+    width: 120px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(7) {
+    order: 6;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(7) .font-type {
+    width: 120px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(8) {
+    order: 8;
+  }
+  .design-system > ul li.typography .typography-list .typography-item:nth-child(8) .font-type {
+    width: 120px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .design-system > ul li.color-swatches .color-st-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 0;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item .color-item .color-type {
+    color: #000;
+    padding-bottom: 10px;
+    font-size: 1rem;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item .color-item .color-style {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(1), .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(4) {
+    grid-column: 1/-1;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(1) .color-style {
+    background-color: #238F51;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(2) .color-style {
+    background-color: #FFB700;
+    border-right: none;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(3) .color-style {
+    background-color: #F05D4D;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(4) .color-style {
+    background-color: #14142B;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(5) .color-style {
+    background-color: #6E6E79;
+    border-right: none;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(6) .color-style {
+    background-color: #9999A6;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(7) .color-style {
+    background-color: #F3F4F6;
+    border-right: none;
+    color: #4d4d4d;
+  }
+  .design-system > ul li.color-swatches .color-st-list .color-st-item:nth-child(8) .color-style {
+    background-color: #FFFFFF;
+    color: #4d4d4d;
+  }
+  .component {
+    background-color: #fff;
+    padding: 150px 32px;
+    max-width: 880px;
+    margin: 0 auto;
+    color: #000;
   }
   .splide .splide__slide + .splide__slide {
     margin-left: 3px;
