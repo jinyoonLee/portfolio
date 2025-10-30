@@ -2196,7 +2196,15 @@ body {
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+  }
+  .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow {
+    flex-basis: 16px;
+  }
+  .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow:after {
+    content: "▼";
+    display: block;
+    margin-top: -8px;
+    color: #f3f2f6;
   }
   .detail-wrap-main .detail-area .case {
     background-color: #fff;
@@ -2789,11 +2797,21 @@ body {
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols {
     display: flex;
-    gap: 23px;
+    align-items: center;
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .col.problem,
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .col.solution {
     flex-basis: 50%;
+  }
+  .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow {
+    flex-basis: 23px;
+  }
+  .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow:after {
+    content: "▶";
+    display: block;
+    text-align: left;
+    margin-left: -4px;
+    color: #f3f2f6;
   }
   .detail-wrap-main .detail-area .case {
     background-color: #fff;
@@ -3432,11 +3450,21 @@ body {
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols {
     display: flex;
-    gap: 33px;
+    align-items: center;
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .col.problem,
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .col.solution {
     flex-basis: 50%;
+  }
+  .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow {
+    flex-basis: 33px;
+  }
+  .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow:after {
+    content: "▶";
+    display: block;
+    text-align: left;
+    margin-left: -4px;
+    color: #f3f2f6;
   }
   .detail-wrap-main .detail-area .case {
     background-color: #fff;

@@ -317,7 +317,15 @@
                             .cols{
                                 display: flex;
                                 flex-direction: column;
-                                gap: 16px;
+                                .flow-arrow{
+                                    flex-basis: 16px;
+                                    &:after{
+                                        content: '▼';
+                                        display: block;
+                                        margin-top: -8px;
+                                        color: $color-white;
+                                    }
+                                }
                             }
                         }
                     }
@@ -1048,10 +1056,20 @@
                             }
                             .cols{
                                 display: flex;
-                                gap: 23px;
+                                align-items: center;
                                 .col.problem,
                                 .col.solution{
                                     flex-basis: 50%;
+                                }
+                                .flow-arrow{
+                                    flex-basis: 23px;
+                                    &:after{
+                                        content: '▶';
+                                        display: block;
+                                        text-align: left;
+                                        margin-left: -4px;
+                                        color: $color-white;
+                                    }
                                 }
                             }
                         }
@@ -1815,10 +1833,20 @@
                             }
                             .cols{
                                 display: flex;
-                                gap: 33px;
+                                align-items: center;
                                 .col.problem,
                                 .col.solution{
                                     flex-basis: 50%;
+                                }
+                                .flow-arrow{
+                                    flex-basis: 33px;
+                                    &:after{
+                                        content: '▶';
+                                        display: block;
+                                        text-align: left;
+                                        margin-left: -4px;
+                                        color: $color-white;
+                                    }
                                 }
                             }
                         }
