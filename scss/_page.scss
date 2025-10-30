@@ -78,6 +78,9 @@
                             display: none;
                         }
                     }
+                    &:nth-child(1) span{
+                        background-color: $color-accent;
+                    }
                 }
             }
             &.active{
@@ -779,6 +782,9 @@
                         >img{
                             display: none;
                         }
+                    }
+                    &:nth-child(1) span{
+                        background-color: $color-accent;
                     }
                 }
             }
@@ -1531,6 +1537,9 @@
                             display: none;
                         }
                     }
+                    &:nth-child(1) span{
+                        background-color: $color-accent;
+                    }
                 }
             }
             &.active{
@@ -1794,7 +1803,6 @@
                                         &.solution{
                                             background-color: #fff;
                                             border: 2px solid $color-accent;
-                                            // transform: translateX(calc(-100% - 33px));
                                         }
                                         >b{
                                             display: block;

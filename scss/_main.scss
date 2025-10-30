@@ -109,6 +109,15 @@ body{
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
     }
+    .tag{
+        display: inline-block;
+        background-color: $color-accent;
+        color: $color-white;
+        font-size: 10px;
+        padding: 3px 6px 5px;
+        border-radius: 6px;
+        margin-bottom: 8px;
+    }
     .section-main{
         display: flex;
         align-items: center;
@@ -548,6 +557,15 @@ body{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
+    }
+    .tag{
+        display: inline-block;
+        background-color: $color-accent;
+        color: $color-white;
+        font-size: 10px;
+        padding: 3px 6px 5px;
+        border-radius: 6px;
+        margin-bottom: 8px;
     }
     .section-main{
         display: flex;
@@ -1000,6 +1018,15 @@ body{
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
+    }
+    .tag{
+        display: inline-block;
+        background-color: $color-accent;
+        color: $color-white;
+        font-size: 10px;
+        padding: 3px 6px 5px;
+        border-radius: 6px;
+        margin-bottom: 8px;
     }
     .section-main{
         display: flex;
@@ -1459,6 +1486,15 @@ body{
         font-weight: $font-weight-bold;
         letter-spacing: -2px;
         padding-bottom: 30px;
+    }
+    .tag{
+        display: inline-block;
+        background-color: $color-accent;
+        color: $color-white;
+        font-size: 12px;
+        padding: 3px 6px 5px;
+        border-radius: 6px;
+        margin-bottom: 8px;
     }
 
     .section-main{

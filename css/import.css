@@ -168,6 +168,15 @@ body {
     font-weight: 700;
     letter-spacing: -2px;
   }
+  .tag {
+    display: inline-block;
+    background-color: #DA4B26;
+    color: #f3f2f6;
+    font-size: 10px;
+    padding: 3px 6px 5px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
   .section-main {
     display: flex;
     align-items: center;
@@ -597,6 +606,15 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
+  }
+  .tag {
+    display: inline-block;
+    background-color: #DA4B26;
+    color: #f3f2f6;
+    font-size: 10px;
+    padding: 3px 6px 5px;
+    border-radius: 6px;
+    margin-bottom: 8px;
   }
   .section-main {
     display: flex;
@@ -1036,6 +1054,15 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -2px;
+  }
+  .tag {
+    display: inline-block;
+    background-color: #DA4B26;
+    color: #f3f2f6;
+    font-size: 10px;
+    padding: 3px 6px 5px;
+    border-radius: 6px;
+    margin-bottom: 8px;
   }
   .section-main {
     display: flex;
@@ -1490,6 +1517,15 @@ body {
     font-weight: 700;
     letter-spacing: -2px;
     padding-bottom: 30px;
+  }
+  .tag {
+    display: inline-block;
+    background-color: #DA4B26;
+    color: #f3f2f6;
+    font-size: 12px;
+    padding: 3px 6px 5px;
+    border-radius: 6px;
+    margin-bottom: 8px;
   }
   .section-main {
     display: flex;
@@ -1954,6 +1990,9 @@ body {
   }
   .work-list .list-title + .list-wrap li.active a > img {
     display: none;
+  }
+  .work-list .list-title + .list-wrap li:nth-child(1) span {
+    background-color: #DA4B26;
   }
   .work-list .list-title.active > p {
     color: #DA4B26;
@@ -2534,6 +2573,9 @@ body {
   }
   .work-list .list-title + .list-wrap li.active a > img {
     display: none;
+  }
+  .work-list .list-title + .list-wrap li:nth-child(1) span {
+    background-color: #DA4B26;
   }
   .work-list .list-title.active > p {
     color: #DA4B26;
@@ -3163,6 +3205,9 @@ body {
   }
   .work-list .list-title + .list-wrap li.active a > img {
     display: none;
+  }
+  .work-list .list-title + .list-wrap li:nth-child(1) span {
+    background-color: #DA4B26;
   }
   .work-list .list-title.active > p {
     color: #DA4B26;
