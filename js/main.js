@@ -67,6 +67,7 @@ tl.to(".section-main div", { scale: 0.9, ease: "power2.out" }, "b")
 // body 배경색 & p 컬러
 tl.to(".section-main", { backgroundColor: "#000", ease: "power2.out" }, "b")
 tl.to(".section-main .main-title >span", { color: "#fff", ease: "power2.out" }, "b")
+tl.to(".section-main .main-desc", { color: "#b9b9b9", ease: "power2.out" }, "b")
 
 //! section-work h2
 gsap.matchMedia().add("(min-width: 480px)", () => {

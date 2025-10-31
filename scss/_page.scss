@@ -1747,7 +1747,7 @@
             .page-01,
             .page-02{
                 .work-inner{
-                    max-width: 1440px;
+                    max-width: 1200px;
                     margin: 0 auto;
                     padding: 0 32px;
                 }
@@ -1756,35 +1756,35 @@
                 .work-inner{
                     display: flex;
                     gap: 4vw;
+                    align-items: center;
                     height: 911px;
                     overflow: hidden;
-                    >*{
-                        flex-basis: 50%;
-                    }
                     .img-wrap{
-                        position: relative;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         >img{
-                            position: absolute;
-                            top: -85px;
+                            height: 800px;
                         }
                     }
-                    .work-desc{
-                        padding-top: 10px;
-                        text-align: justify;
-                        text-indent: 10px;
+                    .work-content{
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .work-desc{
+                            padding-top: 10px;
+                            text-align: justify;
+                            text-indent: 10px;
+                        }
                     }
-                }
-                .work-content{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
                 }
             }
             .page-02{
                 background-color: $color-black;
                 padding: 150px 0 180px;
                 .work-inner{
-                    max-width: 1200px;
                     text-align: center;
                     word-break: keep-all;
                     h2{
