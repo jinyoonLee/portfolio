@@ -2199,6 +2199,7 @@ body {
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow {
     flex-basis: 16px;
+    z-index: 10;
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow:after {
     content: "▼";
@@ -2825,6 +2826,7 @@ body {
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow {
     flex-basis: 23px;
+    z-index: 10;
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow:after {
     content: "▶";
@@ -3498,6 +3500,7 @@ body {
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow {
     flex-basis: 33px;
+    z-index: 10;
   }
   .detail-wrap-main .detail-area .page-02 .work-inner .problem-set > li .cols .flow-arrow:after {
     content: "▶";
