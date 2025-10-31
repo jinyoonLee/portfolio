@@ -2219,17 +2219,37 @@ body {
     flex-direction: column;
     gap: 50px;
   }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul > * p::before {
+    display: block;
+    font-size: 10px;
+    padding: 3px 6px 4px;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .problem p {
     color: #4d4d4d;
     padding: 0 20px;
     line-height: 1.6;
-    word-break: keep-all;
+    text-align: justify;
+  }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .problem p::before {
+    content: "OLD";
+    color: #000;
+    background-color: #b9b9b9;
+    width: 31.73px;
   }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .solution p {
     color: #000;
     padding: 0 20px;
     line-height: 1.6;
-    word-break: keep-all;
+    text-align: justify;
+  }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .solution p::before {
+    content: "NEW";
+    color: #f3f2f6;
+    background-color: #DA4B26;
+    width: 33.91px;
   }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul li {
     flex-basis: 50%;
@@ -2825,17 +2845,37 @@ body {
     display: flex;
     gap: 20px;
   }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul > * p::before {
+    display: block;
+    font-size: 10px;
+    padding: 3px 6px 4px;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .problem p {
     color: #4d4d4d;
     padding: 0 20px;
     line-height: 1.6;
-    word-break: keep-all;
+    text-align: justify;
+  }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .problem p::before {
+    content: "OLD";
+    color: #000;
+    background-color: #b9b9b9;
+    width: 31.73px;
   }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .solution p {
     color: #000;
     padding: 0 20px;
     line-height: 1.6;
-    word-break: keep-all;
+    text-align: justify;
+  }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .solution p::before {
+    content: "NEW";
+    color: #f3f2f6;
+    background-color: #DA4B26;
+    width: 33.91px;
   }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul li {
     flex-basis: 50%;
@@ -3478,22 +3518,42 @@ body {
     display: flex;
     gap: 50px;
   }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul > * p::before {
+    display: block;
+    font-size: 10px;
+    padding: 3px 6px 4px;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .problem p {
     color: #4d4d4d;
     padding: 0 20px;
     line-height: 1.6;
-    word-break: keep-all;
+    text-align: justify;
+  }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .problem p::before {
+    content: "OLD";
+    color: #000;
+    background-color: #b9b9b9;
+    width: 31.73px;
   }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .solution p {
     color: #000;
     padding: 0 20px;
     line-height: 1.6;
-    word-break: keep-all;
+    text-align: justify;
     order: 1;
+  }
+  .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .solution p::before {
+    content: "NEW";
+    color: #f3f2f6;
+    background-color: #DA4B26;
+    width: 33.91px;
   }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul .solution .media-box {
     order: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .detail-wrap-main .detail-area .case .work-inner .work-case-title > ul li {
     flex-basis: 50%;
@@ -3524,7 +3584,7 @@ body {
     margin-right: auto;
   }
   .detail-wrap-main .detail-area .case.case-01 .problem .media-box {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .detail-wrap-main .detail-area .case.case-01 .problem .media-box img {
     margin-top: -14px;
@@ -3544,7 +3604,7 @@ body {
     order: 1;
   }
   .detail-wrap-main .detail-area .case.case-02 .problem .media-box {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     order: 0;
   }
   .detail-wrap-main .detail-area .case.case-02 .problem .media-box img {
@@ -3556,7 +3616,7 @@ body {
     width: 404px;
   }
   .detail-wrap-main .detail-area .case.case-03 .problem .media-box {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .detail-wrap-main .detail-area .case.case-03 .problem .media-box img {
     margin-top: -239px;
@@ -3576,7 +3636,7 @@ body {
     order: 1;
   }
   .detail-wrap-main .detail-area .case.case-04 .problem .media-box {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     order: 0;
   }
   .detail-wrap-main .detail-area .case.case-04 .problem .media-box img {

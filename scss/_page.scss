@@ -342,17 +342,41 @@
                             display: flex;
                             flex-direction: column;
                             gap: 50px;
+                            >*{
+                                p{
+                                    &::before{
+                                        display: block;
+                                        font-size: 10px;
+                                        padding: 3px 6px 4px;
+                                        border-radius: 6px;
+                                        margin-right: 6px;
+                                        margin-bottom: 6px;
+                                    }
+                                }
+                            }
                             .problem p{
                                 color: $color-dark-gray;
                                 padding: 0 20px;
                                 line-height: 1.6;
-                                word-break: keep-all;
+                                text-align: justify;
+                                &::before{
+                                    content: 'OLD';
+                                    color: $color-black;
+                                    background-color: $color-light-gray;
+                                    width: 31.73px;
+                                }
                             }
                             .solution p{
                                 color: $color-black;
                                 padding: 0 20px;
                                 line-height: 1.6;
-                                word-break: keep-all;
+                                text-align: justify;
+                                &::before{
+                                    content: 'NEW';
+                                    color: $color-white;
+                                    background-color: $color-accent;
+                                    width: 33.91px;
+                                }
                             }
                             li{
                                 flex-basis: 50%;
@@ -1086,17 +1110,41 @@
                         >ul{
                             display: flex;
                             gap: 20px;
+                            >*{
+                                p{
+                                    &::before{
+                                        display: block;
+                                        font-size: 10px;
+                                        padding: 3px 6px 4px;
+                                        border-radius: 6px;
+                                        margin-right: 6px;
+                                        margin-bottom: 6px;
+                                    }
+                                }
+                            }
                             .problem p{
                                 color: $color-dark-gray;
                                 padding: 0 20px;
                                 line-height: 1.6;
-                                word-break: keep-all;
+                                text-align: justify;
+                                &::before{
+                                    content: 'OLD';
+                                    color: $color-black;
+                                    background-color: $color-light-gray;
+                                    width: 31.73px;
+                                }
                             }
                             .solution p{
                                 color: $color-black;
                                 padding: 0 20px;
                                 line-height: 1.6;
-                                word-break: keep-all;
+                                text-align: justify;
+                                &::before{
+                                    content: 'NEW';
+                                    color: $color-white;
+                                    background-color: $color-accent;
+                                    width: 33.91px;
+                                }
                             }
                             li{
                                 flex-basis: 50%;
@@ -1863,12 +1911,30 @@
                         >ul{
                             display: flex;
                             gap: 50px;
+                            >*{
+                                p{
+                                    &::before{
+                                        display: block;
+                                        font-size: 10px;
+                                        padding: 3px 6px 4px;
+                                        border-radius: 6px;
+                                        margin-right: 6px;
+                                        margin-bottom: 6px;
+                                    }
+                                }
+                            }
                             .problem{
                                 p{
                                     color: $color-dark-gray;
                                     padding: 0 20px;
                                     line-height: 1.6;
-                                    word-break: keep-all;
+                                    text-align: justify;
+                                    &::before{
+                                        content: 'OLD';
+                                        color: $color-black;
+                                        background-color: $color-light-gray;
+                                        width: 31.73px;
+                                    }
                                 }
                             }
                             .solution {
@@ -1876,12 +1942,18 @@
                                     color: $color-black;
                                     padding: 0 20px;
                                     line-height: 1.6;
-                                    word-break: keep-all;
+                                    text-align: justify;
                                     order: 1;
+                                    &::before{
+                                        content: 'NEW';
+                                        color: $color-white;
+                                        background-color: $color-accent;
+                                        width: 33.91px;
+                                    }
                                 }
                                 .media-box{
                                     order: 0;
-                                    margin-bottom: 30px;
+                                    margin-bottom: 20px;
                                 }
                             }
                             li{
@@ -1919,7 +1991,7 @@
                 &.case-01{
                     .problem{
                         .media-box{
-                            margin-top: 30px;
+                            margin-top: 20px;
                             img{
                                 margin-top: -14px;
                                 width: 456px;
@@ -1943,7 +2015,7 @@
                             order: 1;
                         }
                         .media-box{
-                            margin-bottom: 30px;
+                            margin-bottom: 20px;
                             order: 0;
                             img{
                                 margin-top: -287px;
@@ -1963,7 +2035,7 @@
                 &.case-03{
                     .problem{
                         .media-box{
-                            margin-top: 30px;
+                            margin-top: 20px;
                             img{
                                 margin-top: -239px;
                                 width: 404px;
@@ -1987,7 +2059,7 @@
                             order: 1;
                         }
                         .media-box{
-                            margin-bottom: 30px;
+                            margin-bottom: 20px;
                             order: 0;
                             img{
                                 margin-top: -3px;
