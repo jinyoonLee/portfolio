@@ -106,7 +106,7 @@
         .work{
             .work-inner {
                 .work-content{
-                    padding-bottom: 40px;
+                    padding-bottom: 20px;
                     position: relative;
                     >h3{
                         display: block;
@@ -178,6 +178,7 @@
         }
         .bfimg-wrap{
             li{
+                margin-bottom: 20px;
                 .media-box{
                     background-color: $color-line;
                     overflow: hidden;
@@ -193,9 +194,25 @@
                     font-size: $font-size-xs;
                     color: $color-dark-gray;
                     line-height: 1.8;
-                    padding: 15px 0 40px;
+                    padding: 15px 0;
+                    &::before{
+                        display: block;
+                        font-size: 10px;
+                        padding: 3px 6px 4px;
+                        border-radius: 6px;
+                        margin-right: 6px;
+                        margin-bottom: 6px;
+                    }
                 }
                 &.problem{
+                    p{
+                        &::before{
+                            content: 'OLD';
+                            color: $color-black;
+                            background-color: $color-light-gray;
+                            width: 31.73px;
+                        }
+                    }
                     .media-box{
                         img{
                             margin-left: 5vw;
@@ -205,6 +222,14 @@
                     }
                 }
                 &.solution{
+                    p{
+                        &::before{
+                            content: 'NEW';
+                            color: $color-white;
+                            background-color: $color-accent;
+                            width: 33.91px;
+                        }
+                    }
                     .media-box{
                         img{
                             margin-top: 5vw;
@@ -914,6 +939,7 @@
         }
         .bfimg-wrap{
             li{
+                margin-bottom: 40px;
                 .media-box{
                     background-color: $color-line;
                     overflow: hidden;
@@ -929,9 +955,25 @@
                     font-size: $font-size-sm;
                     color: $color-dark-gray;
                     line-height: 1.8;
-                    padding: 15px 0 40px;
+                    padding: 15px 0;
+                    &::before{
+                        display: block;
+                        font-size: 10px;
+                        padding: 3px 6px 4px;
+                        border-radius: 6px;
+                        margin-right: 6px;
+                        margin-bottom: 6px;
+                    }
                 }
                 &.problem{
+                    p{
+                        &::before{
+                            content: 'OLD';
+                            color: $color-black;
+                            background-color: $color-light-gray;
+                            width: 31.73px;
+                        }
+                    }
                     .media-box{
                         img{
                             margin-left: 45px;
@@ -940,6 +982,14 @@
                     }
                 }
                 &.solution{
+                    p{
+                        &::before{
+                            content: 'NEW';
+                            color: $color-white;
+                            background-color: $color-accent;
+                            width: 33.91px;
+                        }
+                    }
                     .media-box{
                         img{
                             margin-top: 45px;
@@ -1703,6 +1753,7 @@
         }
         .bfimg-wrap{
             li{
+                margin-bottom: 40px;
                 .media-box{
                     background-color: $color-line;
                     overflow: hidden;
@@ -1712,17 +1763,31 @@
                     img{
                         max-width: unset;
                         border-radius: 17px;
-                        //margin-right: auto;
-                        //margin-left: auto;
                     }
                 }
                 p{
                     font-size: $font-size-sm;
                     color: $color-dark-gray;
                     line-height: 1.8;
-                    padding: 15px 0 40px;
+                    padding: 15px 0;
+                    &::before{
+                        display: block;
+                        font-size: 10px;
+                        padding: 3px 6px 4px;
+                        border-radius: 6px;
+                        margin-right: 6px;
+                        margin-bottom: 6px;
+                    }
                 }
                 &.problem{
+                    p{
+                        &::before{
+                            content: 'OLD';
+                            color: $color-black;
+                            background-color: $color-light-gray;
+                            width: 31.73px;
+                        }
+                    }
                     .media-box{
                         img{
                             margin-left: 55px;
@@ -1731,6 +1796,14 @@
                     }
                 }
                 &.solution{
+                    p{
+                        &::before{
+                            content: 'NEW';
+                            color: $color-white;
+                            background-color: $color-accent;
+                            width: 33.91px;
+                        }
+                    }
                     .media-box{
                         img{
                             margin-top: 55px;
