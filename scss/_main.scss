@@ -521,7 +521,8 @@ body{
             background: url('../images/work03_main.png') 
                         no-repeat 
                         right -155px top 150px / clamp(650px, 104vw, 900px) auto;
-            h2{
+            .h2-wrap{
+                display: block;
                 color: $color-black;
                 padding-bottom: 70px;
                 padding-left: 16px;
@@ -973,7 +974,8 @@ body{
             background: url('../images/work03_main.png') 
                         no-repeat 
                         right -155px top / clamp(900px, 69vw, 1200px) auto;
-            h2{
+            .h2-wrap{
+                display: block;
                 max-width: 864px;
                 margin: 0 auto;
                 color: $color-black;
@@ -986,6 +988,7 @@ body{
                     max-width: 864px;
                     margin: 0 auto;
                     padding-left: 32px;
+                    padding-right: 32px;
                 }
             }
             .work:not(.work-main){
@@ -1447,7 +1450,8 @@ body{
             background: url('../images/work03_main.png') 
                         no-repeat 
                         right 32px top -130px / clamp(900px, 69vw, 1200px) auto;
-            h2{
+            .h2-wrap{
+                display: block;
                 max-width: 1440px;
                 margin: 0 auto;
                 color: $color-black;
@@ -1456,7 +1460,6 @@ body{
                 .work-inner{
                     max-width: 1440px;
                     margin: 0 auto;
-                    padding-left: 32px;
                     padding-bottom: 150px;
                 }
             }

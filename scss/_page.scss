@@ -367,9 +367,12 @@
                         >ul{
                             display: flex;
                             flex-direction: column;
-                            gap: 50px;
+                            gap: 35px;
                             >*{
                                 p{
+                                    line-height: 1.6;
+                                    text-align: justify;
+                                    padding-bottom: 15px;
                                     &::before{
                                         display: block;
                                         font-size: 10px;
@@ -382,9 +385,6 @@
                             }
                             .problem p{
                                 color: $color-dark-gray;
-                                padding: 0 20px;
-                                line-height: 1.6;
-                                text-align: justify;
                                 &::before{
                                     content: 'OLD';
                                     color: $color-black;
@@ -394,9 +394,6 @@
                             }
                             .solution p{
                                 color: $color-black;
-                                padding: 0 20px;
-                                line-height: 1.6;
-                                text-align: justify;
                                 &::before{
                                     content: 'NEW';
                                     color: $color-white;
@@ -410,12 +407,12 @@
                                 flex-direction: column;
                                 &.problem{
                                     p{
-                                        order: 1;
+                                        order: 0;
                                     }
                                 }
                                 &.solution{
                                     p{
-                                        order: 1;
+                                        order: 0;
                                     }
                                 }
                             }
@@ -425,7 +422,7 @@
                 h2{
                     font-size: $font-size-md;
                     font-weight: $font-weight-regular;
-                    margin-bottom: 40px;
+                    margin-bottom: 35px;
                     color: $color-black;
                     .title-num{
                         font-size: $font-size-sm;
@@ -437,10 +434,9 @@
                 .media-box{
                     background-color: $color-white;
                     overflow: hidden;
-                    border-radius: 30px;
-                    order: 0;
+                    border-radius: 12px;
+                    order: 1;
                     height: 380px;
-                    margin-bottom: 20px;
                     border: 2px solid $color-white;
                     img{
                         margin-left: auto;
@@ -1161,9 +1157,11 @@
                     .work-case-title{
                         >ul{
                             display: flex;
-                            gap: 20px;
+                            gap: 25px;
                             >*{
                                 p{
+                                    line-height: 1.6;
+                                    text-align: justify;
                                     &::before{
                                         display: block;
                                         font-size: 10px;
@@ -1176,9 +1174,6 @@
                             }
                             .problem p{
                                 color: $color-dark-gray;
-                                padding: 0 20px;
-                                line-height: 1.6;
-                                text-align: justify;
                                 &::before{
                                     content: 'OLD';
                                     color: $color-black;
@@ -1188,9 +1183,7 @@
                             }
                             .solution p{
                                 color: $color-black;
-                                padding: 0 20px;
-                                line-height: 1.6;
-                                text-align: justify;
+                                order: 1;
                                 &::before{
                                     content: 'NEW';
                                     color: $color-white;
@@ -1231,7 +1224,7 @@
                 .media-box{
                     background-color: $color-white;
                     overflow: hidden;
-                    border-radius: 30px;
+                    border-radius: 12px;
                     order: 0;
                     height: 400px;
                     margin-bottom: 20px;
@@ -1989,6 +1982,8 @@
                             gap: 50px;
                             >*{
                                 p{
+                                    line-height: 1.6;
+                                    text-align: justify;
                                     &::before{
                                         display: block;
                                         font-size: 10px;
@@ -2002,9 +1997,6 @@
                             .problem{
                                 p{
                                     color: $color-dark-gray;
-                                    padding: 0 20px;
-                                    line-height: 1.6;
-                                    text-align: justify;
                                     &::before{
                                         content: 'OLD';
                                         color: $color-black;
@@ -2016,9 +2008,6 @@
                             .solution {
                                 p{
                                     color: $color-black;
-                                    padding: 0 20px;
-                                    line-height: 1.6;
-                                    text-align: justify;
                                     order: 1;
                                     &::before{
                                         content: 'NEW';
@@ -2055,7 +2044,7 @@
                 .media-box{
                     background-color: $color-white;
                     overflow: hidden;
-                    border-radius: 30px;
+                    border-radius: 12px;
                     height: 500px;
                     border: 2px solid #f3f2f6;
                     img{
@@ -2077,10 +2066,10 @@
                     .solution{
                         margin-top: -70px;
                         .media-box{
-                            height: 570px;
+                            height: 545px;
                             img{
                                 margin-top: -58px;
-                                width: 443px;
+                                width: 427px;
                             }
                         }
                     }
@@ -2121,10 +2110,10 @@
                     .solution{
                         margin-top: -70px;
                         .media-box{
-                            height: 570px;
+                            height: 545px;
                             img{
                                 margin-top: -64px;
-                                width: 416px;
+                                width: 398px;
                             }
                         }
                     }

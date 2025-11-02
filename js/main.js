@@ -73,14 +73,15 @@ tl.to(".section-main .main-desc", { color: "#b9b9b9", ease: "power2.out" }, "b")
 gsap.matchMedia().add("(min-width: 480px)", () => {
     gsap.from(".section-work h2", {
         scale: 4,
-        duration: 2,
+        duration: 1,
         x: 0,
         y: 0,
         transformOrigin: "left center",
         scrollTrigger: {
             trigger: ".section-work h2",
-            start: "top 40%",
-            once: true,
+            start: "top center",
+            end: "top bottom",
+            once: true
         }
     })
 })
