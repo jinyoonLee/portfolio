@@ -1495,7 +1495,7 @@ body {
   main .section-work .work.work-main .work-inner {
     max-width: 1440px;
     margin: 0 auto;
-    padding-bottom: 150px;
+    padding-top: 70px;
   }
   main .section-project {
     margin-top: 40px;
@@ -1676,6 +1676,9 @@ body {
   }
   .section-work .works .work.active {
     pointer-events: auto;
+  }
+  .section-work .works .work.work-main {
+    justify-content: flex-start;
   }
   .section-work .works .work.work-main .work-desc {
     padding-bottom: 20px;

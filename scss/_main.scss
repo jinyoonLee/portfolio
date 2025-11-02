@@ -1460,7 +1460,7 @@ body{
                 .work-inner{
                     max-width: 1440px;
                     margin: 0 auto;
-                    padding-bottom: 150px;
+                    padding-top: 70px;
                 }
             }
         }
@@ -1651,6 +1651,7 @@ body{
                     pointer-events: auto;
                 }
                 &.work-main{
+                    justify-content: flex-start;
                     .work-desc{
                         padding-bottom: 20px;
                     }
