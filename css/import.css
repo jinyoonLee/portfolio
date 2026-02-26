@@ -3471,6 +3471,9 @@ body {
   .detail-area .work-02 + .bfimg-wrap + .detail div img {
     border: none;
   }
+  .detail-area .work-10 .work-inner .work-media img {
+    border: none;
+  }
   .detail-wrap-main {
     padding-bottom: 50px;
   }
