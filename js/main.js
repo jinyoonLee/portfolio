@@ -87,26 +87,26 @@ gsap.matchMedia().add("(min-width: 480px)", () => {
 })
 
 //! section-work article
-gsap.matchMedia().add("(min-width: 1280px)", () => {
-    const panels = gsap.utils.toArray(".work")
+// gsap.matchMedia().add("(min-width: 1280px)", () => {
+//     const panels = gsap.utils.toArray(".work")
     
-    panels.forEach((panel, i) => {
-        ScrollTrigger.create({
-            trigger: panel,
-            start: "top top",
-            end: "bottom top",
-            scrub: 1,
-            pin: true,
-            pinSpacing: false,
-                    snap: {
-                        snapTo: 1,
-                        duration: 0.15,
-                        ease: "power2.out" 
-                    },
-            toggleClass: { targets: panel, className: "active" },
-        })
-    })
-})
+//     panels.forEach((panel, i) => {
+//         ScrollTrigger.create({
+//             trigger: panel,
+//             start: "top top",
+//             end: "bottom top",
+//             scrub: 1,
+//             pin: true,
+//             pinSpacing: false,
+//                     snap: {
+//                         snapTo: 1,
+//                         duration: 0.15,
+//                         ease: "power2.out" 
+//                     },
+//             toggleClass: { targets: panel, className: "active" },
+//         })
+//     })
+// })
 
 //! project h2 x값
 gsap.matchMedia().add("(min-width: 1280px)", () => {
