@@ -1703,9 +1703,6 @@ body {
     align-items: center;
     background-color: #f3f2f6;
   }
-  .section-work .works .work:last-child {
-    margin-bottom: 100vh;
-  }
   .section-work .works .work > a {
     pointer-events: auto;
   }
