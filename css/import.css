@@ -2074,6 +2074,12 @@ body {
     flex-direction: column;
     margin: 20px auto 0;
   }
+  .detail-area .detail .work-desc {
+    padding: 50px 0 35px;
+    font-size: 1rem;
+    color: #4d4d4d;
+    line-height: 1.8;
+  }
   .detail-area .detail div img {
     width: 100%;
     height: auto;
@@ -2703,6 +2709,12 @@ body {
     gap: 40px;
     flex-direction: column;
     margin: 40px auto 0;
+  }
+  .detail-area .detail .work-desc {
+    padding: 50px 0 35px;
+    font-size: 1.125rem;
+    color: #4d4d4d;
+    line-height: 1.8;
   }
   .detail-area .detail div img {
     width: 100%;
@@ -3388,6 +3400,12 @@ body {
     gap: 40px;
     flex-direction: column;
     margin: 40px auto 0;
+  }
+  .detail-area .detail .work-desc {
+    padding: 50px 0 35px;
+    font-size: 1.125rem;
+    color: #4d4d4d;
+    line-height: 1.8;
   }
   .detail-area .detail div img {
     width: 100%;

@@ -166,6 +166,12 @@
             gap: 20px;
             flex-direction: column;
             margin: 20px auto 0;
+            .work-desc {
+                padding: 50px 0 35px;
+                font-size: $font-size-xs;
+                color: $color-dark-gray;
+                line-height: 1.8;
+            }
             div{
                 img{
                     width: 100%;
@@ -922,6 +928,12 @@
             gap: 40px;
             flex-direction: column;
             margin: 40px auto 0;
+            .work-desc {
+                padding: 50px 0 35px;
+                font-size: $font-size-sm;
+                color: $color-dark-gray;
+                line-height: 1.8;
+            }
             div{
                 img{
                     width: 100%;
@@ -1733,6 +1745,12 @@
             gap: 40px;
             flex-direction: column;
             margin: 40px auto 0;
+            .work-desc {
+                padding: 50px 0 35px;
+                font-size: $font-size-sm;
+                color: $color-dark-gray;
+                line-height: 1.8;
+            }
             div{
                 img{
                     width: 100%;
